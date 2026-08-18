@@ -1,0 +1,6326 @@
+{
+  "1": [
+    {
+      "word": "private",
+      "phonetic": "ˈpraɪvət",
+      "pos": "adj.",
+      "meaning": "私人的",
+      "key": true
+    },
+    {
+      "word": "conversation",
+      "phonetic": "ˌkɒnvəˈseɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "谈话",
+      "key": false
+    },
+    {
+      "word": "theatre",
+      "phonetic": "ˈθɪətə(r)",
+      "pos": "n.",
+      "meaning": "剧场，戏院",
+      "key": false
+    },
+    {
+      "word": "seat",
+      "phonetic": "siːt",
+      "pos": "n.",
+      "meaning": "座位",
+      "key": true
+    },
+    {
+      "word": "angry",
+      "phonetic": "ˈæŋɡri",
+      "pos": "adj.",
+      "meaning": "生气的",
+      "key": false
+    },
+    {
+      "word": "attention",
+      "phonetic": "əˈtenʃ(ə)n",
+      "pos": "n.",
+      "meaning": "注意",
+      "key": true
+    },
+    {
+      "word": "angrily",
+      "phonetic": "ˈæŋɡrəli",
+      "pos": "adv.",
+      "meaning": "生气地",
+      "key": false
+    },
+    {
+      "word": "bear",
+      "phonetic": "beə(r)",
+      "pos": "v.",
+      "meaning": "容忍",
+      "key": true
+    },
+    {
+      "word": "business",
+      "phonetic": "ˈbɪznəs",
+      "pos": "n.",
+      "meaning": "事",
+      "key": true
+    },
+    {
+      "word": "rudely",
+      "phonetic": "ˈruːdli",
+      "pos": "adv.",
+      "meaning": "无礼地，粗鲁地",
+      "key": false
+    },
+    {
+      "word": "play",
+      "phonetic": "pleɪ",
+      "pos": "n.",
+      "meaning": "戏",
+      "key": true
+    }
+  ],
+  "2": [
+    {
+      "word": "until",
+      "phonetic": "ʌnˈtɪl",
+      "pos": "prep.",
+      "meaning": "直到",
+      "key": true
+    },
+    {
+      "word": "outside",
+      "phonetic": "ˌaʊtˈsaɪd",
+      "pos": "adv.",
+      "meaning": "外面",
+      "key": true
+    },
+    {
+      "word": "ring",
+      "phonetic": "rɪŋ",
+      "pos": "v.",
+      "meaning": "（铃、电话等）响（rang, rung）",
+      "key": true
+    },
+    {
+      "word": "aunt",
+      "phonetic": "ɑːnt",
+      "pos": "n.",
+      "meaning": "姑，姨，婶，舅母",
+      "key": true
+    },
+    {
+      "word": "repeat",
+      "phonetic": "rɪˈpiːt",
+      "pos": "v.",
+      "meaning": "重复",
+      "key": true
+    }
+  ],
+  "3": [
+    {
+      "word": "send",
+      "phonetic": "send",
+      "pos": "v.",
+      "meaning": "寄 , 送寄",
+      "key": true
+    },
+    {
+      "word": "postcard",
+      "phonetic": "ˈpəʊstkɑːd",
+      "pos": "n.",
+      "meaning": "明信片",
+      "key": false
+    },
+    {
+      "word": "spoil",
+      "phonetic": "spɔɪl",
+      "pos": "v.",
+      "meaning": "使索然无味, 损坏",
+      "key": true
+    },
+    {
+      "word": "museum",
+      "phonetic": "mjuˈziːəm",
+      "pos": "n.",
+      "meaning": "博物馆",
+      "key": true
+    },
+    {
+      "word": "public",
+      "phonetic": "ˈpʌblɪk",
+      "pos": "adj.",
+      "meaning": "公共的",
+      "key": true
+    },
+    {
+      "word": "friendly",
+      "phonetic": "ˈfrendli",
+      "pos": "adj.",
+      "meaning": "友好的",
+      "key": false
+    },
+    {
+      "word": "waiter",
+      "phonetic": "ˈweɪtə(r)",
+      "pos": "n.",
+      "meaning": "服务员, 招待员",
+      "key": false
+    },
+    {
+      "word": "lend",
+      "phonetic": "lend",
+      "pos": "v.",
+      "meaning": "借、给",
+      "key": true
+    },
+    {
+      "word": "decision",
+      "phonetic": "dɪˈsɪʒ(ə)n",
+      "pos": "n.",
+      "meaning": "决定",
+      "key": true
+    },
+    {
+      "word": "whole",
+      "phonetic": "həʊl",
+      "pos": "adj.",
+      "meaning": "整个的",
+      "key": true
+    },
+    {
+      "word": "single",
+      "phonetic": "ˈsɪŋɡ(ə)l",
+      "pos": "adj.",
+      "meaning": "唯一的, 单一的",
+      "key": true
+    },
+    {
+      "word": "decide",
+      "phonetic": "dɪˈsaɪd",
+      "pos": "v.",
+      "meaning": "决定",
+      "key": true
+    }
+  ],
+  "4": [
+    {
+      "word": "exciting",
+      "phonetic": "ɪkˈsaɪtɪŋ",
+      "pos": "adj.",
+      "meaning": "令人兴奋的",
+      "key": false
+    },
+    {
+      "word": "receive",
+      "phonetic": "rɪˈsiːv",
+      "pos": "v.",
+      "meaning": "接收，收到",
+      "key": true
+    },
+    {
+      "word": "firm",
+      "phonetic": "fɜːm",
+      "pos": "n.",
+      "meaning": "商行，公司",
+      "key": true
+    },
+    {
+      "word": "different",
+      "phonetic": "ˈdɪfrənt",
+      "pos": "adj.",
+      "meaning": "不同的",
+      "key": true
+    },
+    {
+      "word": "centre",
+      "phonetic": "ˈsentə(r)",
+      "pos": "n.",
+      "meaning": "中心",
+      "key": true
+    },
+    {
+      "word": "abroad",
+      "phonetic": "əˈbrɔːd",
+      "pos": "adv.",
+      "meaning": "在国外",
+      "key": false
+    }
+  ],
+  "5": [
+    {
+      "word": "pigeon",
+      "phonetic": "ˈpɪdʒɪn",
+      "pos": "n.",
+      "meaning": "鸽子",
+      "key": false
+    },
+    {
+      "word": "message",
+      "phonetic": "ˈmesɪdʒ",
+      "pos": "n.",
+      "meaning": "信息",
+      "key": true
+    },
+    {
+      "word": "cover",
+      "phonetic": "ˈkʌvə(r)",
+      "pos": "v.",
+      "meaning": "越过",
+      "key": true
+    },
+    {
+      "word": "distance",
+      "phonetic": "ˈdɪstəns",
+      "pos": "n.",
+      "meaning": "距离",
+      "key": true
+    },
+    {
+      "word": "request",
+      "phonetic": "rɪˈkwest",
+      "pos": "n.",
+      "meaning": "要求，请求",
+      "key": true
+    },
+    {
+      "word": "spare part",
+      "phonetic": "ˌspeə ˈpɑːt",
+      "pos": "n.",
+      "meaning": "备件",
+      "key": false
+    },
+    {
+      "word": "service",
+      "phonetic": "ˈsɜːvɪs",
+      "pos": "n.",
+      "meaning": "业务，服务",
+      "key": true
+    }
+  ],
+  "6": [
+    {
+      "word": "beggar",
+      "phonetic": "ˈbeɡə(r)",
+      "pos": "n.",
+      "meaning": "乞丐",
+      "key": false
+    },
+    {
+      "word": "food",
+      "phonetic": "fuːd",
+      "pos": "n.",
+      "meaning": "食物",
+      "key": true
+    },
+    {
+      "word": "pocket",
+      "phonetic": "ˈpɒkɪt",
+      "pos": "n.",
+      "meaning": "衣服口袋",
+      "key": false
+    },
+    {
+      "word": "call",
+      "phonetic": "kɔːl",
+      "pos": "v.",
+      "meaning": "拜访，光顾",
+      "key": true
+    }
+  ],
+  "7": [
+    {
+      "word": "detective",
+      "phonetic": "dɪˈtektɪv",
+      "pos": "n.",
+      "meaning": "侦探",
+      "key": false
+    },
+    {
+      "word": "airport",
+      "phonetic": "ˈeəpɔːt",
+      "pos": "n.",
+      "meaning": "机场",
+      "key": true
+    },
+    {
+      "word": "expect",
+      "phonetic": "ɪkˈspekt",
+      "pos": "v.",
+      "meaning": "期待，等待",
+      "key": true
+    },
+    {
+      "word": "valuable",
+      "phonetic": "ˈvæljuəb(ə)l",
+      "pos": "adj.",
+      "meaning": "贵重的",
+      "key": false
+    },
+    {
+      "word": "parcel",
+      "phonetic": "ˈpɑːs(ə)l",
+      "pos": "n.",
+      "meaning": "包裹",
+      "key": false
+    },
+    {
+      "word": "diamond",
+      "phonetic": "ˈdaɪmənd",
+      "pos": "n.",
+      "meaning": "钻石",
+      "key": false
+    },
+    {
+      "word": "steal",
+      "phonetic": "stiːl",
+      "pos": "v.",
+      "meaning": "偷",
+      "key": true
+    },
+    {
+      "word": "main",
+      "phonetic": "meɪn",
+      "pos": "adj.",
+      "meaning": "主要的",
+      "key": true
+    },
+    {
+      "word": "airfield",
+      "phonetic": "ˈeəfiːld",
+      "pos": "n.",
+      "meaning": "飞机起落的场地",
+      "key": false
+    },
+    {
+      "word": "guard",
+      "phonetic": "ɡɑːd",
+      "pos": "n.",
+      "meaning": "警戒，守卫",
+      "key": true
+    },
+    {
+      "word": "precious",
+      "phonetic": "ˈpreʃəs",
+      "pos": "adj.",
+      "meaning": "珍贵的",
+      "key": false
+    },
+    {
+      "word": "stone",
+      "phonetic": "stəʊn",
+      "pos": "n.",
+      "meaning": "石子",
+      "key": true
+    },
+    {
+      "word": "sand",
+      "phonetic": "sænd",
+      "pos": "n.",
+      "meaning": "沙子",
+      "key": false
+    }
+  ],
+  "8": [
+    {
+      "word": "competition",
+      "phonetic": "ˌkɒmpəˈtɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "比赛，竞赛",
+      "key": true
+    },
+    {
+      "word": "neat",
+      "phonetic": "niːt",
+      "pos": "adj.",
+      "meaning": "整齐的，整洁的",
+      "key": true
+    },
+    {
+      "word": "path",
+      "phonetic": "pɑːθ",
+      "pos": "n.",
+      "meaning": "小路，小径",
+      "key": false
+    },
+    {
+      "word": "wooden",
+      "phonetic": "ˈwʊdn",
+      "pos": "adj.",
+      "meaning": "木头的",
+      "key": false
+    },
+    {
+      "word": "pool",
+      "phonetic": "puːl",
+      "pos": "n.",
+      "meaning": "水池",
+      "key": false
+    }
+  ],
+  "9": [
+    {
+      "word": "welcome",
+      "phonetic": "ˈwelkəm",
+      "pos": "n.",
+      "meaning": "欢迎；v. 欢迎",
+      "key": true
+    },
+    {
+      "word": "crowd",
+      "phonetic": "kraʊd",
+      "pos": "n.",
+      "meaning": "人群",
+      "key": true
+    },
+    {
+      "word": "gather",
+      "phonetic": "ˈɡæðə(r)",
+      "pos": "v.",
+      "meaning": "聚集",
+      "key": true
+    },
+    {
+      "word": "hand",
+      "phonetic": "hænd",
+      "pos": "n.",
+      "meaning": "（表或机器的）指针",
+      "key": true
+    },
+    {
+      "word": "shout",
+      "phonetic": "ʃaʊt",
+      "pos": "v.",
+      "meaning": "喊叫",
+      "key": true
+    },
+    {
+      "word": "refuse",
+      "phonetic": "rɪˈfjuːz",
+      "pos": "v.",
+      "meaning": "拒绝",
+      "key": true
+    },
+    {
+      "word": "laugh",
+      "phonetic": "lɑːf",
+      "pos": "v.",
+      "meaning": "笑",
+      "key": true
+    }
+  ],
+  "10": [
+    {
+      "word": "jazz",
+      "phonetic": "dʒæz",
+      "pos": "n.",
+      "meaning": "爵士音乐",
+      "key": false
+    },
+    {
+      "word": "musical",
+      "phonetic": "ˈmjuːzɪk(ə)l",
+      "pos": "adj.",
+      "meaning": "音乐的",
+      "key": false
+    },
+    {
+      "word": "instrument",
+      "phonetic": "ˈɪnstrəmənt",
+      "pos": "n.",
+      "meaning": "乐器",
+      "key": false
+    },
+    {
+      "word": "clavichord",
+      "phonetic": "ˈklævɪkɔːd",
+      "pos": "n.",
+      "meaning": "古钢琴",
+      "key": false
+    },
+    {
+      "word": "recently",
+      "phonetic": "ˈriːs(ə)ntli",
+      "pos": "adv.",
+      "meaning": "最近",
+      "key": true
+    },
+    {
+      "word": "damage",
+      "phonetic": "ˈdæmɪdʒ",
+      "pos": "v.",
+      "meaning": "损坏",
+      "key": true
+    },
+    {
+      "word": "key",
+      "phonetic": "kiː",
+      "pos": "n.",
+      "meaning": "琴键",
+      "key": true
+    },
+    {
+      "word": "string",
+      "phonetic": "strɪŋ",
+      "pos": "n.",
+      "meaning": "（乐器的）弦",
+      "key": false
+    },
+    {
+      "word": "shock",
+      "phonetic": "ʃɒk",
+      "pos": "v.",
+      "meaning": "使不悦或生气，震惊",
+      "key": true
+    },
+    {
+      "word": "allow",
+      "phonetic": "əˈlaʊ",
+      "pos": "v.",
+      "meaning": "允许，让",
+      "key": true
+    },
+    {
+      "word": "touch",
+      "phonetic": "tʌtʃ",
+      "pos": "v.",
+      "meaning": "触摸",
+      "key": true
+    }
+  ],
+  "11": [
+    {
+      "word": "turn",
+      "phonetic": "tɜːn",
+      "pos": "n.",
+      "meaning": "行为，举止",
+      "key": true
+    },
+    {
+      "word": "deserve",
+      "phonetic": "dɪˈzɜːv",
+      "pos": "v.",
+      "meaning": "应得到，值得",
+      "key": true
+    },
+    {
+      "word": "lawyer",
+      "phonetic": "ˈlɔɪə(r)",
+      "pos": "n.",
+      "meaning": "律师",
+      "key": true
+    },
+    {
+      "word": "bank",
+      "phonetic": "bæŋk",
+      "pos": "n.",
+      "meaning": "银行",
+      "key": true
+    },
+    {
+      "word": "salary",
+      "phonetic": "ˈsæləri",
+      "pos": "n.",
+      "meaning": "工资",
+      "key": false
+    },
+    {
+      "word": "immediately",
+      "phonetic": "ɪˈmiːdiətli",
+      "pos": "adv.",
+      "meaning": "立刻",
+      "key": true
+    }
+  ],
+  "12": [
+    {
+      "word": "luck",
+      "phonetic": "lʌk",
+      "pos": "n.",
+      "meaning": "运气，幸运",
+      "key": false
+    },
+    {
+      "word": "captain",
+      "phonetic": "ˈkæptɪn",
+      "pos": "n.",
+      "meaning": "船长",
+      "key": true
+    },
+    {
+      "word": "sail",
+      "phonetic": "seɪl",
+      "pos": "v.",
+      "meaning": "航行",
+      "key": false
+    },
+    {
+      "word": "harbour",
+      "phonetic": "ˈhɑːbə(r)",
+      "pos": "n.",
+      "meaning": "港口",
+      "key": false
+    },
+    {
+      "word": "proud",
+      "phonetic": "praʊd",
+      "pos": "adj.",
+      "meaning": "自豪",
+      "key": false
+    },
+    {
+      "word": "important",
+      "phonetic": "ɪmˈpɔːt(ə)nt",
+      "pos": "adj.",
+      "meaning": "重要的",
+      "key": true
+    }
+  ],
+  "13": [
+    {
+      "word": "group",
+      "phonetic": "ɡruːp",
+      "pos": "n.",
+      "meaning": "小组，团体",
+      "key": true
+    },
+    {
+      "word": "pop singer",
+      "phonetic": "pɒp ˈsɪŋə(r)",
+      "pos": "n.",
+      "meaning": "流行歌手",
+      "key": false
+    },
+    {
+      "word": "club",
+      "phonetic": "klʌb",
+      "pos": "n.",
+      "meaning": "俱乐部",
+      "key": true
+    },
+    {
+      "word": "performance",
+      "phonetic": "pəˈfɔːməns",
+      "pos": "n.",
+      "meaning": "演出",
+      "key": true
+    },
+    {
+      "word": "occasion",
+      "phonetic": "əˈkeɪʒ(ə)n",
+      "pos": "n.",
+      "meaning": "场合",
+      "key": true
+    }
+  ],
+  "14": [
+    {
+      "word": "experience",
+      "phonetic": "ɪkˈspɪəriəns",
+      "pos": "n.",
+      "meaning": "经历",
+      "key": true
+    },
+    {
+      "word": "wave",
+      "phonetic": "weɪv",
+      "pos": "v.",
+      "meaning": "招手",
+      "key": true
+    },
+    {
+      "word": "lift",
+      "phonetic": "lɪft",
+      "pos": "v.",
+      "meaning": "搭便车",
+      "key": true
+    },
+    {
+      "word": "reply",
+      "phonetic": "rɪˈplaɪ",
+      "pos": "v.",
+      "meaning": "回答",
+      "key": true
+    },
+    {
+      "word": "language",
+      "phonetic": "ˈlæŋɡwɪdʒ",
+      "pos": "n.",
+      "meaning": "语言",
+      "key": true
+    },
+    {
+      "word": "journey",
+      "phonetic": "ˈdʒɜːni",
+      "pos": "n.",
+      "meaning": "旅行",
+      "key": false
+    },
+    {
+      "word": "amusing",
+      "phonetic": "əˈmjuːzɪŋ",
+      "pos": "adj.",
+      "meaning": "好笑的，有趣的",
+      "key": false
+    }
+  ],
+  "15": [
+    {
+      "word": "secretary",
+      "phonetic": "ˈsekrət(ə)ri",
+      "pos": "n.",
+      "meaning": "秘书",
+      "key": false
+    },
+    {
+      "word": "nervous",
+      "phonetic": "ˈnɜːvəs",
+      "pos": "adj.",
+      "meaning": "精神紧张的",
+      "key": false
+    },
+    {
+      "word": "afford",
+      "phonetic": "əˈfɔːd",
+      "pos": "v.",
+      "meaning": "负担得起",
+      "key": false
+    },
+    {
+      "word": "weak",
+      "phonetic": "wiːk",
+      "pos": "adj.",
+      "meaning": "弱的",
+      "key": true
+    },
+    {
+      "word": "interrupt",
+      "phonetic": "ˌɪntəˈrʌpt",
+      "pos": "v.",
+      "meaning": "插话，打断",
+      "key": true
+    }
+  ],
+  "16": [
+    {
+      "word": "park",
+      "phonetic": "pɑːk",
+      "pos": "v.",
+      "meaning": "停放（汽车）",
+      "key": true
+    },
+    {
+      "word": "traffic",
+      "phonetic": "ˈtræfɪk",
+      "pos": "n.",
+      "meaning": "交通",
+      "key": false
+    },
+    {
+      "word": "ticket",
+      "phonetic": "ˈtɪkɪt",
+      "pos": "n.",
+      "meaning": "交通违规罚款单",
+      "key": true
+    },
+    {
+      "word": "note",
+      "phonetic": "nəʊt",
+      "pos": "n.",
+      "meaning": "便条",
+      "key": true
+    },
+    {
+      "word": "area",
+      "phonetic": "ˈeəriə",
+      "pos": "n.",
+      "meaning": "地段",
+      "key": true
+    },
+    {
+      "word": "sign",
+      "phonetic": "saɪn",
+      "pos": "n.",
+      "meaning": "指示牌",
+      "key": true
+    },
+    {
+      "word": "reminder",
+      "phonetic": "rɪˈmaɪndə(r)",
+      "pos": "n.",
+      "meaning": "提示",
+      "key": false
+    },
+    {
+      "word": "fail",
+      "phonetic": "feɪl",
+      "pos": "v.",
+      "meaning": "无视，忘记",
+      "key": true
+    },
+    {
+      "word": "obey",
+      "phonetic": "əˈbeɪ",
+      "pos": "v.",
+      "meaning": "服从",
+      "key": false
+    },
+    {
+      "word": "polite",
+      "phonetic": "pəˈlaɪt",
+      "pos": "adj.",
+      "meaning": "有礼貌的",
+      "key": false
+    }
+  ],
+  "17": [
+    {
+      "word": "appear",
+      "phonetic": "əˈpɪə(r)",
+      "pos": "v.",
+      "meaning": "登场，扮演",
+      "key": true
+    },
+    {
+      "word": "stage",
+      "phonetic": "steɪdʒ",
+      "pos": "n.",
+      "meaning": "舞台",
+      "key": true
+    },
+    {
+      "word": "bright",
+      "phonetic": "braɪt",
+      "pos": "adj.",
+      "meaning": "鲜艳的",
+      "key": true
+    },
+    {
+      "word": "stocking",
+      "phonetic": "ˈstɒkɪŋ",
+      "pos": "n.",
+      "meaning": "（女用）长筒袜(棉的, 绒的, 并不是现在的丝袜)",
+      "key": false
+    },
+    {
+      "word": "sock",
+      "phonetic": "sɒk",
+      "pos": "n.",
+      "meaning": "短袜",
+      "key": false
+    }
+  ],
+  "18": [
+    {
+      "word": "pub",
+      "phonetic": "pʌb",
+      "pos": "n.",
+      "meaning": "小酒店",
+      "key": false
+    },
+    {
+      "word": "landlord",
+      "phonetic": "ˈlændlɔːd",
+      "pos": "n.",
+      "meaning": "店主",
+      "key": false
+    },
+    {
+      "word": "bill",
+      "phonetic": "bɪl",
+      "pos": "n.",
+      "meaning": "帐单",
+      "key": true
+    }
+  ],
+  "19": [
+    {
+      "word": "hurry",
+      "phonetic": "ˈhʌri",
+      "pos": "v.",
+      "meaning": "匆忙",
+      "key": false
+    },
+    {
+      "word": "ticket office",
+      "phonetic": "ˈtɪkɪt ˈɒfɪs",
+      "pos": "n.",
+      "meaning": "售票处",
+      "key": false
+    },
+    {
+      "word": "pity",
+      "phonetic": "ˈpɪti",
+      "pos": "n.",
+      "meaning": "令人遗憾的事",
+      "key": true
+    },
+    {
+      "word": "exclaim",
+      "phonetic": "ɪkˈskleɪm",
+      "pos": "v.",
+      "meaning": "大声说",
+      "key": false
+    },
+    {
+      "word": "return",
+      "phonetic": "rɪˈtɜːn",
+      "pos": "v.",
+      "meaning": "退回",
+      "key": true
+    },
+    {
+      "word": "sadly",
+      "phonetic": "ˈsædli",
+      "pos": "adv.",
+      "meaning": "悲哀地，丧气地",
+      "key": false
+    }
+  ],
+  "20": [
+    {
+      "word": "fisherman",
+      "phonetic": "ˈfɪʃəmən",
+      "pos": "n.",
+      "meaning": "钓鱼人，渔民",
+      "key": false
+    },
+    {
+      "word": "boot",
+      "phonetic": "buːt",
+      "pos": "n.",
+      "meaning": "靴子",
+      "key": true
+    },
+    {
+      "word": "waste",
+      "phonetic": "weɪst",
+      "pos": "n.",
+      "meaning": "浪费",
+      "key": true
+    },
+    {
+      "word": "realize",
+      "phonetic": "ˈriːəlaɪz",
+      "pos": "v.",
+      "meaning": "意识到",
+      "key": true
+    },
+    {
+      "word": "catch",
+      "phonetic": "kætʃ",
+      "pos": "v.",
+      "meaning": "抓到",
+      "key": true
+    }
+  ],
+  "21": [
+    {
+      "word": "mad",
+      "phonetic": "mæd",
+      "pos": "adj.",
+      "meaning": "发疯",
+      "key": true
+    },
+    {
+      "word": "reason",
+      "phonetic": "ˈriːz(ə)n",
+      "pos": "n.",
+      "meaning": "原因",
+      "key": true
+    },
+    {
+      "word": "sum",
+      "phonetic": "sʌm",
+      "pos": "n.",
+      "meaning": "量",
+      "key": true
+    },
+    {
+      "word": "determined",
+      "phonetic": "dɪˈtɜːmɪnd",
+      "pos": "adj.",
+      "meaning": "坚定的，下决心的",
+      "key": false
+    }
+  ],
+  "22": [
+    {
+      "word": "dream",
+      "phonetic": "driːm",
+      "pos": "v.",
+      "meaning": "做梦，梦想",
+      "key": true
+    },
+    {
+      "word": "age",
+      "phonetic": "eɪdʒ",
+      "pos": "n.",
+      "meaning": "年龄",
+      "key": true
+    },
+    {
+      "word": "channel",
+      "phonetic": "ˈtʃæn(ə)l",
+      "pos": "n.",
+      "meaning": "海峡",
+      "key": true
+    },
+    {
+      "word": "throw",
+      "phonetic": "θrəʊ",
+      "pos": "v.",
+      "meaning": "扔，抛",
+      "key": true
+    }
+  ],
+  "23": [
+    {
+      "word": "complete",
+      "phonetic": "kəmˈpliːt",
+      "pos": "v.",
+      "meaning": "完成",
+      "key": true
+    },
+    {
+      "word": "modern",
+      "phonetic": "ˈmɒd(ə)n",
+      "pos": "adj.",
+      "meaning": "新式的，与以往不同的",
+      "key": true
+    },
+    {
+      "word": "strange",
+      "phonetic": "streɪndʒ",
+      "pos": "adj.",
+      "meaning": "奇怪的",
+      "key": true
+    },
+    {
+      "word": "district",
+      "phonetic": "ˈdɪstrɪkt",
+      "pos": "n.",
+      "meaning": "地区",
+      "key": true
+    }
+  ],
+  "24": [
+    {
+      "word": "manager",
+      "phonetic": "ˈmænɪdʒə(r)",
+      "pos": "n.",
+      "meaning": "经理",
+      "key": true
+    },
+    {
+      "word": "upset",
+      "phonetic": "ˌʌpˈset",
+      "pos": "adj.",
+      "meaning": "不安",
+      "key": false
+    },
+    {
+      "word": "sympathetic",
+      "phonetic": "ˌsɪmpəˈθetɪk",
+      "pos": "adj.",
+      "meaning": "表示同情的",
+      "key": true
+    },
+    {
+      "word": "complain",
+      "phonetic": "kəmˈpleɪn",
+      "pos": "v.",
+      "meaning": "抱怨",
+      "key": true
+    },
+    {
+      "word": "wicked",
+      "phonetic": "ˈwɪkɪd",
+      "pos": "adj.",
+      "meaning": "很坏的，邪恶的",
+      "key": false
+    },
+    {
+      "word": "contain",
+      "phonetic": "kənˈteɪn",
+      "pos": "v.",
+      "meaning": "包含，内装",
+      "key": true
+    },
+    {
+      "word": "honesty",
+      "phonetic": "ˈɒnəsti",
+      "pos": "n.",
+      "meaning": "诚实",
+      "key": false
+    }
+  ],
+  "25": [
+    {
+      "word": "railway",
+      "phonetic": "ˈreɪlweɪ",
+      "pos": "n.",
+      "meaning": "铁路",
+      "key": false
+    },
+    {
+      "word": "porter",
+      "phonetic": "ˈpɔːtə(r)",
+      "pos": "n.",
+      "meaning": "搬运工",
+      "key": false
+    },
+    {
+      "word": "foreigner",
+      "phonetic": "ˈfɒrənə(r)",
+      "pos": "n.",
+      "meaning": "外国人",
+      "key": false
+    },
+    {
+      "word": "wonder",
+      "phonetic": "ˈwʌndə(r)",
+      "pos": "v.",
+      "meaning": "感到奇怪",
+      "key": true
+    },
+    {
+      "word": "several",
+      "phonetic": "ˈsevrəl",
+      "pos": "pron.",
+      "meaning": "几个",
+      "key": true
+    },
+    {
+      "word": "quantifier",
+      "phonetic": "ˈkwɒntɪfaɪə",
+      "pos": "n.",
+      "meaning": "数量词",
+      "key": false
+    }
+  ],
+  "26": [
+    {
+      "word": "art",
+      "phonetic": "ɑːt",
+      "pos": "n.",
+      "meaning": "艺术",
+      "key": true
+    },
+    {
+      "word": "critic",
+      "phonetic": "ˈkrɪtɪk",
+      "pos": "n.",
+      "meaning": "评论家",
+      "key": true
+    },
+    {
+      "word": "paint",
+      "phonetic": "peɪnt",
+      "pos": "v.",
+      "meaning": "画",
+      "key": true
+    },
+    {
+      "word": "pretend",
+      "phonetic": "prɪˈtend",
+      "pos": "v.",
+      "meaning": "假装",
+      "key": true
+    },
+    {
+      "word": "pattern",
+      "phonetic": "ˈpæt(ə)n",
+      "pos": "n.",
+      "meaning": "图案",
+      "key": true
+    },
+    {
+      "word": "curtain",
+      "phonetic": "ˈkɜːt(ə)n",
+      "pos": "n.",
+      "meaning": "窗帘，幕布",
+      "key": false
+    },
+    {
+      "word": "material",
+      "phonetic": "məˈtɪəriəl",
+      "pos": "n.",
+      "meaning": "材料",
+      "key": true
+    },
+    {
+      "word": "appreciate",
+      "phonetic": "əˈpriːʃieɪt",
+      "pos": "v.",
+      "meaning": "鉴赏",
+      "key": true
+    },
+    {
+      "word": "notice",
+      "phonetic": "ˈnəʊtɪs",
+      "pos": "v.",
+      "meaning": "注意到",
+      "key": true
+    },
+    {
+      "word": "whether",
+      "phonetic": "ˈweðə(r)",
+      "pos": "conj.",
+      "meaning": "是否",
+      "key": true
+    },
+    {
+      "word": "hang",
+      "phonetic": "hæŋ",
+      "pos": "v.",
+      "meaning": "悬挂，吊",
+      "key": true
+    },
+    {
+      "word": "critically",
+      "phonetic": "ˈkrɪtɪkli",
+      "pos": "adv.",
+      "meaning": "批评地",
+      "key": false
+    },
+    {
+      "word": "upside down",
+      "phonetic": "ˌʌpsaɪd ˈdaʊn",
+      "pos": "adv.",
+      "meaning": "上下颠倒地（两个同样的音连在一起时, 前面的音声去不读）",
+      "key": false
+    },
+    {
+      "word": "upside",
+      "phonetic": "ˈʌpsaɪd",
+      "pos": "n.",
+      "meaning": "优势",
+      "key": false
+    }
+  ],
+  "27": [
+    {
+      "word": "tent",
+      "phonetic": "tent",
+      "pos": "n.",
+      "meaning": "帐篷",
+      "key": false
+    },
+    {
+      "word": "field",
+      "phonetic": "fiːld",
+      "pos": "n.",
+      "meaning": "田地，田野",
+      "key": true
+    },
+    {
+      "word": "smell",
+      "phonetic": "smel",
+      "pos": "v.",
+      "meaning": "闻起来",
+      "key": false
+    },
+    {
+      "word": "wonderful",
+      "phonetic": "ˈwʌndəf(ə)l",
+      "pos": "adj.",
+      "meaning": "极好的",
+      "key": true
+    },
+    {
+      "word": "campfire",
+      "phonetic": "ˈkæmpfaɪə(r)",
+      "pos": "n.",
+      "meaning": "营火，篝火",
+      "key": false
+    },
+    {
+      "word": "creep",
+      "phonetic": "kriːp",
+      "pos": "v.",
+      "meaning": "爬行",
+      "key": true
+    },
+    {
+      "word": "sleeping bag",
+      "phonetic": "ˈsliːpɪŋ bæɡ",
+      "pos": "n.",
+      "meaning": "睡袋",
+      "key": false
+    },
+    {
+      "word": "comfortable",
+      "phonetic": "ˈkʌmftəb(ə)l",
+      "pos": "adj.",
+      "meaning": "舒适的，安逸的",
+      "key": false
+    },
+    {
+      "word": "soundly",
+      "phonetic": "ˈsaʊndli",
+      "pos": "adv.",
+      "meaning": "香甜地",
+      "key": false
+    },
+    {
+      "word": "leap",
+      "phonetic": "liːp",
+      "pos": "v.",
+      "meaning": "跳跃，跳起",
+      "key": false
+    },
+    {
+      "word": "heavily",
+      "phonetic": "ˈhevɪli",
+      "pos": "adv.",
+      "meaning": "大量地",
+      "key": false
+    },
+    {
+      "word": "stream",
+      "phonetic": "striːm",
+      "pos": "n.",
+      "meaning": "小溪",
+      "key": false
+    },
+    {
+      "word": "form",
+      "phonetic": "fɔːm",
+      "pos": "v.",
+      "meaning": "形成",
+      "key": true
+    },
+    {
+      "word": "wind",
+      "phonetic": "wɪnd",
+      "pos": "v.",
+      "meaning": "蜿蜒",
+      "key": true
+    },
+    {
+      "word": "right",
+      "phonetic": "raɪt",
+      "pos": "adv.",
+      "meaning": "正好",
+      "key": true
+    }
+  ],
+  "28": [
+    {
+      "word": "rare",
+      "phonetic": "reə(r)",
+      "pos": "adj.",
+      "meaning": "罕见的",
+      "key": false
+    },
+    {
+      "word": "ancient",
+      "phonetic": "ˈeɪnʃənt",
+      "pos": "adj.",
+      "meaning": "古代的，古老的",
+      "key": false
+    },
+    {
+      "word": "myth",
+      "phonetic": "mɪθ",
+      "pos": "n.",
+      "meaning": "神话故事",
+      "key": false
+    },
+    {
+      "word": "trouble",
+      "phonetic": "ˈtrʌb(ə)l",
+      "pos": "n.",
+      "meaning": "麻烦",
+      "key": true
+    },
+    {
+      "word": "effect",
+      "phonetic": "ɪˈfekt",
+      "pos": "n.",
+      "meaning": "结果，效果",
+      "key": true
+    },
+    {
+      "word": "Medusa",
+      "phonetic": "mɪˈdjuːzə",
+      "pos": "n.",
+      "meaning": "美杜莎（古希腊神话中 3 位蛇发女怪这一）",
+      "key": false
+    },
+    {
+      "word": "Gorgon",
+      "phonetic": "ˈɡɔːɡən",
+      "pos": "n.",
+      "meaning": "（古希腊神话）3 位蛇发女怪之一（凡见其貌者都会变成石头）",
+      "key": false
+    }
+  ],
+  "29": [
+    {
+      "word": "taxi",
+      "phonetic": "ˈtæksi",
+      "pos": "n.",
+      "meaning": "出租汽车",
+      "key": false
+    },
+    {
+      "word": "Pilatus Porter",
+      "phonetic": "pɪˈleɪtəs ˈpɔrtər",
+      "pos": "n.",
+      "meaning": "皮勒特斯 波特（飞机名）",
+      "key": false
+    },
+    {
+      "word": "land",
+      "phonetic": "lænd",
+      "pos": "v.",
+      "meaning": "着陆 (不及物)",
+      "key": true
+    },
+    {
+      "word": "plough",
+      "phonetic": "plaʊ",
+      "pos": "v.",
+      "meaning": "耕地",
+      "key": false
+    },
+    {
+      "word": "lonely",
+      "phonetic": "ˈləʊnli",
+      "pos": "adj.",
+      "meaning": "偏僻的, 人迹罕见的(地方)",
+      "key": false
+    },
+    {
+      "word": "Welsh",
+      "phonetic": "welʃ",
+      "pos": "adj.",
+      "meaning": "威尔士的",
+      "key": false
+    },
+    {
+      "word": "roof",
+      "phonetic": "ruːf",
+      "pos": "n.",
+      "meaning": "楼顶 (从外面看)",
+      "key": false
+    },
+    {
+      "word": "block",
+      "phonetic": "blɒk",
+      "pos": "n.",
+      "meaning": "块, 一座大楼",
+      "key": true
+    },
+    {
+      "word": "flat",
+      "phonetic": "flæt",
+      "pos": "n.",
+      "meaning": "公寓房",
+      "key": true
+    },
+    {
+      "word": "desert",
+      "phonetic": "ˈdezət",
+      "pos": "v.",
+      "meaning": "废弃",
+      "key": true
+    }
+  ],
+  "30": [
+    {
+      "word": "polo",
+      "phonetic": "ˈpəʊləʊ",
+      "pos": "n.",
+      "meaning": "水球",
+      "key": false
+    },
+    {
+      "word": "Wayle",
+      "phonetic": "weil",
+      "pos": "n.",
+      "meaning": "威尔（河名）",
+      "key": false
+    },
+    {
+      "word": "cut",
+      "phonetic": "kʌt",
+      "pos": "v.",
+      "meaning": "穿过",
+      "key": true
+    },
+    {
+      "word": "row",
+      "phonetic": "rəʊ",
+      "pos": "v.",
+      "meaning": "划（船）",
+      "key": false
+    },
+    {
+      "word": "kick",
+      "phonetic": "kɪk",
+      "pos": "v.",
+      "meaning": "踢",
+      "key": true
+    },
+    {
+      "word": "towards",
+      "phonetic": "təˈwɔːdz",
+      "pos": "prep.",
+      "meaning": "朝，向",
+      "key": true
+    },
+    {
+      "word": "nearly",
+      "phonetic": "ˈnɪəli",
+      "pos": "adv.",
+      "meaning": "几乎",
+      "key": true
+    },
+    {
+      "word": "sight",
+      "phonetic": "saɪt",
+      "pos": "n.",
+      "meaning": "眼界，视域",
+      "key": true
+    }
+  ],
+  "31": [
+    {
+      "word": "retire",
+      "phonetic": "rɪˈtaɪə(r)",
+      "pos": "v.",
+      "meaning": "退休",
+      "key": true
+    },
+    {
+      "word": "company",
+      "phonetic": "ˈkʌmpəni",
+      "pos": "n.",
+      "meaning": "公司",
+      "key": true
+    },
+    {
+      "word": "bicycle",
+      "phonetic": "ˈbaɪsɪk(ə)l",
+      "pos": "n.",
+      "meaning": "自行车",
+      "key": false
+    },
+    {
+      "word": "save",
+      "phonetic": "seɪv",
+      "pos": "v.",
+      "meaning": "积蓄",
+      "key": true
+    },
+    {
+      "word": "workshop",
+      "phonetic": "ˈwɜːkʃɒp",
+      "pos": "n.",
+      "meaning": "车间",
+      "key": false
+    },
+    {
+      "word": "helper",
+      "phonetic": "ˈhelpə(r)",
+      "pos": "n.",
+      "meaning": "帮手，助手",
+      "key": false
+    },
+    {
+      "word": "employ",
+      "phonetic": "ɪmˈplɔɪ",
+      "pos": "v.",
+      "meaning": "雇佣",
+      "key": false
+    },
+    {
+      "word": "grandson",
+      "phonetic": "ˈɡrænsʌn",
+      "pos": "n.",
+      "meaning": "孙子",
+      "key": false
+    },
+    {
+      "word": "success",
+      "phonetic": "səkˈses",
+      "pos": "n.",
+      "meaning": "成功",
+      "key": true
+    },
+    {
+      "word": "experience",
+      "phonetic": "ɪkˈspɪəriəns",
+      "pos": "n.",
+      "meaning": "经历",
+      "key": true
+    },
+    {
+      "word": "work",
+      "phonetic": "wɜːk",
+      "pos": "n.",
+      "meaning": "工作",
+      "key": true
+    }
+  ],
+  "32": [
+    {
+      "word": "once",
+      "phonetic": "wʌns",
+      "pos": "adv.",
+      "meaning": "曾经，以前",
+      "key": true
+    },
+    {
+      "word": "temptation",
+      "phonetic": "tempˈteɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "诱惑",
+      "key": false
+    },
+    {
+      "word": "article",
+      "phonetic": "ˈɑːtɪk(ə)l",
+      "pos": "n.",
+      "meaning": "物品，东西",
+      "key": true
+    },
+    {
+      "word": "wrap",
+      "phonetic": "ræp",
+      "pos": "v.",
+      "meaning": "包裹",
+      "key": true
+    },
+    {
+      "word": "simply",
+      "phonetic": "ˈsɪmpli",
+      "pos": "adv.",
+      "meaning": "仅仅",
+      "key": true
+    },
+    {
+      "word": "arrest",
+      "phonetic": "əˈrest",
+      "pos": "v.",
+      "meaning": "逮捕",
+      "key": true
+    }
+  ],
+  "33": [
+    {
+      "word": "darkness",
+      "phonetic": "ˈdɑːknəs",
+      "pos": "n.",
+      "meaning": "黑暗",
+      "key": false
+    },
+    {
+      "word": "explain",
+      "phonetic": "ɪkˈspleɪn",
+      "pos": "v.",
+      "meaning": "解释，叙述",
+      "key": true
+    },
+    {
+      "word": "coast",
+      "phonetic": "kəʊst",
+      "pos": "n.",
+      "meaning": "海滨",
+      "key": true
+    },
+    {
+      "word": "storm",
+      "phonetic": "stɔːm",
+      "pos": "n.",
+      "meaning": "暴风雨",
+      "key": false
+    },
+    {
+      "word": "towards",
+      "phonetic": "təˈwɔːdz",
+      "pos": "prep.",
+      "meaning": "向，朝；接近",
+      "key": true
+    },
+    {
+      "word": "rock",
+      "phonetic": "rɒk",
+      "pos": "n.",
+      "meaning": "岩石，礁石",
+      "key": true
+    },
+    {
+      "word": "shore",
+      "phonetic": "ʃɔː(r)",
+      "pos": "n.",
+      "meaning": "海岸",
+      "key": false
+    },
+    {
+      "word": "light",
+      "phonetic": "laɪt",
+      "pos": "n.",
+      "meaning": "灯光",
+      "key": true
+    },
+    {
+      "word": "ahead",
+      "phonetic": "əˈhed",
+      "pos": "adv.",
+      "meaning": "在前面",
+      "key": true
+    },
+    {
+      "word": "cliff",
+      "phonetic": "klɪf",
+      "pos": "n.",
+      "meaning": "峭壁",
+      "key": false
+    },
+    {
+      "word": "struggle",
+      "phonetic": "ˈstrʌɡ(ə)l",
+      "pos": "v.",
+      "meaning": "挣扎",
+      "key": true
+    },
+    {
+      "word": "hospital",
+      "phonetic": "ˈhɒspɪt(ə)l",
+      "pos": "n.",
+      "meaning": "医院",
+      "key": true
+    }
+  ],
+  "34": [
+    {
+      "word": "station",
+      "phonetic": "ˈsteɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "（警察）局",
+      "key": true
+    },
+    {
+      "word": "most",
+      "phonetic": "məʊst",
+      "pos": "adv.",
+      "meaning": "相当，非常",
+      "key": true
+    }
+  ],
+  "35": [
+    {
+      "word": "while",
+      "phonetic": "waɪl",
+      "pos": "n.",
+      "meaning": "一段时间",
+      "key": true
+    },
+    {
+      "word": "regret",
+      "phonetic": "rɪˈɡret",
+      "pos": "v.",
+      "meaning": "后悔",
+      "key": true
+    },
+    {
+      "word": "far",
+      "phonetic": "fɑː(r)",
+      "pos": "adv.",
+      "meaning": "非常",
+      "key": true
+    },
+    {
+      "word": "rush",
+      "phonetic": "rʌʃ",
+      "pos": "v.",
+      "meaning": "冲",
+      "key": false
+    },
+    {
+      "word": "act",
+      "phonetic": "ækt",
+      "pos": "v.",
+      "meaning": "行动",
+      "key": true
+    },
+    {
+      "word": "straight",
+      "phonetic": "streɪt",
+      "pos": "adv.",
+      "meaning": "径直",
+      "key": true
+    },
+    {
+      "word": "fright",
+      "phonetic": "fraɪt",
+      "pos": "n.",
+      "meaning": "害怕",
+      "key": true
+    },
+    {
+      "word": "battered",
+      "phonetic": "ˈbætəd",
+      "pos": "adj.",
+      "meaning": "撞坏的",
+      "key": false
+    },
+    {
+      "word": "shortly",
+      "phonetic": "ˈʃɔːtli",
+      "pos": "adv.",
+      "meaning": "很快，不久",
+      "key": true
+    },
+    {
+      "word": "afterwards",
+      "phonetic": "ˈɑːftəwədz",
+      "pos": "adv.",
+      "meaning": "以后",
+      "key": false
+    }
+  ],
+  "36": [
+    {
+      "word": "record",
+      "phonetic": "ˈrekɔːd",
+      "pos": "n.",
+      "meaning": "记录",
+      "key": true
+    },
+    {
+      "word": "strong",
+      "phonetic": "strɒŋ",
+      "pos": "adj.",
+      "meaning": "强壮的",
+      "key": true
+    },
+    {
+      "word": "swimmer",
+      "phonetic": "ˈswɪmə(r)",
+      "pos": "n.",
+      "meaning": "游泳运动员",
+      "key": false
+    },
+    {
+      "word": "succeed",
+      "phonetic": "səkˈsiːd",
+      "pos": "v.",
+      "meaning": "成功",
+      "key": true
+    },
+    {
+      "word": "train",
+      "phonetic": "treɪn",
+      "pos": "v.",
+      "meaning": "训练",
+      "key": true
+    },
+    {
+      "word": "anxiously",
+      "phonetic": "ˈæŋkʃəsli",
+      "pos": "adv.",
+      "meaning": "焦急地",
+      "key": false
+    },
+    {
+      "word": "intend",
+      "phonetic": "ɪnˈtend",
+      "pos": "v.",
+      "meaning": "打算",
+      "key": true
+    },
+    {
+      "word": "solid",
+      "phonetic": "ˈsɒlɪd",
+      "pos": "adj.",
+      "meaning": "固体的，硬的",
+      "key": false
+    }
+  ],
+  "37": [
+    {
+      "word": "Olympic",
+      "phonetic": "əˈlɪmpɪk",
+      "pos": "adj.",
+      "meaning": "奥林匹克的",
+      "key": false
+    },
+    {
+      "word": "hold",
+      "phonetic": "həʊld",
+      "pos": "v.",
+      "meaning": "召开",
+      "key": true
+    },
+    {
+      "word": "government",
+      "phonetic": "ˈɡʌvənmənt",
+      "pos": "n.",
+      "meaning": "政府",
+      "key": true
+    },
+    {
+      "word": "immense",
+      "phonetic": "ɪˈmens",
+      "pos": "adj.",
+      "meaning": "巨大的",
+      "key": true
+    },
+    {
+      "word": "stadium",
+      "phonetic": "ˈsteɪdiəm",
+      "pos": "n.",
+      "meaning": "露天体育场",
+      "key": false
+    },
+    {
+      "word": "standard",
+      "phonetic": "ˈstændəd",
+      "pos": "n.",
+      "meaning": "标准",
+      "key": true
+    },
+    {
+      "word": "capital",
+      "phonetic": "ˈkæpɪt(ə)l",
+      "pos": "n.",
+      "meaning": "首都",
+      "key": true
+    },
+    {
+      "word": "fantastic",
+      "phonetic": "fænˈtæstɪk",
+      "pos": "adj.",
+      "meaning": "巨大的",
+      "key": true
+    },
+    {
+      "word": "design",
+      "phonetic": "dɪˈzaɪn",
+      "pos": "v.",
+      "meaning": "设计",
+      "key": true
+    }
+  ],
+  "38": [
+    {
+      "word": "except",
+      "phonetic": "ɪkˈsept",
+      "pos": "prep.",
+      "meaning": "除了",
+      "key": true
+    },
+    {
+      "word": "Mediterranean",
+      "phonetic": "ˌmedɪtəˈreɪniən",
+      "pos": "n.",
+      "meaning": "地中海",
+      "key": false
+    },
+    {
+      "word": "complain",
+      "phonetic": "kəmˈpleɪn",
+      "pos": "v.",
+      "meaning": "抱怨",
+      "key": true
+    },
+    {
+      "word": "continually",
+      "phonetic": "kənˈtɪnjuəli",
+      "pos": "adv.",
+      "meaning": "不断地",
+      "key": true
+    },
+    {
+      "word": "bitterly",
+      "phonetic": "ˈbɪtəli",
+      "pos": "adv.",
+      "meaning": "刺骨地",
+      "key": false
+    },
+    {
+      "word": "sunshine",
+      "phonetic": "ˈsʌnʃaɪn",
+      "pos": "n.",
+      "meaning": "阳光",
+      "key": false
+    },
+    {
+      "word": "settle",
+      "phonetic": "ˈset(ə)l",
+      "pos": "v.",
+      "meaning": "安顿",
+      "key": true
+    },
+    {
+      "word": "though",
+      "phonetic": "ðəʊ",
+      "pos": "conj.",
+      "meaning": "虽然、尽管",
+      "key": true
+    }
+  ],
+  "39": [
+    {
+      "word": "operation",
+      "phonetic": "ˌɒpəˈreɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "手术",
+      "key": true
+    },
+    {
+      "word": "successful",
+      "phonetic": "səkˈsesf(ə)l",
+      "pos": "adj.",
+      "meaning": "成功的",
+      "key": true
+    },
+    {
+      "word": "following",
+      "phonetic": "ˈfɒləʊɪŋ",
+      "pos": "adj.",
+      "meaning": "下一个",
+      "key": true
+    },
+    {
+      "word": "patient",
+      "phonetic": "ˈpeɪʃ(ə)nt",
+      "pos": "n.",
+      "meaning": "病人",
+      "key": true
+    },
+    {
+      "word": "alone",
+      "phonetic": "əˈləʊn",
+      "pos": "adj.",
+      "meaning": "独自的",
+      "key": true
+    },
+    {
+      "word": "exchange",
+      "phonetic": "ɪksˈtʃeɪndʒ",
+      "pos": "n.",
+      "meaning": "（电话的）交换台",
+      "key": true
+    },
+    {
+      "word": "inquire",
+      "phonetic": "ɪnˈkwaɪə(r)",
+      "pos": "v.",
+      "meaning": "询问，打听",
+      "key": true
+    },
+    {
+      "word": "certain",
+      "phonetic": "ˈsɜːt(ə)n",
+      "pos": "adj.",
+      "meaning": "某个",
+      "key": true
+    },
+    {
+      "word": "caller",
+      "phonetic": "ˈkɔːlə(r)",
+      "pos": "n.",
+      "meaning": "打电话的人",
+      "key": false
+    },
+    {
+      "word": "relative",
+      "phonetic": "ˈrelətɪv",
+      "pos": "n.",
+      "meaning": "亲戚",
+      "key": true
+    }
+  ],
+  "40": [
+    {
+      "word": "hostess",
+      "phonetic": "ˈhəʊstəs",
+      "pos": "n.",
+      "meaning": "女主人",
+      "key": false
+    },
+    {
+      "word": "unsmiling",
+      "phonetic": "ˌʌnˈsmaɪlɪŋ",
+      "pos": "adj.",
+      "meaning": "不笑的，严肃的",
+      "key": false
+    },
+    {
+      "word": "tight",
+      "phonetic": "taɪt",
+      "pos": "adj.",
+      "meaning": "紧身的",
+      "key": true
+    },
+    {
+      "word": "fix",
+      "phonetic": "fɪks",
+      "pos": "v.",
+      "meaning": "凝视",
+      "key": true
+    },
+    {
+      "word": "globe",
+      "phonetic": "ɡləʊb",
+      "pos": "n.",
+      "meaning": "地球",
+      "key": true
+    },
+    {
+      "word": "despair",
+      "phonetic": "dɪˈspeə(r)",
+      "pos": "n.",
+      "meaning": "绝望",
+      "key": true
+    }
+  ],
+  "41": [
+    {
+      "word": "rude",
+      "phonetic": "ruːd",
+      "pos": "adj.",
+      "meaning": "无礼的",
+      "key": false
+    },
+    {
+      "word": "mirror",
+      "phonetic": "ˈmɪrə(r)",
+      "pos": "n.",
+      "meaning": "镜子",
+      "key": false
+    },
+    {
+      "word": "hole",
+      "phonetic": "həʊl",
+      "pos": "n.",
+      "meaning": "孔",
+      "key": true
+    },
+    {
+      "word": "remark",
+      "phonetic": "rɪˈmɑːk",
+      "pos": "v.",
+      "meaning": "评说",
+      "key": true
+    },
+    {
+      "word": "remind",
+      "phonetic": "rɪˈmaɪnd",
+      "pos": "v.",
+      "meaning": "提醒",
+      "key": true
+    },
+    {
+      "word": "lighthouse",
+      "phonetic": "ˈlaɪthaʊs",
+      "pos": "n.",
+      "meaning": "灯塔",
+      "key": false
+    }
+  ],
+  "42": [
+    {
+      "word": "musical",
+      "phonetic": "ˈmjuːzɪk(ə)l",
+      "pos": "adj.",
+      "meaning": "精通音乐的",
+      "key": false
+    },
+    {
+      "word": "market",
+      "phonetic": "ˈmɑːkɪt",
+      "pos": "n.",
+      "meaning": "市场，集市",
+      "key": true
+    },
+    {
+      "word": "snake charmer",
+      "phonetic": "ˈsneɪk tʃɑːmə(r)",
+      "pos": "n.",
+      "meaning": "玩蛇者（通常借音乐控制）",
+      "key": false
+    },
+    {
+      "word": "pipe",
+      "phonetic": "paɪp",
+      "pos": "n.",
+      "meaning": "（吹奏的）管乐器",
+      "key": true
+    },
+    {
+      "word": "tune",
+      "phonetic": "tjuːn",
+      "pos": "n.",
+      "meaning": "曲调",
+      "key": true
+    },
+    {
+      "word": "glimpse",
+      "phonetic": "ɡlɪmps",
+      "pos": "n.",
+      "meaning": "一瞥",
+      "key": false
+    },
+    {
+      "word": "snake",
+      "phonetic": "sneɪk",
+      "pos": "n.",
+      "meaning": "蛇",
+      "key": false
+    },
+    {
+      "word": "movement",
+      "phonetic": "ˈmuːvmənt",
+      "pos": "n.",
+      "meaning": "动作",
+      "key": true
+    },
+    {
+      "word": "continue",
+      "phonetic": "kənˈtɪnjuː",
+      "pos": "v.",
+      "meaning": "继续",
+      "key": true
+    },
+    {
+      "word": "dance",
+      "phonetic": "dɑːns",
+      "pos": "v.",
+      "meaning": "跳舞",
+      "key": true
+    },
+    {
+      "word": "obviously",
+      "phonetic": "ˈɒbviəsli",
+      "pos": "adv.",
+      "meaning": "显然",
+      "key": true
+    },
+    {
+      "word": "difference",
+      "phonetic": "ˈdɪfrəns",
+      "pos": "n.",
+      "meaning": "差别",
+      "key": true
+    },
+    {
+      "word": "Indian",
+      "phonetic": "ˈɪndiən",
+      "pos": "adj.",
+      "meaning": "印度的",
+      "key": false
+    }
+  ],
+  "43": [
+    {
+      "word": "pole",
+      "phonetic": "pəʊl",
+      "pos": "n.",
+      "meaning": "（地球的）极",
+      "key": false
+    },
+    {
+      "word": "flight",
+      "phonetic": "flaɪt",
+      "pos": "n.",
+      "meaning": "飞行",
+      "key": true
+    },
+    {
+      "word": "explorer",
+      "phonetic": "ɪkˈsplɔːrə",
+      "pos": "n.",
+      "meaning": "探险家",
+      "key": false
+    },
+    {
+      "word": "lie",
+      "phonetic": "laɪ",
+      "pos": "v.",
+      "meaning": "处于",
+      "key": true
+    },
+    {
+      "word": "serious",
+      "phonetic": "ˈsɪəriəs",
+      "pos": "adj.",
+      "meaning": "严重的",
+      "key": true
+    },
+    {
+      "word": "point",
+      "phonetic": "pɔɪnt",
+      "pos": "n.",
+      "meaning": "地点",
+      "key": true
+    },
+    {
+      "word": "seem",
+      "phonetic": "siːm",
+      "pos": "v.",
+      "meaning": "似乎",
+      "key": true
+    },
+    {
+      "word": "crash",
+      "phonetic": "kræʃ",
+      "pos": "v.",
+      "meaning": "坠毁",
+      "key": true
+    },
+    {
+      "word": "sack",
+      "phonetic": "sæk",
+      "pos": "n.",
+      "meaning": "袋子",
+      "key": false
+    },
+    {
+      "word": "clear",
+      "phonetic": "klɪə(r)",
+      "pos": "v.",
+      "meaning": "越过",
+      "key": true
+    },
+    {
+      "word": "aircraft",
+      "phonetic": "ˈeəkrɑːft",
+      "pos": "n.",
+      "meaning": "飞机",
+      "key": true
+    },
+    {
+      "word": "endless",
+      "phonetic": "ˈendləs",
+      "pos": "adj.",
+      "meaning": "无尽的",
+      "key": false
+    },
+    {
+      "word": "plain",
+      "phonetic": "pleɪn",
+      "pos": "n.",
+      "meaning": "平原",
+      "key": false
+    }
+  ],
+  "44": [
+    {
+      "word": "forest",
+      "phonetic": "ˈfɒrɪst",
+      "pos": "n.",
+      "meaning": "森林",
+      "key": false
+    },
+    {
+      "word": "risk",
+      "phonetic": "rɪsk",
+      "pos": "n.",
+      "meaning": "危险，冒险",
+      "key": true
+    },
+    {
+      "word": "picnic",
+      "phonetic": "ˈpɪknɪk",
+      "pos": "n.",
+      "meaning": "野餐",
+      "key": false
+    },
+    {
+      "word": "edge",
+      "phonetic": "edʒ",
+      "pos": "n.",
+      "meaning": "边缘",
+      "key": true
+    },
+    {
+      "word": "strap",
+      "phonetic": "stræp",
+      "pos": "n.",
+      "meaning": "带，皮带",
+      "key": false
+    },
+    {
+      "word": "possession",
+      "phonetic": "pəˈzeʃ(ə)n",
+      "pos": "n.",
+      "meaning": "所有",
+      "key": false
+    },
+    {
+      "word": "breath",
+      "phonetic": "breθ",
+      "pos": "n.",
+      "meaning": "呼吸",
+      "key": false
+    },
+    {
+      "word": "contents",
+      "phonetic": "ˈkɒntents",
+      "pos": "n.",
+      "meaning": "（常用复数）内有的物品",
+      "key": false
+    },
+    {
+      "word": "mend",
+      "phonetic": "mend",
+      "pos": "v.",
+      "meaning": "修理",
+      "key": true
+    }
+  ],
+  "45": [
+    {
+      "word": "clear",
+      "phonetic": "klɪə(r)",
+      "pos": "adj.",
+      "meaning": "无罪的，不亏心的",
+      "key": true
+    },
+    {
+      "word": "conscience",
+      "phonetic": "ˈkɒnʃəns",
+      "pos": "n.",
+      "meaning": "良心，道德心",
+      "key": false
+    },
+    {
+      "word": "wallet",
+      "phonetic": "ˈwɒlɪt",
+      "pos": "n.",
+      "meaning": "皮夹，钱夹",
+      "key": false
+    },
+    {
+      "word": "savings",
+      "phonetic": "ˈseɪvɪŋz",
+      "pos": "n.",
+      "meaning": "存款",
+      "key": false
+    },
+    {
+      "word": "villager",
+      "phonetic": "ˈvɪlɪdʒə(r)",
+      "pos": "n.",
+      "meaning": "村民",
+      "key": false
+    },
+    {
+      "word": "per cent",
+      "phonetic": "pə ˈsent",
+      "pos": "prep.",
+      "meaning": "百分之……",
+      "key": false
+    }
+  ],
+  "46": [
+    {
+      "word": "unload",
+      "phonetic": "ˌʌnˈləʊd",
+      "pos": "v.",
+      "meaning": "卸（货）",
+      "key": false
+    },
+    {
+      "word": "wooden",
+      "phonetic": "ˈwʊdn",
+      "pos": "adj.",
+      "meaning": "木制的",
+      "key": false
+    },
+    {
+      "word": "extremely",
+      "phonetic": "ɪkˈstriːmli",
+      "pos": "adv.",
+      "meaning": "非常，极其",
+      "key": true
+    },
+    {
+      "word": "occur",
+      "phonetic": "əˈkɜː(r)",
+      "pos": "v.",
+      "meaning": "发生",
+      "key": true
+    },
+    {
+      "word": "astonish",
+      "phonetic": "əˈstɒnɪʃ",
+      "pos": "v.",
+      "meaning": "使惊讶",
+      "key": false
+    },
+    {
+      "word": "pile",
+      "phonetic": "paɪl",
+      "pos": "n.",
+      "meaning": "堆",
+      "key": false
+    },
+    {
+      "word": "woollen",
+      "phonetic": "ˈwʊlən",
+      "pos": "n.",
+      "meaning": "羊毛的",
+      "key": false
+    },
+    {
+      "word": "goods",
+      "phonetic": "ɡʊdz",
+      "pos": "n.",
+      "meaning": "（常用复数）货物，商品",
+      "key": false
+    },
+    {
+      "word": "discover",
+      "phonetic": "dɪˈskʌvə(r)",
+      "pos": "v.",
+      "meaning": "发现",
+      "key": true
+    },
+    {
+      "word": "admit",
+      "phonetic": "ədˈmɪt",
+      "pos": "v.",
+      "meaning": "承认",
+      "key": true
+    },
+    {
+      "word": "confine",
+      "phonetic": "kənˈfaɪn",
+      "pos": "v.",
+      "meaning": "关在（一个狭小的空间里）",
+      "key": true
+    },
+    {
+      "word": "normal",
+      "phonetic": "ˈnɔːm(ə)l",
+      "pos": "adj.",
+      "meaning": "正常的，通常的",
+      "key": true
+    }
+  ],
+  "47": [
+    {
+      "word": "thirsty",
+      "phonetic": "ˈθɜːsti",
+      "pos": "adj.",
+      "meaning": "贪杯的",
+      "key": false
+    },
+    {
+      "word": "ghost",
+      "phonetic": "ɡəʊst",
+      "pos": "n.",
+      "meaning": "鬼魂",
+      "key": false
+    },
+    {
+      "word": "haunt",
+      "phonetic": "hɔːnt",
+      "pos": "v.",
+      "meaning": "（鬼）来访，闹鬼",
+      "key": false
+    },
+    {
+      "word": "block",
+      "phonetic": "blɒk",
+      "pos": "v.",
+      "meaning": "堵",
+      "key": true
+    },
+    {
+      "word": "furniture",
+      "phonetic": "ˈfɜːnɪtʃə(r)",
+      "pos": "n.",
+      "meaning": "家具",
+      "key": false
+    },
+    {
+      "word": "whisky",
+      "phonetic": "ˈwɪski",
+      "pos": "n.",
+      "meaning": "威士忌酒",
+      "key": false
+    },
+    {
+      "word": "suggest",
+      "phonetic": "səˈdʒest",
+      "pos": "v.",
+      "meaning": "暗示",
+      "key": true
+    },
+    {
+      "word": "shake",
+      "phonetic": "ʃeɪk",
+      "pos": "v.",
+      "meaning": "摇动",
+      "key": true
+    },
+    {
+      "word": "accept",
+      "phonetic": "əkˈsept",
+      "pos": "v.",
+      "meaning": "接受",
+      "key": true
+    }
+  ],
+  "48": [
+    {
+      "word": "pull",
+      "phonetic": "pʊl",
+      "pos": "v.",
+      "meaning": "拔",
+      "key": true
+    },
+    {
+      "word": "cotton wool",
+      "phonetic": "ˌkɒtn ˈwʊl",
+      "pos": "n.",
+      "meaning": "药棉",
+      "key": false
+    },
+    {
+      "word": "collect",
+      "phonetic": "kəˈlekt",
+      "pos": "v.",
+      "meaning": "搜集",
+      "key": true
+    },
+    {
+      "word": "collection",
+      "phonetic": "kəˈlekʃ(ə)n",
+      "pos": "n.",
+      "meaning": "收藏品，收集品",
+      "key": true
+    },
+    {
+      "word": "nod",
+      "phonetic": "nɒd",
+      "pos": "v.",
+      "meaning": "点头",
+      "key": false
+    },
+    {
+      "word": "meanwhile",
+      "phonetic": "ˈmiːnwaɪl",
+      "pos": "adv.",
+      "meaning": "同时",
+      "key": true
+    }
+  ],
+  "49": [
+    {
+      "word": "tired",
+      "phonetic": "ˈtaɪəd",
+      "pos": "adj.",
+      "meaning": "厌烦的",
+      "key": false
+    },
+    {
+      "word": "real",
+      "phonetic": "ˈriːəl",
+      "pos": "adj.",
+      "meaning": "真正的",
+      "key": true
+    },
+    {
+      "word": "owner",
+      "phonetic": "ˈəʊnə(r)",
+      "pos": "n.",
+      "meaning": "主人",
+      "key": true
+    },
+    {
+      "word": "spring",
+      "phonetic": "sprɪŋ",
+      "pos": "n.",
+      "meaning": "弹簧",
+      "key": true
+    },
+    {
+      "word": "mattress",
+      "phonetic": "ˈmætrəs",
+      "pos": "n.",
+      "meaning": "床垫",
+      "key": false
+    },
+    {
+      "word": "gust",
+      "phonetic": "ɡʌst",
+      "pos": "n.",
+      "meaning": "一阵风",
+      "key": true
+    },
+    {
+      "word": "sweep",
+      "phonetic": "swiːp",
+      "pos": "v.",
+      "meaning": "扫，刮",
+      "key": false
+    },
+    {
+      "word": "courtyard",
+      "phonetic": "ˈkɔːtjɑːd",
+      "pos": "n.",
+      "meaning": "院子",
+      "key": false
+    },
+    {
+      "word": "smash",
+      "phonetic": "smæʃ",
+      "pos": "v.",
+      "meaning": "碰碎，摔碎",
+      "key": true
+    },
+    {
+      "word": "miraculously",
+      "phonetic": "mɪˈrækjələsli",
+      "pos": "adv.",
+      "meaning": "奇迹般地",
+      "key": false
+    },
+    {
+      "word": "unhurt",
+      "phonetic": "ʌnˈhɜːt",
+      "pos": "adj.",
+      "meaning": "没有受伤的",
+      "key": false
+    },
+    {
+      "word": "glance",
+      "phonetic": "ɡlɑːns",
+      "pos": "v.",
+      "meaning": "扫视",
+      "key": false
+    },
+    {
+      "word": "promptly",
+      "phonetic": "ˈprɒmptli",
+      "pos": "adv.",
+      "meaning": "迅速地",
+      "key": false
+    }
+  ],
+  "50": [
+    {
+      "word": "ride",
+      "phonetic": "raɪd",
+      "pos": "n.",
+      "meaning": "旅行",
+      "key": true
+    },
+    {
+      "word": "excursion",
+      "phonetic": "ɪkˈskɜːʃn",
+      "pos": "n.",
+      "meaning": "远足",
+      "key": false
+    },
+    {
+      "word": "conductor",
+      "phonetic": "kənˈdʌktə(r)",
+      "pos": "n.",
+      "meaning": "售票员",
+      "key": false
+    },
+    {
+      "word": "view",
+      "phonetic": "vjuː",
+      "pos": "n.",
+      "meaning": "景色",
+      "key": true
+    }
+  ],
+  "51": [
+    {
+      "word": "reward",
+      "phonetic": "rɪˈwɔːd",
+      "pos": "n.",
+      "meaning": "报偿 v. 给奖赏",
+      "key": false
+    },
+    {
+      "word": "virtue",
+      "phonetic": "ˈvɜːtʃuː",
+      "pos": "n.",
+      "meaning": "美德",
+      "key": false
+    },
+    {
+      "word": "diet",
+      "phonetic": "ˈdaɪət",
+      "pos": "n.",
+      "meaning": "节食",
+      "key": true
+    },
+    {
+      "word": "forbid",
+      "phonetic": "fəˈbɪd",
+      "pos": "v.",
+      "meaning": "禁止",
+      "key": true
+    },
+    {
+      "word": "hurriedly",
+      "phonetic": "ˈhʌrɪdli",
+      "pos": "adv.",
+      "meaning": "匆忙地",
+      "key": false
+    },
+    {
+      "word": "embarrass",
+      "phonetic": "ɪmˈbærəs",
+      "pos": "v.",
+      "meaning": "使尴尬",
+      "key": false
+    },
+    {
+      "word": "guiltily",
+      "phonetic": "ˈɡɪltɪli",
+      "pos": "adv.",
+      "meaning": "内疚地",
+      "key": false
+    },
+    {
+      "word": "strict",
+      "phonetic": "strɪkt",
+      "pos": "adj.",
+      "meaning": "严格的",
+      "key": false
+    },
+    {
+      "word": "occasionally",
+      "phonetic": "əˈkeɪʒnəli",
+      "pos": "adv.",
+      "meaning": "偶尔地",
+      "key": false
+    }
+  ],
+  "52": [
+    {
+      "word": "temporarily",
+      "phonetic": "ˈtemprərəli",
+      "pos": "adv.",
+      "meaning": "暂时地",
+      "key": false
+    },
+    {
+      "word": "inch",
+      "phonetic": "ɪntʃ",
+      "pos": "n.",
+      "meaning": "英寸（度量单位）",
+      "key": false
+    },
+    {
+      "word": "space",
+      "phonetic": "speɪs",
+      "pos": "n.",
+      "meaning": "空间",
+      "key": true
+    },
+    {
+      "word": "actually",
+      "phonetic": "ˈæktʃuəli",
+      "pos": "adv.",
+      "meaning": "实际上",
+      "key": true
+    }
+  ],
+  "53": [
+    {
+      "word": "hot",
+      "phonetic": "hɒt",
+      "pos": "adj.",
+      "meaning": "带电的，充电的",
+      "key": true
+    },
+    {
+      "word": "fireman",
+      "phonetic": "ˈfaɪəmən",
+      "pos": "n.",
+      "meaning": "消防队员",
+      "key": false
+    },
+    {
+      "word": "cause",
+      "phonetic": "kɔːz",
+      "pos": "v.",
+      "meaning": "引起 n. 原因",
+      "key": true
+    },
+    {
+      "word": "examine",
+      "phonetic": "ɪɡˈzæmɪn",
+      "pos": "v.",
+      "meaning": "检查",
+      "key": true
+    },
+    {
+      "word": "accidentally",
+      "phonetic": "ˌæksɪˈdentəli",
+      "pos": "adv.",
+      "meaning": "意外地，偶然地",
+      "key": false
+    },
+    {
+      "word": "remains",
+      "phonetic": "rɪˈmeɪnz",
+      "pos": "n.",
+      "meaning": "尸体，残骸",
+      "key": false
+    },
+    {
+      "word": "wire",
+      "phonetic": "ˈwaɪə(r)",
+      "pos": "n.",
+      "meaning": "电线",
+      "key": false
+    },
+    {
+      "word": "volt",
+      "phonetic": "vəʊlt",
+      "pos": "n.",
+      "meaning": "伏特（电压单位）",
+      "key": false
+    },
+    {
+      "word": "power line",
+      "phonetic": "ˈpaʊə laɪn",
+      "pos": "n.",
+      "meaning": "电力线",
+      "key": false
+    },
+    {
+      "word": "solve",
+      "phonetic": "sɒlv",
+      "pos": "v.",
+      "meaning": "解决",
+      "key": true
+    },
+    {
+      "word": "mystery",
+      "phonetic": "ˈmɪst(ə)ri",
+      "pos": "n.",
+      "meaning": "谜（无法接受地, 解释不了的）",
+      "key": false
+    },
+    {
+      "word": "snatch",
+      "phonetic": "snætʃ",
+      "pos": "v.",
+      "meaning": "抓住",
+      "key": false
+    },
+    {
+      "word": "spark",
+      "phonetic": "spɑːk",
+      "pos": "n.",
+      "meaning": "电火花",
+      "key": false
+    }
+  ],
+  "54": [
+    {
+      "word": "sticky",
+      "phonetic": "ˈstɪki",
+      "pos": "adj.",
+      "meaning": "粘的",
+      "key": false
+    },
+    {
+      "word": "finger",
+      "phonetic": "ˈfɪŋɡə(r)",
+      "pos": "n.",
+      "meaning": "手指",
+      "key": true
+    },
+    {
+      "word": "pie",
+      "phonetic": "paɪ",
+      "pos": "n.",
+      "meaning": "馅饼",
+      "key": false
+    },
+    {
+      "word": "mix",
+      "phonetic": "mɪks",
+      "pos": "v.",
+      "meaning": "混合，拌和",
+      "key": true
+    },
+    {
+      "word": "pastry",
+      "phonetic": "ˈpeɪstri",
+      "pos": "n.",
+      "meaning": "面糊",
+      "key": false
+    },
+    {
+      "word": "annoying",
+      "phonetic": "əˈnɔɪɪŋ",
+      "pos": "adj.",
+      "meaning": "恼人的",
+      "key": false
+    },
+    {
+      "word": "receiver",
+      "phonetic": "rɪˈsiːvə(r)",
+      "pos": "n.",
+      "meaning": "电话的话筒",
+      "key": false
+    },
+    {
+      "word": "dismay",
+      "phonetic": "dɪsˈmeɪ",
+      "pos": "v.",
+      "meaning": "失望，泄气",
+      "key": false
+    },
+    {
+      "word": "recognize",
+      "phonetic": "ˈrekəɡnaɪz",
+      "pos": "v.",
+      "meaning": "认出，听出",
+      "key": true
+    },
+    {
+      "word": "persuade",
+      "phonetic": "pəˈsweɪd",
+      "pos": "v.",
+      "meaning": "说服，劝说",
+      "key": true
+    },
+    {
+      "word": "mess",
+      "phonetic": "mes",
+      "pos": "n.",
+      "meaning": "乱七八糟",
+      "key": true
+    },
+    {
+      "word": "doorknob",
+      "phonetic": "ˈdɔːnɒb",
+      "pos": "n.",
+      "meaning": "门把手",
+      "key": false
+    },
+    {
+      "word": "sign",
+      "phonetic": "saɪn",
+      "pos": "v.",
+      "meaning": "签字",
+      "key": true
+    },
+    {
+      "word": "register",
+      "phonetic": "ˈredʒɪstə(r)",
+      "pos": "v.",
+      "meaning": "挂号邮寄",
+      "key": true
+    }
+  ],
+  "55": [
+    {
+      "word": "gold",
+      "phonetic": "ɡəʊld",
+      "pos": "n.",
+      "meaning": "金子",
+      "key": true
+    },
+    {
+      "word": "mine",
+      "phonetic": "maɪn",
+      "pos": "n.",
+      "meaning": "矿",
+      "key": true
+    },
+    {
+      "word": "treasure",
+      "phonetic": "ˈtreʒə(r)",
+      "pos": "n.",
+      "meaning": "财宝",
+      "key": false
+    },
+    {
+      "word": "revealer",
+      "phonetic": "rɪˈvi:lə",
+      "pos": "n.",
+      "meaning": "探测器",
+      "key": false
+    },
+    {
+      "word": "invent",
+      "phonetic": "ɪnˈvent",
+      "pos": "v.",
+      "meaning": "发明",
+      "key": true
+    },
+    {
+      "word": "detect",
+      "phonetic": "dɪˈtekt",
+      "pos": "v.",
+      "meaning": "探测",
+      "key": true
+    },
+    {
+      "word": "bury",
+      "phonetic": "ˈberi",
+      "pos": "v.",
+      "meaning": "埋藏",
+      "key": true
+    },
+    {
+      "word": "cave",
+      "phonetic": "keɪv",
+      "pos": "n.",
+      "meaning": "山洞",
+      "key": false
+    },
+    {
+      "word": "seashore",
+      "phonetic": "ˈsiːʃɔː(r)",
+      "pos": "n.",
+      "meaning": "海岸",
+      "key": false
+    },
+    {
+      "word": "pirate",
+      "phonetic": "ˈpaɪrət",
+      "pos": "n.",
+      "meaning": "海盗",
+      "key": false
+    },
+    {
+      "word": "arm",
+      "phonetic": "ɑːm",
+      "pos": "v.",
+      "meaning": "武装",
+      "key": true
+    },
+    {
+      "word": "soil",
+      "phonetic": "sɔɪl",
+      "pos": "n.",
+      "meaning": "泥土",
+      "key": true
+    },
+    {
+      "word": "entrance",
+      "phonetic": "ˈentrəns",
+      "pos": "n.",
+      "meaning": "入口",
+      "key": false
+    },
+    {
+      "word": "finally",
+      "phonetic": "ˈfaɪnəli",
+      "pos": "adv.",
+      "meaning": "最后",
+      "key": true
+    },
+    {
+      "word": "worthless",
+      "phonetic": "ˈwɜːθləs",
+      "pos": "adj.",
+      "meaning": "毫无价值的",
+      "key": false
+    },
+    {
+      "word": "thoroughly",
+      "phonetic": "ˈθʌrəli",
+      "pos": "adv.",
+      "meaning": "彻底地",
+      "key": false
+    },
+    {
+      "word": "trunk",
+      "phonetic": "trʌŋk",
+      "pos": "n.",
+      "meaning": "行李箱",
+      "key": false
+    },
+    {
+      "word": "confident",
+      "phonetic": "ˈkɒnfɪdənt",
+      "pos": "adj.",
+      "meaning": "有信心的",
+      "key": false
+    },
+    {
+      "word": "value",
+      "phonetic": "ˈvæljuː",
+      "pos": "n.",
+      "meaning": "价值",
+      "key": true
+    }
+  ],
+  "56": [
+    {
+      "word": "sound",
+      "phonetic": "saʊnd",
+      "pos": "n.",
+      "meaning": "声音",
+      "key": true
+    },
+    {
+      "word": "excitement",
+      "phonetic": "ɪkˈsaɪtmənt",
+      "pos": "n.",
+      "meaning": "激动，兴奋",
+      "key": false
+    },
+    {
+      "word": "handsome",
+      "phonetic": "ˈhænsəm",
+      "pos": "adj.",
+      "meaning": "漂亮的；美观的",
+      "key": false
+    },
+    {
+      "word": "Rolls-Royce",
+      "phonetic": "ˌrəʊlz ˈrɔɪs",
+      "pos": "n.",
+      "meaning": "罗尔斯--罗伊斯",
+      "key": false
+    },
+    {
+      "word": "Benz",
+      "phonetic": "benz",
+      "pos": "n.",
+      "meaning": "奔驰",
+      "key": false
+    },
+    {
+      "word": "wheel",
+      "phonetic": "wiːl",
+      "pos": "n.",
+      "meaning": "轮子",
+      "key": false
+    },
+    {
+      "word": "explosion",
+      "phonetic": "ɪkˈspləʊʒ(ə)n",
+      "pos": "n.",
+      "meaning": "爆炸，轰响",
+      "key": false
+    },
+    {
+      "word": "course",
+      "phonetic": "kɔːs",
+      "pos": "n.",
+      "meaning": "跑道；行程",
+      "key": true
+    },
+    {
+      "word": "rival",
+      "phonetic": "ˈraɪv(ə)l",
+      "pos": "n.",
+      "meaning": "对手",
+      "key": true
+    },
+    {
+      "word": "speed",
+      "phonetic": "spiːd",
+      "pos": "v.",
+      "meaning": "疾驶",
+      "key": true
+    },
+    {
+      "word": "downhill",
+      "phonetic": "ˌdaʊnˈhɪl",
+      "pos": "adv.",
+      "meaning": "下坡",
+      "key": false
+    }
+  ],
+  "57": [
+    {
+      "word": "madam",
+      "phonetic": "ˈmædəm",
+      "pos": "n.",
+      "meaning": "（对妇女的尊称）太太，夫人",
+      "key": false
+    },
+    {
+      "word": "jeans",
+      "phonetic": "dʒiːnz",
+      "pos": "n.",
+      "meaning": "牛仔裤",
+      "key": false
+    },
+    {
+      "word": "hesitate",
+      "phonetic": "ˈhezɪteɪt",
+      "pos": "v.",
+      "meaning": "犹豫，迟缓",
+      "key": true
+    },
+    {
+      "word": "serve",
+      "phonetic": "sɜːv",
+      "pos": "v.",
+      "meaning": "接待（顾客）",
+      "key": true
+    },
+    {
+      "word": "scornfully",
+      "phonetic": "ˈskɔːnfəli",
+      "pos": "adv.",
+      "meaning": "轻蔑地",
+      "key": false
+    },
+    {
+      "word": "punish",
+      "phonetic": "ˈpʌnɪʃ",
+      "pos": "v.",
+      "meaning": "惩罚",
+      "key": false
+    },
+    {
+      "word": "fur",
+      "phonetic": "fɜː(r)",
+      "pos": "n.",
+      "meaning": "裘皮",
+      "key": false
+    },
+    {
+      "word": "eager",
+      "phonetic": "ˈiːɡə(r)",
+      "pos": "adj.",
+      "meaning": "热切的，热情的",
+      "key": false
+    }
+  ],
+  "58": [
+    {
+      "word": "blessing",
+      "phonetic": "ˈblesɪŋ",
+      "pos": "n.",
+      "meaning": "福分，福气",
+      "key": false
+    },
+    {
+      "word": "disguise",
+      "phonetic": "dɪsˈɡaɪz",
+      "pos": "n.",
+      "meaning": "伪装",
+      "key": false
+    },
+    {
+      "word": "tiny",
+      "phonetic": "ˈtaɪni",
+      "pos": "adj.",
+      "meaning": "极小的",
+      "key": false
+    },
+    {
+      "word": "possess",
+      "phonetic": "pəˈzes",
+      "pos": "v.",
+      "meaning": "拥有",
+      "key": false
+    },
+    {
+      "word": "cursed",
+      "phonetic": "kɜːst",
+      "pos": "adj.",
+      "meaning": "可恨的",
+      "key": false
+    },
+    {
+      "word": "increase",
+      "phonetic": "ɪnˈkriːs",
+      "pos": "v.",
+      "meaning": "增加",
+      "key": true
+    },
+    {
+      "word": "plant",
+      "phonetic": "plɑːnt",
+      "pos": "v.",
+      "meaning": "种植",
+      "key": true
+    },
+    {
+      "word": "church",
+      "phonetic": "tʃɜːtʃ",
+      "pos": "n.",
+      "meaning": "教堂",
+      "key": true
+    },
+    {
+      "word": "evil",
+      "phonetic": "ˈiːv(ə)l",
+      "pos": "adj.",
+      "meaning": "坏的",
+      "key": false
+    },
+    {
+      "word": "reputation",
+      "phonetic": "ˌrepjuˈteɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "名声",
+      "key": false
+    },
+    {
+      "word": "claim",
+      "phonetic": "kleɪm",
+      "pos": "v.",
+      "meaning": "以…为其后果",
+      "key": true
+    },
+    {
+      "word": "victim",
+      "phonetic": "ˈvɪktɪm",
+      "pos": "n.",
+      "meaning": "受害者，牺牲品",
+      "key": true
+    },
+    {
+      "word": "vicar",
+      "phonetic": "ˈvɪkə(r)",
+      "pos": "n.",
+      "meaning": "教区牧师",
+      "key": false
+    },
+    {
+      "word": "source",
+      "phonetic": "sɔːs",
+      "pos": "n.",
+      "meaning": "来源",
+      "key": true
+    },
+    {
+      "word": "income",
+      "phonetic": "ˈɪnkʌm",
+      "pos": "n.",
+      "meaning": "收入",
+      "key": true
+    },
+    {
+      "word": "trunk",
+      "phonetic": "trʌŋk",
+      "pos": "n.",
+      "meaning": "树干",
+      "key": false
+    },
+    {
+      "word": "gain",
+      "phonetic": "ɡeɪn",
+      "pos": "v.",
+      "meaning": "受益",
+      "key": true
+    }
+  ],
+  "59": [
+    {
+      "word": "bark",
+      "phonetic": "bɑːk",
+      "pos": "v.",
+      "meaning": "狗叫",
+      "key": false
+    },
+    {
+      "word": "press",
+      "phonetic": "pres",
+      "pos": "v.",
+      "meaning": "按，压",
+      "key": true
+    },
+    {
+      "word": "paw",
+      "phonetic": "pɔː",
+      "pos": "n.",
+      "meaning": "脚爪",
+      "key": false
+    },
+    {
+      "word": "latch",
+      "phonetic": "lætʃ",
+      "pos": "n.",
+      "meaning": "门闩",
+      "key": false
+    },
+    {
+      "word": "expert",
+      "phonetic": "ˈekspɜːt",
+      "pos": "n.",
+      "meaning": "专家",
+      "key": true
+    },
+    {
+      "word": "develop",
+      "phonetic": "dɪˈveləp",
+      "pos": "v.",
+      "meaning": "养成",
+      "key": true
+    },
+    {
+      "word": "habit",
+      "phonetic": "ˈhæbɪt",
+      "pos": "n.",
+      "meaning": "习惯",
+      "key": true
+    },
+    {
+      "word": "remove",
+      "phonetic": "rɪˈmuːv",
+      "pos": "v.",
+      "meaning": "拆掉，取下",
+      "key": true
+    }
+  ],
+  "60": [
+    {
+      "word": "future",
+      "phonetic": "ˈfjuːtʃə(r)",
+      "pos": "n.",
+      "meaning": "未来，前途",
+      "key": true
+    },
+    {
+      "word": "fair",
+      "phonetic": "feə(r)",
+      "pos": "n.",
+      "meaning": "集市",
+      "key": true
+    },
+    {
+      "word": "fortune-teller",
+      "phonetic": "ˈfɔːtʃuːn telə(r)",
+      "pos": "n.",
+      "meaning": "算命人",
+      "key": false
+    },
+    {
+      "word": "crystal",
+      "phonetic": "ˈkrɪst(ə)l",
+      "pos": "n.",
+      "meaning": "水晶",
+      "key": true
+    },
+    {
+      "word": "relation",
+      "phonetic": "rɪˈleɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "亲属",
+      "key": true
+    },
+    {
+      "word": "impatiently",
+      "phonetic": "ɪmˈpeɪʃntli",
+      "pos": "adv.",
+      "meaning": "不耐烦地",
+      "key": false
+    }
+  ],
+  "61": [
+    {
+      "word": "Hubble",
+      "phonetic": "ˈhʌb(ə)l",
+      "pos": "n.",
+      "meaning": "哈勃",
+      "key": false
+    },
+    {
+      "word": "telescope",
+      "phonetic": "ˈtelɪskəʊp",
+      "pos": "n.",
+      "meaning": "望远镜",
+      "key": false
+    },
+    {
+      "word": "launch",
+      "phonetic": "lɔːntʃ",
+      "pos": "v.",
+      "meaning": "发射",
+      "key": true
+    },
+    {
+      "word": "space",
+      "phonetic": "speɪs",
+      "pos": "n.",
+      "meaning": "空间",
+      "key": true
+    },
+    {
+      "word": "NASA",
+      "phonetic": "ˈnæsə",
+      "pos": "n.",
+      "meaning": "(National Aeronautics and Space Administration) 国家航空和航天局",
+      "key": false
+    },
+    {
+      "word": "billion",
+      "phonetic": "ˈbɪljən",
+      "pos": "n.",
+      "meaning": "10 亿",
+      "key": true
+    },
+    {
+      "word": "faulty",
+      "phonetic": "ˈfɔːlti",
+      "pos": "adj.",
+      "meaning": "有错误的",
+      "key": false
+    },
+    {
+      "word": "astronaut",
+      "phonetic": "ˈæstrənɔːt",
+      "pos": "n.",
+      "meaning": "宇航员",
+      "key": false
+    },
+    {
+      "word": "shuttle",
+      "phonetic": "ˈʃʌt(ə)l",
+      "pos": "n.",
+      "meaning": "航天飞机",
+      "key": false
+    },
+    {
+      "word": "endeavour",
+      "phonetic": "ɪnˈdevə(r)",
+      "pos": "n.",
+      "meaning": "Endeavour “奋进”号",
+      "key": false
+    },
+    {
+      "word": "robot-arm",
+      "phonetic": "'rəubɔt a:m",
+      "pos": "n.",
+      "meaning": "机器手",
+      "key": false
+    },
+    {
+      "word": "grab",
+      "phonetic": "ɡræb",
+      "pos": "v.",
+      "meaning": "抓",
+      "key": false
+    },
+    {
+      "word": "atmosphere",
+      "phonetic": "ˈætməsfɪə(r)",
+      "pos": "n.",
+      "meaning": "大气层",
+      "key": false
+    },
+    {
+      "word": "distant",
+      "phonetic": "ˈdɪstənt",
+      "pos": "adj.",
+      "meaning": "遥远的",
+      "key": false
+    },
+    {
+      "word": "galaxy",
+      "phonetic": "ˈɡæləksi",
+      "pos": "n.",
+      "meaning": "星系",
+      "key": false
+    },
+    {
+      "word": "universe",
+      "phonetic": "ˈjuːnɪvɜːs",
+      "pos": "n.",
+      "meaning": "宇宙",
+      "key": false
+    },
+    {
+      "word": "eagle eye",
+      "phonetic": "ˌiːɡl ˈaɪ",
+      "pos": "n.",
+      "meaning": "鹰眼",
+      "key": false
+    }
+  ],
+  "62": [
+    {
+      "word": "control",
+      "phonetic": "kənˈtrəʊl",
+      "pos": "n.",
+      "meaning": "控制",
+      "key": true
+    },
+    {
+      "word": "smoke",
+      "phonetic": "sməʊk",
+      "pos": "n.",
+      "meaning": "烟",
+      "key": true
+    },
+    {
+      "word": "desolate",
+      "phonetic": "ˈdesələt",
+      "pos": "adj.",
+      "meaning": "荒凉的",
+      "key": false
+    },
+    {
+      "word": "threaten",
+      "phonetic": "ˈθret(ə)n",
+      "pos": "v.",
+      "meaning": "威胁",
+      "key": true
+    },
+    {
+      "word": "surrounding",
+      "phonetic": "səˈraʊndɪŋ",
+      "pos": "adj.",
+      "meaning": "周围的",
+      "key": false
+    },
+    {
+      "word": "destruction",
+      "phonetic": "dɪˈstrʌkʃ(ə)n",
+      "pos": "n.",
+      "meaning": "破坏，毁灭",
+      "key": false
+    },
+    {
+      "word": "flood",
+      "phonetic": "flʌd",
+      "pos": "n.",
+      "meaning": "洪水，水灾",
+      "key": false
+    },
+    {
+      "word": "authority",
+      "phonetic": "ɔːˈθɒrəti",
+      "pos": "n.",
+      "meaning": "（常用复数）当局",
+      "key": true
+    },
+    {
+      "word": "grass-seed",
+      "phonetic": "'gra:s'si:d",
+      "pos": "n.",
+      "meaning": "草籽",
+      "key": false
+    },
+    {
+      "word": "spray",
+      "phonetic": "spreɪ",
+      "pos": "v.",
+      "meaning": "喷撒",
+      "key": false
+    },
+    {
+      "word": "quantity",
+      "phonetic": "ˈkwɒntəti",
+      "pos": "n.",
+      "meaning": "量",
+      "key": false
+    },
+    {
+      "word": "root",
+      "phonetic": "ruːt",
+      "pos": "n.",
+      "meaning": "根",
+      "key": true
+    },
+    {
+      "word": "century",
+      "phonetic": "ˈsentʃəri",
+      "pos": "n.",
+      "meaning": "世纪",
+      "key": true
+    },
+    {
+      "word": "patch",
+      "phonetic": "pætʃ",
+      "pos": "n.",
+      "meaning": "小片",
+      "key": true
+    },
+    {
+      "word": "blacken",
+      "phonetic": "ˈblækən",
+      "pos": "v.",
+      "meaning": "变黑，发暗",
+      "key": false
+    }
+  ],
+  "63": [
+    {
+      "word": "circle",
+      "phonetic": "ˈsɜːk(ə)l",
+      "pos": "n.",
+      "meaning": "圈子",
+      "key": true
+    },
+    {
+      "word": "admire",
+      "phonetic": "ədˈmaɪə(r)",
+      "pos": "v.",
+      "meaning": "赞美，钦佩",
+      "key": true
+    },
+    {
+      "word": "close",
+      "phonetic": "kləʊz",
+      "pos": "adj.",
+      "meaning": "亲密的",
+      "key": true
+    },
+    {
+      "word": "wedding",
+      "phonetic": "ˈwedɪŋ",
+      "pos": "n.",
+      "meaning": "婚礼",
+      "key": false
+    },
+    {
+      "word": "reception",
+      "phonetic": "rɪˈsepʃ(ə)n",
+      "pos": "n.",
+      "meaning": "招待会",
+      "key": false
+    },
+    {
+      "word": "sort",
+      "phonetic": "sɔːt",
+      "pos": "n.",
+      "meaning": "种类",
+      "key": true
+    }
+  ],
+  "64": [
+    {
+      "word": "tunnel",
+      "phonetic": "ˈtʌn(ə)l",
+      "pos": "n.",
+      "meaning": "隧道",
+      "key": false
+    },
+    {
+      "word": "port",
+      "phonetic": "pɔːt",
+      "pos": "n.",
+      "meaning": "港口",
+      "key": true
+    },
+    {
+      "word": "ventilate",
+      "phonetic": "ˈventɪleɪt",
+      "pos": "v.",
+      "meaning": "通风",
+      "key": true
+    },
+    {
+      "word": "chimney",
+      "phonetic": "ˈtʃɪmni",
+      "pos": "n.",
+      "meaning": "烟囱",
+      "key": false
+    },
+    {
+      "word": "sea level",
+      "phonetic": "ˈsiː lev(ə)l",
+      "pos": "n.",
+      "meaning": "海平面",
+      "key": false
+    },
+    {
+      "word": "double",
+      "phonetic": "ˈdʌb(ə)l",
+      "pos": "adj.",
+      "meaning": "双的",
+      "key": true
+    },
+    {
+      "word": "ventilation",
+      "phonetic": "ˌventɪˈleɪʃn",
+      "pos": "n.",
+      "meaning": "通风",
+      "key": false
+    },
+    {
+      "word": "fear",
+      "phonetic": "fɪə(r)",
+      "pos": "v.",
+      "meaning": "害怕",
+      "key": true
+    },
+    {
+      "word": "invasion",
+      "phonetic": "ɪnˈveɪʒ(ə)n",
+      "pos": "n.",
+      "meaning": "入侵，侵略",
+      "key": false
+    },
+    {
+      "word": "officially",
+      "phonetic": "əˈfɪʃəli",
+      "pos": "adv.",
+      "meaning": "正式地",
+      "key": false
+    },
+    {
+      "word": "connect",
+      "phonetic": "kəˈnekt",
+      "pos": "v.",
+      "meaning": "连接",
+      "key": true
+    },
+    {
+      "word": "European",
+      "phonetic": "ˌjʊərəˈpiːən",
+      "pos": "adj.",
+      "meaning": "欧洲的",
+      "key": false
+    },
+    {
+      "word": "continent",
+      "phonetic": "ˈkɒntɪnənt",
+      "pos": "n.",
+      "meaning": "大陆",
+      "key": false
+    }
+  ],
+  "65": [
+    {
+      "word": "versus",
+      "phonetic": "ˈvɜːsəs",
+      "pos": "prep.",
+      "meaning": "V.S. 对 (对抗的概念)",
+      "key": false
+    },
+    {
+      "word": "Christmas",
+      "phonetic": "ˈkrɪsməs",
+      "pos": "n.",
+      "meaning": "圣诞节",
+      "key": true
+    },
+    {
+      "word": "circus",
+      "phonetic": "ˈsɜːkəs",
+      "pos": "n.",
+      "meaning": "马戏团",
+      "key": false
+    },
+    {
+      "word": "present",
+      "phonetic": "ˈprez(ə)nt",
+      "pos": "n.",
+      "meaning": "礼物",
+      "key": true
+    },
+    {
+      "word": "accompany",
+      "phonetic": "əˈkʌmpəni",
+      "pos": "v.",
+      "meaning": "陪伴, 随行",
+      "key": true
+    },
+    {
+      "word": "approach",
+      "phonetic": "əˈprəʊtʃ",
+      "pos": "v.",
+      "meaning": "走近",
+      "key": true
+    },
+    {
+      "word": "ought",
+      "phonetic": "ɔːt",
+      "pos": "v.",
+      "meaning": "应该",
+      "key": true
+    },
+    {
+      "word": "weigh",
+      "phonetic": "weɪ",
+      "pos": "v.",
+      "meaning": "重",
+      "key": false
+    },
+    {
+      "word": "fortunate",
+      "phonetic": "ˈfɔːtʃənət",
+      "pos": "adj.",
+      "meaning": "幸运的",
+      "key": false
+    }
+  ],
+  "66": [
+    {
+      "word": "Lancaster",
+      "phonetic": "ˈlæŋkəstə(r)",
+      "pos": "n.",
+      "meaning": "兰开斯特",
+      "key": false
+    },
+    {
+      "word": "bomber",
+      "phonetic": "ˈbɒmə(r)",
+      "pos": "n.",
+      "meaning": "轰炸机",
+      "key": false
+    },
+    {
+      "word": "remote",
+      "phonetic": "rɪˈməʊt",
+      "pos": "adj.",
+      "meaning": "偏僻的",
+      "key": false
+    },
+    {
+      "word": "Pacific",
+      "phonetic": "pəˈsɪfɪk",
+      "pos": "n.",
+      "meaning": "太平洋",
+      "key": false
+    },
+    {
+      "word": "damage",
+      "phonetic": "ˈdæmɪdʒ",
+      "pos": "v.",
+      "meaning": "毁坏",
+      "key": true
+    },
+    {
+      "word": "wreck",
+      "phonetic": "rek",
+      "pos": "n.",
+      "meaning": "残骸",
+      "key": true
+    },
+    {
+      "word": "rediscover",
+      "phonetic": "ˌriːdɪˈskʌvə(r)",
+      "pos": "v.",
+      "meaning": "重新发现",
+      "key": false
+    },
+    {
+      "word": "aerial",
+      "phonetic": "ˈeəriəl",
+      "pos": "adj.",
+      "meaning": "航空的",
+      "key": false
+    },
+    {
+      "word": "survey",
+      "phonetic": "ˈsɜːveɪ",
+      "pos": "n.",
+      "meaning": "调查",
+      "key": true
+    },
+    {
+      "word": "rescue",
+      "phonetic": "ˈreskjuː",
+      "pos": "v.",
+      "meaning": "营救（＝save）",
+      "key": false
+    },
+    {
+      "word": "package",
+      "phonetic": "ˈpækɪdʒ",
+      "pos": "v.",
+      "meaning": "把……打包",
+      "key": true
+    },
+    {
+      "word": "enthusiast",
+      "phonetic": "ɪnˈθjuːziæst",
+      "pos": "n.",
+      "meaning": "热心人",
+      "key": false
+    },
+    {
+      "word": "restore",
+      "phonetic": "rɪˈstɔː(r)",
+      "pos": "v.",
+      "meaning": "修复（修并且复原,如对艺术品的修复）",
+      "key": true
+    },
+    {
+      "word": "imagine",
+      "phonetic": "ɪˈmædʒɪn",
+      "pos": "v.",
+      "meaning": "想像",
+      "key": true
+    },
+    {
+      "word": "packing case",
+      "phonetic": "ˈpækɪŋ keɪs",
+      "pos": "n.",
+      "meaning": "包装箱",
+      "key": false
+    },
+    {
+      "word": "colony",
+      "phonetic": "ˈkɒləni",
+      "pos": "n.",
+      "meaning": "群",
+      "key": false
+    },
+    {
+      "word": "bee",
+      "phonetic": "biː",
+      "pos": "n.",
+      "meaning": "蜂",
+      "key": false
+    },
+    {
+      "word": "hive",
+      "phonetic": "haɪv",
+      "pos": "n.",
+      "meaning": "蜂房",
+      "key": false
+    },
+    {
+      "word": "preserve",
+      "phonetic": "prɪˈzɜːv",
+      "pos": "v.",
+      "meaning": "保护",
+      "key": true
+    },
+    {
+      "word": "beeswax",
+      "phonetic": "ˈbiːzwæks",
+      "pos": "n.",
+      "meaning": "蜂蜡",
+      "key": false
+    }
+  ],
+  "67": [
+    {
+      "word": "volcano",
+      "phonetic": "vɒlˈkeɪnəʊ",
+      "pos": "n.",
+      "meaning": "火山",
+      "key": false
+    },
+    {
+      "word": "active",
+      "phonetic": "ˈæktɪv",
+      "pos": "adj.",
+      "meaning": "活动的",
+      "key": true
+    },
+    {
+      "word": "Kivu",
+      "phonetic": "'ki:vu:",
+      "pos": "n.",
+      "meaning": "基伍湖",
+      "key": false
+    },
+    {
+      "word": "congo",
+      "phonetic": "ˈkɒŋɡəʊ",
+      "pos": "n.",
+      "meaning": "刚果",
+      "key": false
+    },
+    {
+      "word": "Kituro",
+      "phonetic": "ki'tu:rəu",
+      "pos": "n.",
+      "meaning": "基图罗",
+      "key": false
+    },
+    {
+      "word": "erupt",
+      "phonetic": "ɪˈrʌpt",
+      "pos": "v.",
+      "meaning": "（火山）喷发",
+      "key": false
+    },
+    {
+      "word": "violently",
+      "phonetic": "ˈvaɪələntli",
+      "pos": "adv.",
+      "meaning": "猛烈地，剧烈地",
+      "key": false
+    },
+    {
+      "word": "manage",
+      "phonetic": "ˈmænɪdʒ",
+      "pos": "v.",
+      "meaning": "设法",
+      "key": true
+    },
+    {
+      "word": "brilliant",
+      "phonetic": "ˈbrɪliənt",
+      "pos": "adj.",
+      "meaning": "精彩的",
+      "key": false
+    },
+    {
+      "word": "liquid",
+      "phonetic": "ˈlɪkwɪd",
+      "pos": "adj.",
+      "meaning": "液态的；n. 液体",
+      "key": false
+    },
+    {
+      "word": "escape",
+      "phonetic": "ɪˈskeɪp",
+      "pos": "v.",
+      "meaning": "逃脱",
+      "key": true
+    },
+    {
+      "word": "alive",
+      "phonetic": "əˈlaɪv",
+      "pos": "adj.",
+      "meaning": "活着的",
+      "key": false
+    }
+  ],
+  "68": [
+    {
+      "word": "persistent",
+      "phonetic": "pəˈsɪstənt",
+      "pos": "adj.",
+      "meaning": "坚持的，固执的",
+      "key": true
+    },
+    {
+      "word": "avoid",
+      "phonetic": "əˈvɔɪd",
+      "pos": "v.",
+      "meaning": "避开",
+      "key": true
+    },
+    {
+      "word": "insist",
+      "phonetic": "ɪnˈsɪst",
+      "pos": "v.",
+      "meaning": "坚持做",
+      "key": true
+    }
+  ],
+  "69": [
+    {
+      "word": "murder",
+      "phonetic": "ˈmɜːdə(r)",
+      "pos": "n.",
+      "meaning": "谋杀",
+      "key": true
+    },
+    {
+      "word": "instruct",
+      "phonetic": "ɪnˈstrʌkt",
+      "pos": "v.",
+      "meaning": "命令，指示",
+      "key": true
+    },
+    {
+      "word": "acquire",
+      "phonetic": "əˈkwaɪə(r)",
+      "pos": "v.",
+      "meaning": "取得，获得",
+      "key": false
+    },
+    {
+      "word": "confidence",
+      "phonetic": "ˈkɒnfɪdəns",
+      "pos": "n.",
+      "meaning": "信心",
+      "key": true
+    },
+    {
+      "word": "examiner",
+      "phonetic": "ɪɡˈzæmɪnə(r)",
+      "pos": "n.",
+      "meaning": "主考人",
+      "key": false
+    },
+    {
+      "word": "suppose",
+      "phonetic": "səˈpəʊz",
+      "pos": "v.",
+      "meaning": "假设",
+      "key": true
+    },
+    {
+      "word": "tap",
+      "phonetic": "tæp",
+      "pos": "v.",
+      "meaning": "轻敲",
+      "key": false
+    },
+    {
+      "word": "react",
+      "phonetic": "riˈækt",
+      "pos": "v.",
+      "meaning": "反应",
+      "key": true
+    },
+    {
+      "word": "brake",
+      "phonetic": "breɪk",
+      "pos": "n.",
+      "meaning": "刹车",
+      "key": false
+    },
+    {
+      "word": "pedal",
+      "phonetic": "ˈped(ə)l",
+      "pos": "n.",
+      "meaning": "踏板",
+      "key": false
+    },
+    {
+      "word": "mournful",
+      "phonetic": "ˈmɔːnf(ə)l",
+      "pos": "adj.",
+      "meaning": "悲哀的",
+      "key": false
+    }
+  ],
+  "70": [
+    {
+      "word": "bullfight",
+      "phonetic": "ˈbʊlfaɪt",
+      "pos": "n.",
+      "meaning": "斗牛",
+      "key": false
+    },
+    {
+      "word": "drunk",
+      "phonetic": "drʌŋk",
+      "pos": "n.",
+      "meaning": "醉汉",
+      "key": false
+    },
+    {
+      "word": "wander",
+      "phonetic": "ˈwɒndə(r)",
+      "pos": "v.",
+      "meaning": "溜达，乱走",
+      "key": false
+    },
+    {
+      "word": "ring",
+      "phonetic": "rɪŋ",
+      "pos": "n.",
+      "meaning": "圆形竞技场地",
+      "key": true
+    },
+    {
+      "word": "unaware",
+      "phonetic": "ˌʌnəˈweə(r)",
+      "pos": "adj.",
+      "meaning": "不知道的，未觉察的",
+      "key": false
+    },
+    {
+      "word": "bull",
+      "phonetic": "bʊl",
+      "pos": "n.",
+      "meaning": "公牛",
+      "key": false
+    },
+    {
+      "word": "matador",
+      "phonetic": "ˈmætədɔː(r)",
+      "pos": "n.",
+      "meaning": "斗牛士",
+      "key": false
+    },
+    {
+      "word": "remark",
+      "phonetic": "rɪˈmɑːk",
+      "pos": "n.",
+      "meaning": "评论；言语",
+      "key": true
+    },
+    {
+      "word": "apparently",
+      "phonetic": "əˈpærəntli",
+      "pos": "adv.",
+      "meaning": "明显地",
+      "key": true
+    },
+    {
+      "word": "sensitive",
+      "phonetic": "ˈsensətɪv",
+      "pos": "adj.",
+      "meaning": "敏感的",
+      "key": false
+    },
+    {
+      "word": "criticism",
+      "phonetic": "ˈkrɪtɪsɪzəm",
+      "pos": "n.",
+      "meaning": "批评",
+      "key": true
+    },
+    {
+      "word": "charge",
+      "phonetic": "tʃɑːdʒ",
+      "pos": "v.",
+      "meaning": "冲上去",
+      "key": true
+    },
+    {
+      "word": "clumsily",
+      "phonetic": "ˈklʌmzɪli",
+      "pos": "adv.",
+      "meaning": "笨拙地",
+      "key": false
+    },
+    {
+      "word": "bow",
+      "phonetic": "bəʊ",
+      "pos": "v.",
+      "meaning": "鞠躬",
+      "key": false
+    },
+    {
+      "word": "safety",
+      "phonetic": "ˈseɪfti",
+      "pos": "n.",
+      "meaning": "安全地带",
+      "key": true
+    },
+    {
+      "word": "sympathetically",
+      "phonetic": "ˌsɪmpəˈθetɪkli",
+      "pos": "adv.",
+      "meaning": "同情地",
+      "key": false
+    }
+  ],
+  "71": [
+    {
+      "word": "parliament",
+      "phonetic": "ˈpɑːləmənt",
+      "pos": "n.",
+      "meaning": "议会，国会",
+      "key": true
+    },
+    {
+      "word": "erect",
+      "phonetic": "ɪˈrekt",
+      "pos": "v.",
+      "meaning": "建起",
+      "key": false
+    },
+    {
+      "word": "accurate",
+      "phonetic": "ˈækjərət",
+      "pos": "adj.",
+      "meaning": "准确的",
+      "key": false
+    },
+    {
+      "word": "official",
+      "phonetic": "əˈfɪʃ(ə)l",
+      "pos": "n.",
+      "meaning": "官员，行政人员",
+      "key": true
+    },
+    {
+      "word": "Greenwich",
+      "phonetic": "ˈɡrenɪtʃ",
+      "pos": "n.",
+      "meaning": "格林尼治",
+      "key": false
+    },
+    {
+      "word": "observatory",
+      "phonetic": "əbˈzɜːvətri",
+      "pos": "n.",
+      "meaning": "天文台",
+      "key": false
+    },
+    {
+      "word": "check",
+      "phonetic": "tʃek",
+      "pos": "v.",
+      "meaning": "检查",
+      "key": true
+    },
+    {
+      "word": "microphone",
+      "phonetic": "ˈmaɪkrəfəʊn",
+      "pos": "n.",
+      "meaning": "扩音器，麦克风",
+      "key": false
+    },
+    {
+      "word": "tower",
+      "phonetic": "ˈtaʊə(r)",
+      "pos": "v.",
+      "meaning": "塔",
+      "key": false
+    }
+  ],
+  "72": [
+    {
+      "word": "racing",
+      "phonetic": "ˈreɪsɪŋ",
+      "pos": "n.",
+      "meaning": "竞赛",
+      "key": false
+    },
+    {
+      "word": "per",
+      "phonetic": "pə(r)",
+      "pos": "prep.",
+      "meaning": "每",
+      "key": false
+    },
+    {
+      "word": "Utah",
+      "phonetic": "ˈjuːtɑː",
+      "pos": "n.",
+      "meaning": "犹他（美国州名）",
+      "key": false
+    },
+    {
+      "word": "horsepower",
+      "phonetic": "ˈhɔːspaʊə(r)",
+      "pos": "n.",
+      "meaning": "马力",
+      "key": false
+    },
+    {
+      "word": "burst",
+      "phonetic": "bɜːst",
+      "pos": "v.",
+      "meaning": "爆裂",
+      "key": false
+    },
+    {
+      "word": "average",
+      "phonetic": "ˈævərɪdʒ",
+      "pos": "adj.",
+      "meaning": "平均的",
+      "key": true
+    },
+    {
+      "word": "footstep",
+      "phonetic": "ˈfʊtstep",
+      "pos": "n.",
+      "meaning": "足迹",
+      "key": false
+    }
+  ],
+  "73": [
+    {
+      "word": "record-holder",
+      "phonetic": "ˈrekɔːd həʊldə(r)",
+      "pos": "n.",
+      "meaning": "纪录保持者",
+      "key": false
+    },
+    {
+      "word": "truant",
+      "phonetic": "ˈtruːənt",
+      "pos": "n.",
+      "meaning": "逃学的孩子",
+      "key": false
+    },
+    {
+      "word": "hitchhike",
+      "phonetic": "ˈhɪtʃhaɪk",
+      "pos": "v.",
+      "meaning": "搭便车旅行",
+      "key": false
+    },
+    {
+      "word": "meantime",
+      "phonetic": "ˈmiːntaɪm",
+      "pos": "n.",
+      "meaning": "其间",
+      "key": true
+    },
+    {
+      "word": "lorry",
+      "phonetic": "ˈlɒri",
+      "pos": "n.",
+      "meaning": "卡车",
+      "key": false
+    },
+    {
+      "word": "border",
+      "phonetic": "ˈbɔːdə(r)",
+      "pos": "n.",
+      "meaning": "边界",
+      "key": true
+    },
+    {
+      "word": "evade",
+      "phonetic": "ɪˈveɪd",
+      "pos": "v.",
+      "meaning": "逃避，逃离",
+      "key": true
+    },
+    {
+      "word": "unimaginative",
+      "phonetic": "ˌʌnɪˈmædʒɪnətɪv",
+      "pos": "adj.",
+      "meaning": "缺乏想像力的",
+      "key": false
+    },
+    {
+      "word": "shame",
+      "phonetic": "ʃeɪm",
+      "pos": "n.",
+      "meaning": "惭愧，羞耻",
+      "key": false
+    }
+  ],
+  "74": [
+    {
+      "word": "limelight",
+      "phonetic": "ˈlaɪmlaɪt",
+      "pos": "n.",
+      "meaning": "舞台灯光",
+      "key": false
+    },
+    {
+      "word": "precaution",
+      "phonetic": "prɪˈkɔːʃ(ə)n",
+      "pos": "n.",
+      "meaning": "预防措施",
+      "key": false
+    },
+    {
+      "word": "fan",
+      "phonetic": "fæn",
+      "pos": "n.",
+      "meaning": "狂热者，迷",
+      "key": true
+    },
+    {
+      "word": "shady",
+      "phonetic": "ˈʃeɪdi",
+      "pos": "adj.",
+      "meaning": "遮荫的",
+      "key": false
+    },
+    {
+      "word": "sheriff",
+      "phonetic": "ˈʃerɪf",
+      "pos": "n.",
+      "meaning": "司法长官",
+      "key": false
+    },
+    {
+      "word": "notice",
+      "phonetic": "ˈnəʊtɪs",
+      "pos": "n.",
+      "meaning": "告示",
+      "key": true
+    },
+    {
+      "word": "sneer",
+      "phonetic": "snɪə(r)",
+      "pos": "n.",
+      "meaning": "冷笑",
+      "key": false
+    }
+  ],
+  "75": [
+    {
+      "word": "thick",
+      "phonetic": "θɪk",
+      "pos": "adj.",
+      "meaning": "厚的",
+      "key": true
+    },
+    {
+      "word": "signal",
+      "phonetic": "ˈsɪɡnəl",
+      "pos": "n.",
+      "meaning": "信号",
+      "key": true
+    },
+    {
+      "word": "stamp",
+      "phonetic": "stæmp",
+      "pos": "v.",
+      "meaning": "跺，踩",
+      "key": true
+    },
+    {
+      "word": "helicopter",
+      "phonetic": "ˈhelɪkɒptə(r)",
+      "pos": "n.",
+      "meaning": "直升飞机",
+      "key": false
+    },
+    {
+      "word": "scene",
+      "phonetic": "siːn",
+      "pos": "n.",
+      "meaning": "现场",
+      "key": true
+    },
+    {
+      "word": "survivor",
+      "phonetic": "səˈvaɪvə(r)",
+      "pos": "n.",
+      "meaning": "幸存者",
+      "key": false
+    }
+  ],
+  "76": [
+    {
+      "word": "fool",
+      "phonetic": "fuːl",
+      "pos": "n.",
+      "meaning": "傻瓜",
+      "key": false
+    },
+    {
+      "word": "bulletin",
+      "phonetic": "ˈbʊlətɪn",
+      "pos": "n.",
+      "meaning": "新闻简报",
+      "key": false
+    },
+    {
+      "word": "announcer",
+      "phonetic": "əˈnaʊnsə(r)",
+      "pos": "n.",
+      "meaning": "（电视、电台）播音员",
+      "key": false
+    },
+    {
+      "word": "macaroni",
+      "phonetic": "ˌmækəˈrəʊni",
+      "pos": "n.",
+      "meaning": "通心面，空心面条",
+      "key": false
+    },
+    {
+      "word": "leading",
+      "phonetic": "ˈliːdɪŋ",
+      "pos": "adj.",
+      "meaning": "主要的",
+      "key": true
+    },
+    {
+      "word": "grower",
+      "phonetic": "ˈɡrəʊə(r)",
+      "pos": "n.",
+      "meaning": "种植者",
+      "key": false
+    },
+    {
+      "word": "splendid",
+      "phonetic": "ˈsplendɪd",
+      "pos": "adj.",
+      "meaning": "极好的",
+      "key": false
+    },
+    {
+      "word": "stalk",
+      "phonetic": "stɔːk",
+      "pos": "n.",
+      "meaning": "梗",
+      "key": false
+    },
+    {
+      "word": "gather",
+      "phonetic": "ˈɡæðə(r)",
+      "pos": "v.",
+      "meaning": "收庄稼",
+      "key": true
+    },
+    {
+      "word": "thresh",
+      "phonetic": "θreʃ",
+      "pos": "v.",
+      "meaning": "打（庄稼）",
+      "key": false
+    },
+    {
+      "word": "process",
+      "phonetic": "ˈprəʊses",
+      "pos": "v.",
+      "meaning": "加工",
+      "key": true
+    },
+    {
+      "word": "Signor",
+      "phonetic": "ˈsiːnjɔː(r)",
+      "pos": "n.",
+      "meaning": "（意大利语）先生",
+      "key": false
+    },
+    {
+      "word": "present",
+      "phonetic": "ˈprez(ə)nt",
+      "pos": "adj.",
+      "meaning": "目前的",
+      "key": true
+    },
+    {
+      "word": "champion",
+      "phonetic": "ˈtʃæmpiən",
+      "pos": "n.",
+      "meaning": "冠军",
+      "key": true
+    },
+    {
+      "word": "studio",
+      "phonetic": "ˈstjuːdiəʊ",
+      "pos": "n.",
+      "meaning": "播音室",
+      "key": true
+    }
+  ],
+  "77": [
+    {
+      "word": "mummy",
+      "phonetic": "ˈmʌmi",
+      "pos": "n.",
+      "meaning": "木乃伊",
+      "key": false
+    },
+    {
+      "word": "Egyptian",
+      "phonetic": "iˈdʒɪpʃn",
+      "pos": "adj.",
+      "meaning": "埃及的",
+      "key": false
+    },
+    {
+      "word": "temple",
+      "phonetic": "ˈtemp(ə)l",
+      "pos": "n.",
+      "meaning": "庙",
+      "key": false
+    },
+    {
+      "word": "mark",
+      "phonetic": "mɑːk",
+      "pos": "n.",
+      "meaning": "斑点",
+      "key": true
+    },
+    {
+      "word": "plate",
+      "phonetic": "pleɪt",
+      "pos": "n.",
+      "meaning": "（照相）底片",
+      "key": true
+    },
+    {
+      "word": "disease",
+      "phonetic": "dɪˈziːz",
+      "pos": "n.",
+      "meaning": "疾病",
+      "key": true
+    },
+    {
+      "word": "last",
+      "phonetic": "lɑːst",
+      "pos": "v.",
+      "meaning": "持续",
+      "key": true
+    },
+    {
+      "word": "prove",
+      "phonetic": "pruːv",
+      "pos": "v.",
+      "meaning": "显示出",
+      "key": true
+    },
+    {
+      "word": "resin",
+      "phonetic": "ˈrezɪn",
+      "pos": "n.",
+      "meaning": "树脂",
+      "key": false
+    },
+    {
+      "word": "skin",
+      "phonetic": "skɪn",
+      "pos": "n.",
+      "meaning": "皮肤",
+      "key": true
+    },
+    {
+      "word": "section",
+      "phonetic": "ˈsekʃ(ə)n",
+      "pos": "n.",
+      "meaning": "切片",
+      "key": true
+    },
+    {
+      "word": "figure",
+      "phonetic": "ˈfɪɡə(r)",
+      "pos": "n.",
+      "meaning": "（人的）体形；人像",
+      "key": true
+    },
+    {
+      "word": "normally",
+      "phonetic": "ˈnɔːməli",
+      "pos": "adv.",
+      "meaning": "通常地",
+      "key": false
+    },
+    {
+      "word": "survive",
+      "phonetic": "səˈvaɪv",
+      "pos": "v.",
+      "meaning": "幸免于",
+      "key": true
+    }
+  ],
+  "78": [
+    {
+      "word": "entitle",
+      "phonetic": "ɪnˈtaɪt(ə)l",
+      "pos": "v.",
+      "meaning": "以……为名",
+      "key": false
+    },
+    {
+      "word": "calm",
+      "phonetic": "kɑːm",
+      "pos": "v.",
+      "meaning": "使镇定",
+      "key": true
+    },
+    {
+      "word": "nerve",
+      "phonetic": "nɜːv",
+      "pos": "n.",
+      "meaning": "神经",
+      "key": true
+    },
+    {
+      "word": "concentration",
+      "phonetic": "ˌkɒns(ə)nˈtreɪʃ(ə)",
+      "pos": "n.",
+      "meaning": "集中，专心",
+      "key": false
+    },
+    {
+      "word": "suffer",
+      "phonetic": "ˈsʌfə(r)",
+      "pos": "v.",
+      "meaning": "受苦，受害",
+      "key": true
+    },
+    {
+      "word": "symptom",
+      "phonetic": "ˈsɪmptəm",
+      "pos": "n.",
+      "meaning": "症状",
+      "key": false
+    },
+    {
+      "word": "temper",
+      "phonetic": "ˈtempə(r)",
+      "pos": "n.",
+      "meaning": "脾气",
+      "key": true
+    },
+    {
+      "word": "appetite",
+      "phonetic": "ˈæpɪtaɪt",
+      "pos": "n.",
+      "meaning": "胃口，食欲",
+      "key": false
+    },
+    {
+      "word": "produce",
+      "phonetic": "prəˈdjuːs",
+      "pos": "v.",
+      "meaning": "拿出",
+      "key": true
+    },
+    {
+      "word": "urge",
+      "phonetic": "ɜːdʒ",
+      "pos": "v.",
+      "meaning": "力劝，怂恿",
+      "key": true
+    },
+    {
+      "word": "satisfaction",
+      "phonetic": "ˌsætɪsˈfækʃ(ə)n",
+      "pos": "n.",
+      "meaning": "满意，满足",
+      "key": false
+    },
+    {
+      "word": "delighted",
+      "phonetic": "dɪˈlaɪtɪd",
+      "pos": "adj.",
+      "meaning": "欣喜的",
+      "key": false
+    }
+  ],
+  "79": [
+    {
+      "word": "parent",
+      "phonetic": "ˈpeərənt",
+      "pos": "n.",
+      "meaning": "父（母）亲",
+      "key": true
+    },
+    {
+      "word": "flight attendant",
+      "phonetic": "ˈflaɪt əˈtendənt",
+      "pos": "n.",
+      "meaning": "空中乘务员",
+      "key": false
+    },
+    {
+      "word": "frightened",
+      "phonetic": "ˈfraɪt(ə)nd",
+      "pos": "adj.",
+      "meaning": "害怕，担惊",
+      "key": false
+    },
+    {
+      "word": "curious",
+      "phonetic": "ˈkjʊəriəs",
+      "pos": "adj.",
+      "meaning": "急于了解，好奇的",
+      "key": false
+    },
+    {
+      "word": "bomb",
+      "phonetic": "bɒm",
+      "pos": "n.",
+      "meaning": "炸弹",
+      "key": true
+    },
+    {
+      "word": "plant",
+      "phonetic": "plɑːnt",
+      "pos": "v.",
+      "meaning": "安放",
+      "key": true
+    }
+  ],
+  "80": [
+    {
+      "word": "palace",
+      "phonetic": "ˈpæləs",
+      "pos": "n.",
+      "meaning": "宫殿",
+      "key": false
+    },
+    {
+      "word": "extraordinary",
+      "phonetic": "ɪkˈstrɔːd(ə)n(ə)ri",
+      "pos": "adj.",
+      "meaning": "不平常的，非凡的",
+      "key": false
+    },
+    {
+      "word": "exhibition",
+      "phonetic": "ˌeksɪˈbɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "展览",
+      "key": false
+    },
+    {
+      "word": "iron",
+      "phonetic": "ˈaɪən",
+      "pos": "n.",
+      "meaning": "铁",
+      "key": false
+    },
+    {
+      "word": "various",
+      "phonetic": "ˈveəriəs",
+      "pos": "adj.",
+      "meaning": "各种各样的",
+      "key": true
+    },
+    {
+      "word": "machinery",
+      "phonetic": "məˈʃiːnəri",
+      "pos": "n.",
+      "meaning": "机器",
+      "key": false
+    },
+    {
+      "word": "display",
+      "phonetic": "dɪˈspleɪ",
+      "pos": "n.",
+      "meaning": "展览",
+      "key": true
+    },
+    {
+      "word": "steam",
+      "phonetic": "stiːm",
+      "pos": "n.",
+      "meaning": "蒸汽",
+      "key": true
+    },
+    {
+      "word": "profit",
+      "phonetic": "ˈprɒfɪt",
+      "pos": "n.",
+      "meaning": "利润",
+      "key": true
+    },
+    {
+      "word": "college",
+      "phonetic": "ˈkɒlɪdʒ",
+      "pos": "n.",
+      "meaning": "学院",
+      "key": true
+    }
+  ],
+  "81": [
+    {
+      "word": "prisoner",
+      "phonetic": "ˈprɪz(ə)nə(r)",
+      "pos": "n.",
+      "meaning": "囚犯",
+      "key": true
+    },
+    {
+      "word": "bush",
+      "phonetic": "bʊʃ",
+      "pos": "n.",
+      "meaning": "灌木丛",
+      "key": false
+    },
+    {
+      "word": "rapidly",
+      "phonetic": "ˈræpɪdli",
+      "pos": "adv.",
+      "meaning": "迅速地",
+      "key": false
+    },
+    {
+      "word": "uniform",
+      "phonetic": "ˈjuːnɪfɔːm",
+      "pos": "n.",
+      "meaning": "制服",
+      "key": false
+    },
+    {
+      "word": "rifle",
+      "phonetic": "ˈraɪf(ə)l",
+      "pos": "n.",
+      "meaning": "来福枪，步枪",
+      "key": false
+    },
+    {
+      "word": "shoulder",
+      "phonetic": "ˈʃəʊldə(r)",
+      "pos": "n.",
+      "meaning": "肩",
+      "key": true
+    },
+    {
+      "word": "march",
+      "phonetic": "mɑːtʃ",
+      "pos": "v.",
+      "meaning": "行进",
+      "key": false
+    },
+    {
+      "word": "boldly",
+      "phonetic": "ˈbəʊldli",
+      "pos": "adj.",
+      "meaning": "大胆地",
+      "key": false
+    },
+    {
+      "word": "blaze",
+      "phonetic": "bleɪz",
+      "pos": "v.",
+      "meaning": "闪耀",
+      "key": true
+    },
+    {
+      "word": "salute",
+      "phonetic": "səˈluːt",
+      "pos": "v.",
+      "meaning": "行礼",
+      "key": false
+    },
+    {
+      "word": "elderly",
+      "phonetic": "ˈeldəli",
+      "pos": "adj.",
+      "meaning": "上了年纪的",
+      "key": false
+    },
+    {
+      "word": "grey",
+      "phonetic": "ɡreɪ",
+      "pos": "adj.",
+      "meaning": "灰白的",
+      "key": false
+    },
+    {
+      "word": "sharp",
+      "phonetic": "ʃɑːp",
+      "pos": "adj.",
+      "meaning": "猛烈的",
+      "key": true
+    },
+    {
+      "word": "blow",
+      "phonetic": "bləʊ",
+      "pos": "n.",
+      "meaning": "打击",
+      "key": true
+    }
+  ],
+  "82": [
+    {
+      "word": "monster",
+      "phonetic": "ˈmɒnstə(r)",
+      "pos": "n.",
+      "meaning": "怪物",
+      "key": false
+    },
+    {
+      "word": "sailor",
+      "phonetic": "ˈseɪlə(r)",
+      "pos": "n.",
+      "meaning": "海员",
+      "key": false
+    },
+    {
+      "word": "sight",
+      "phonetic": "saɪt",
+      "pos": "v.",
+      "meaning": "见到",
+      "key": true
+    },
+    {
+      "word": "creature",
+      "phonetic": "ˈkriːtʃə(r)",
+      "pos": "n.",
+      "meaning": "动物，生物",
+      "key": false
+    },
+    {
+      "word": "peculiar",
+      "phonetic": "pɪˈkjuːliə(r)",
+      "pos": "adj.",
+      "meaning": "奇怪，不寻常的",
+      "key": true
+    },
+    {
+      "word": "shining",
+      "phonetic": "ˈʃaɪnɪŋ",
+      "pos": "adj.",
+      "meaning": "闪闪发光的",
+      "key": false
+    },
+    {
+      "word": "oarfish",
+      "phonetic": "ˈɔːfɪʃ",
+      "pos": "adj.",
+      "meaning": "桨鱼",
+      "key": false
+    },
+    {
+      "word": "claim",
+      "phonetic": "kleɪm",
+      "pos": "v.",
+      "meaning": "声称",
+      "key": true
+    }
+  ],
+  "83": [
+    {
+      "word": "election",
+      "phonetic": "ɪˈlekʃ(ə)n",
+      "pos": "n.",
+      "meaning": "选举",
+      "key": true
+    },
+    {
+      "word": "former",
+      "phonetic": "ˈfɔːmə(r)",
+      "pos": "n.",
+      "meaning": "从前的",
+      "key": true
+    },
+    {
+      "word": "defeat",
+      "phonetic": "dɪˈfiːt",
+      "pos": "v.",
+      "meaning": "打败",
+      "key": true
+    },
+    {
+      "word": "fanatical",
+      "phonetic": "fəˈnætɪkl",
+      "pos": "adj.",
+      "meaning": "狂热的",
+      "key": false
+    },
+    {
+      "word": "opponent",
+      "phonetic": "əˈpəʊnənt",
+      "pos": "n.",
+      "meaning": "反对者，对手",
+      "key": false
+    },
+    {
+      "word": "radical",
+      "phonetic": "ˈrædɪk(ə)l",
+      "pos": "adj.",
+      "meaning": "激进的",
+      "key": true
+    },
+    {
+      "word": "progressive",
+      "phonetic": "prəˈɡresɪv",
+      "pos": "adj.",
+      "meaning": "进步的",
+      "key": false
+    },
+    {
+      "word": "prefix",
+      "phonetic": "ˈpriːfɪks",
+      "pos": "adj.",
+      "meaning": "前..⋯",
+      "key": false
+    },
+    {
+      "word": "suspicious",
+      "phonetic": "səˈspɪʃəs",
+      "pos": "adj.",
+      "meaning": "怀疑的",
+      "key": false
+    }
+  ],
+  "84": [
+    {
+      "word": "strike",
+      "phonetic": "straɪk",
+      "pos": "n.",
+      "meaning": "罢工",
+      "key": true
+    },
+    {
+      "word": "busman",
+      "phonetic": "ˈbʌsmən",
+      "pos": "n.",
+      "meaning": "公共汽车司机",
+      "key": false
+    },
+    {
+      "word": "state",
+      "phonetic": "steɪt",
+      "pos": "v.",
+      "meaning": "正式提出，宣布",
+      "key": true
+    },
+    {
+      "word": "agreement",
+      "phonetic": "əˈɡriːmənt",
+      "pos": "n.",
+      "meaning": "协议",
+      "key": true
+    },
+    {
+      "word": "relieve",
+      "phonetic": "rɪˈliːv",
+      "pos": "v.",
+      "meaning": "减轻",
+      "key": false
+    },
+    {
+      "word": "pressure",
+      "phonetic": "ˈpreʃə(r)",
+      "pos": "n.",
+      "meaning": "压力，麻烦",
+      "key": true
+    },
+    {
+      "word": "extent",
+      "phonetic": "ɪkˈstent",
+      "pos": "n.",
+      "meaning": "程度",
+      "key": false
+    },
+    {
+      "word": "volunteer",
+      "phonetic": "ˌvɒlənˈtɪə(r)",
+      "pos": "v.",
+      "meaning": "自动提出，自愿",
+      "key": false
+    },
+    {
+      "word": "gratitude",
+      "phonetic": "ˈɡrætɪtjuːd",
+      "pos": "n.",
+      "meaning": "感激",
+      "key": false
+    },
+    {
+      "word": "press",
+      "phonetic": "pres",
+      "pos": "n.",
+      "meaning": "新闻界",
+      "key": true
+    },
+    {
+      "word": "object",
+      "phonetic": "ˈɒbdʒɪkt",
+      "pos": "v.",
+      "meaning": "不赞成，反对",
+      "key": true
+    }
+  ],
+  "85": [
+    {
+      "word": "inform",
+      "phonetic": "ɪnˈfɔːm",
+      "pos": "v.",
+      "meaning": "告诉，通知",
+      "key": true
+    },
+    {
+      "word": "headmaster",
+      "phonetic": "ˌhedˈmɑːstə(r)",
+      "pos": "n.",
+      "meaning": "校长",
+      "key": false
+    },
+    {
+      "word": "contribute",
+      "phonetic": "kənˈtrɪbjuːt",
+      "pos": "v.",
+      "meaning": "捐助，援助",
+      "key": true
+    },
+    {
+      "word": "gift",
+      "phonetic": "ɡɪft",
+      "pos": "n.",
+      "meaning": "礼物，赠品",
+      "key": false
+    },
+    {
+      "word": "album",
+      "phonetic": "ˈælbəm",
+      "pos": "n.",
+      "meaning": "签名簿，相册",
+      "key": true
+    },
+    {
+      "word": "patience",
+      "phonetic": "ˈpeɪʃ(ə)ns",
+      "pos": "n.",
+      "meaning": "耐心",
+      "key": false
+    },
+    {
+      "word": "encouragement",
+      "phonetic": "ɪnˈkʌrɪdʒmənt",
+      "pos": "n.",
+      "meaning": "鼓励",
+      "key": false
+    },
+    {
+      "word": "farewell",
+      "phonetic": "ˌfeəˈwel",
+      "pos": "n.",
+      "meaning": "告别",
+      "key": false
+    },
+    {
+      "word": "honour",
+      "phonetic": "ˈɒnə(r)",
+      "pos": "n.",
+      "meaning": "敬意",
+      "key": false
+    },
+    {
+      "word": "coincidence",
+      "phonetic": "kəʊˈɪnsɪdəns",
+      "pos": "n.",
+      "meaning": "巧合",
+      "key": false
+    },
+    {
+      "word": "total",
+      "phonetic": "ˈtəʊt(ə)l",
+      "pos": "n.",
+      "meaning": "总数",
+      "key": true
+    },
+    {
+      "word": "devote",
+      "phonetic": "dɪˈvəʊt",
+      "pos": "v.",
+      "meaning": "致力于",
+      "key": true
+    },
+    {
+      "word": "gardening",
+      "phonetic": "ˈɡɑːdnɪŋ",
+      "pos": "n.",
+      "meaning": "园艺",
+      "key": false
+    },
+    {
+      "word": "hobby",
+      "phonetic": "ˈhɒbi",
+      "pos": "n.",
+      "meaning": "爱好，嗜好",
+      "key": false
+    }
+  ],
+  "86": [
+    {
+      "word": "swing",
+      "phonetic": "swɪŋ",
+      "pos": "v.",
+      "meaning": "转向",
+      "key": false
+    },
+    {
+      "word": "speedboat",
+      "phonetic": "ˈspiːdbəʊt",
+      "pos": "n.",
+      "meaning": "快艇",
+      "key": false
+    },
+    {
+      "word": "desperately",
+      "phonetic": "ˈdespərətli",
+      "pos": "adv.",
+      "meaning": "绝望地",
+      "key": false
+    },
+    {
+      "word": "companion",
+      "phonetic": "kəmˈpænjən",
+      "pos": "n.",
+      "meaning": "同伙，伙伴",
+      "key": false
+    },
+    {
+      "word": "water ski",
+      "phonetic": "ˈwɔːtə(r) skiː",
+      "pos": "n.",
+      "meaning": "（由快艇牵引水橇）滑水",
+      "key": false
+    },
+    {
+      "word": "buoy",
+      "phonetic": "bɔɪ",
+      "pos": "n.",
+      "meaning": "浮标",
+      "key": false
+    },
+    {
+      "word": "dismay",
+      "phonetic": "dɪsˈmeɪ",
+      "pos": "n.",
+      "meaning": "沮丧",
+      "key": false
+    },
+    {
+      "word": "tremendous",
+      "phonetic": "trəˈmendəs",
+      "pos": "adj.",
+      "meaning": "巨大的",
+      "key": false
+    },
+    {
+      "word": "petrol",
+      "phonetic": "ˈpetrəl",
+      "pos": "n.",
+      "meaning": "汽油",
+      "key": false
+    },
+    {
+      "word": "drift",
+      "phonetic": "drɪft",
+      "pos": "v.",
+      "meaning": "漂动，漂流",
+      "key": true
+    },
+    {
+      "word": "gently",
+      "phonetic": "ˈdʒentli",
+      "pos": "adv.",
+      "meaning": "缓慢地，轻轻地",
+      "key": false
+    }
+  ],
+  "87": [
+    {
+      "word": "alibi",
+      "phonetic": "ˈæləbaɪ",
+      "pos": "n.",
+      "meaning": "不在犯罪现场",
+      "key": false
+    },
+    {
+      "word": "commit",
+      "phonetic": "kəˈmɪt",
+      "pos": "v.",
+      "meaning": "犯（罪、错）",
+      "key": true
+    },
+    {
+      "word": "inspector",
+      "phonetic": "ɪnˈspektə(r)",
+      "pos": "n.",
+      "meaning": "探长",
+      "key": false
+    },
+    {
+      "word": "employer",
+      "phonetic": "ɪmˈplɔɪə(r)",
+      "pos": "n.",
+      "meaning": "雇主",
+      "key": false
+    },
+    {
+      "word": "confirm",
+      "phonetic": "kənˈfɜːm",
+      "pos": "v.",
+      "meaning": "确认，证实",
+      "key": true
+    },
+    {
+      "word": "suggest",
+      "phonetic": "səˈdʒest",
+      "pos": "v.",
+      "meaning": "提醒",
+      "key": true
+    },
+    {
+      "word": "truth",
+      "phonetic": "truːθ",
+      "pos": "n.",
+      "meaning": "真相",
+      "key": true
+    }
+  ],
+  "88": [
+    {
+      "word": "trap",
+      "phonetic": "træp",
+      "pos": "v.",
+      "meaning": "陷入，使陷于困境",
+      "key": true
+    },
+    {
+      "word": "surface",
+      "phonetic": "ˈsɜːfɪs",
+      "pos": "n.",
+      "meaning": "地面，表面",
+      "key": true
+    },
+    {
+      "word": "explosive",
+      "phonetic": "ɪkˈspləʊsɪv",
+      "pos": "n.",
+      "meaning": "炸药",
+      "key": false
+    },
+    {
+      "word": "vibration",
+      "phonetic": "vaɪˈbreɪʃ(ə)n",
+      "pos": "n.",
+      "meaning": "震动",
+      "key": false
+    },
+    {
+      "word": "collapse",
+      "phonetic": "kəˈlæps",
+      "pos": "v.",
+      "meaning": "坍塌",
+      "key": true
+    },
+    {
+      "word": "drill",
+      "phonetic": "drɪl",
+      "pos": "v.",
+      "meaning": "钻孔",
+      "key": false
+    },
+    {
+      "word": "capsule",
+      "phonetic": "ˈkæpsjuːl",
+      "pos": "n.",
+      "meaning": "容器",
+      "key": false
+    },
+    {
+      "word": "layer",
+      "phonetic": "ˈleɪə(r)",
+      "pos": "n.",
+      "meaning": "层",
+      "key": false
+    },
+    {
+      "word": "beneath",
+      "phonetic": "bɪˈniːθ",
+      "pos": "prep.",
+      "meaning": "在......之下",
+      "key": false
+    },
+    {
+      "word": "lower",
+      "phonetic": "ˈləʊə(r)",
+      "pos": "v.",
+      "meaning": "放下，降低",
+      "key": false
+    },
+    {
+      "word": "progress",
+      "phonetic": "ˈprəʊɡres",
+      "pos": "v.",
+      "meaning": "进展，进行",
+      "key": true
+    },
+    {
+      "word": "smoothly",
+      "phonetic": "ˈsmuːðli",
+      "pos": "adv.",
+      "meaning": "顺利地",
+      "key": false
+    }
+  ],
+  "89": [
+    {
+      "word": "slip",
+      "phonetic": "slɪp",
+      "pos": "n.",
+      "meaning": "小错误",
+      "key": true
+    },
+    {
+      "word": "comedy",
+      "phonetic": "ˈkɒmədi",
+      "pos": "n.",
+      "meaning": "喜剧",
+      "key": false
+    },
+    {
+      "word": "present",
+      "phonetic": "ˈprez(ə)nt",
+      "pos": "v.",
+      "meaning": "演出；adj. 出席，到场的",
+      "key": true
+    },
+    {
+      "word": "queue",
+      "phonetic": "kjuː",
+      "pos": "v.",
+      "meaning": "排队",
+      "key": false
+    },
+    {
+      "word": "dull",
+      "phonetic": "dʌl",
+      "pos": "adj.",
+      "meaning": "枯燥，无味",
+      "key": false
+    },
+    {
+      "word": "artiste",
+      "phonetic": "ɑːˈtiːst",
+      "pos": "n.",
+      "meaning": "艺人",
+      "key": false
+    },
+    {
+      "word": "advertiser",
+      "phonetic": "ˈædvətaɪzə(r)",
+      "pos": "n.",
+      "meaning": "报幕员",
+      "key": false
+    }
+  ],
+  "90": [
+    {
+      "word": "chip",
+      "phonetic": "tʃɪp",
+      "pos": "n.",
+      "meaning": "油煎土豆片",
+      "key": false
+    },
+    {
+      "word": "overfish",
+      "phonetic": "ˌəʊvəˈfɪʃ",
+      "pos": "v.",
+      "meaning": "过度捕捞",
+      "key": false
+    },
+    {
+      "word": "giant",
+      "phonetic": "ˈdʒaɪənt",
+      "pos": "adj.",
+      "meaning": "巨大的",
+      "key": false
+    },
+    {
+      "word": "terrify",
+      "phonetic": "ˈterɪfaɪ",
+      "pos": "v.",
+      "meaning": "吓，使恐怖",
+      "key": false
+    },
+    {
+      "word": "diver",
+      "phonetic": "ˈdaɪvə(r)",
+      "pos": "n.",
+      "meaning": "潜水员",
+      "key": false
+    },
+    {
+      "word": "oil rig",
+      "phonetic": "ˈɔɪl rɪɡ",
+      "pos": "n.",
+      "meaning": "石油钻塔",
+      "key": false
+    },
+    {
+      "word": "wit",
+      "phonetic": "wɪt",
+      "pos": "n.",
+      "meaning": "（复数）理智，头脑",
+      "key": true
+    },
+    {
+      "word": "cage",
+      "phonetic": "keɪdʒ",
+      "pos": "n.",
+      "meaning": "笼",
+      "key": false
+    },
+    {
+      "word": "shark",
+      "phonetic": "ʃɑːk",
+      "pos": "n.",
+      "meaning": "鲨鱼",
+      "key": false
+    },
+    {
+      "word": "whale",
+      "phonetic": "weɪl",
+      "pos": "n.",
+      "meaning": "鲸",
+      "key": false
+    },
+    {
+      "word": "variety",
+      "phonetic": "vəˈraɪəti",
+      "pos": "n.",
+      "meaning": "品种",
+      "key": true
+    },
+    {
+      "word": "cod",
+      "phonetic": "kɒd",
+      "pos": "n.",
+      "meaning": "鳕",
+      "key": false
+    },
+    {
+      "word": "skate",
+      "phonetic": "skeɪt",
+      "pos": "n.",
+      "meaning": "鳐",
+      "key": true
+    },
+    {
+      "word": "factor",
+      "phonetic": "ˈfæktə(r)",
+      "pos": "n.",
+      "meaning": "因素",
+      "key": true
+    },
+    {
+      "word": "crew",
+      "phonetic": "kruː",
+      "pos": "n.",
+      "meaning": "全体工作人员",
+      "key": false
+    },
+    {
+      "word": "special",
+      "phonetic": "ˈspeʃ(ə)l",
+      "pos": "adj.",
+      "meaning": "特别的",
+      "key": true
+    }
+  ],
+  "91": [
+    {
+      "word": "balloon",
+      "phonetic": "bəˈluːn",
+      "pos": "n.",
+      "meaning": "气球",
+      "key": false
+    },
+    {
+      "word": "royal",
+      "phonetic": "ˈrɔɪəl",
+      "pos": "adj.",
+      "meaning": "皇家",
+      "key": true
+    },
+    {
+      "word": "spy",
+      "phonetic": "spaɪ",
+      "pos": "v.",
+      "meaning": "侦察",
+      "key": false
+    },
+    {
+      "word": "track",
+      "phonetic": "træk",
+      "pos": "n.",
+      "meaning": "轨迹，踪迹",
+      "key": true
+    },
+    {
+      "word": "binoculars",
+      "phonetic": "bɪˈnɒkjələz",
+      "pos": "n.",
+      "meaning": "望远镱",
+      "key": false
+    }
+  ],
+  "92": [
+    {
+      "word": "fast",
+      "phonetic": "fɑːst",
+      "pos": "adv.",
+      "meaning": "熟（睡）",
+      "key": true
+    },
+    {
+      "word": "ladder",
+      "phonetic": "ˈlædə(r)",
+      "pos": "n.",
+      "meaning": "梯子",
+      "key": false
+    },
+    {
+      "word": "shed",
+      "phonetic": "ʃed",
+      "pos": "n.",
+      "meaning": "棚子",
+      "key": false
+    },
+    {
+      "word": "sarcastic",
+      "phonetic": "sɑːˈkæstɪk",
+      "pos": "adj.",
+      "meaning": "讽刺的，讥笑的",
+      "key": false
+    },
+    {
+      "word": "tone",
+      "phonetic": "təʊn",
+      "pos": "n.",
+      "meaning": "语气，腔调",
+      "key": true
+    }
+  ],
+  "93": [
+    {
+      "word": "noble",
+      "phonetic": "ˈnəʊb(ə)l",
+      "pos": "adj.",
+      "meaning": "高尚的，壮丽的",
+      "key": false
+    },
+    {
+      "word": "monument",
+      "phonetic": "ˈmɒnjumənt",
+      "pos": "n.",
+      "meaning": "纪念碑",
+      "key": false
+    },
+    {
+      "word": "statue",
+      "phonetic": "ˈstætʃuː",
+      "pos": "n.",
+      "meaning": "雕像",
+      "key": false
+    },
+    {
+      "word": "liberty",
+      "phonetic": "ˈlɪbəti",
+      "pos": "n.",
+      "meaning": "自由",
+      "key": false
+    },
+    {
+      "word": "present",
+      "phonetic": "ˈprez(ə)nt",
+      "pos": "v.",
+      "meaning": "赠送",
+      "key": true
+    },
+    {
+      "word": "sculptor",
+      "phonetic": "ˈskʌlptə(r)",
+      "pos": "n.",
+      "meaning": "雕刻家",
+      "key": false
+    },
+    {
+      "word": "actual",
+      "phonetic": "ˈæktʃuəl",
+      "pos": "adj.",
+      "meaning": "实际的，真实的",
+      "key": true
+    },
+    {
+      "word": "copper",
+      "phonetic": "ˈkɒpə(r)",
+      "pos": "n.",
+      "meaning": "铜",
+      "key": false
+    },
+    {
+      "word": "support",
+      "phonetic": "səˈpɔːt",
+      "pos": "v.",
+      "meaning": "支持，支撑",
+      "key": true
+    },
+    {
+      "word": "framework",
+      "phonetic": "ˈfreɪmwɜːk",
+      "pos": "n.",
+      "meaning": "构架，框架",
+      "key": false
+    },
+    {
+      "word": "transport",
+      "phonetic": "ˈtrænspɔːt",
+      "pos": "v.",
+      "meaning": "运送",
+      "key": true
+    },
+    {
+      "word": "site",
+      "phonetic": "saɪt",
+      "pos": "n.",
+      "meaning": "场地",
+      "key": true
+    },
+    {
+      "word": "pedestal",
+      "phonetic": "ˈpedɪst(ə)l",
+      "pos": "n.",
+      "meaning": "底座",
+      "key": false
+    }
+  ],
+  "94": [
+    {
+      "word": "instruct",
+      "phonetic": "ɪnˈstrʌkt",
+      "pos": "v.",
+      "meaning": "指导，传授",
+      "key": true
+    },
+    {
+      "word": "Los Angeles",
+      "phonetic": "lɔ:s ˈeɪndʒəlz",
+      "pos": "n.",
+      "meaning": "洛杉矶",
+      "key": false
+    },
+    {
+      "word": "reluctant",
+      "phonetic": "rɪˈlʌktənt",
+      "pos": "adj.",
+      "meaning": "勉强的，不愿意的",
+      "key": false
+    },
+    {
+      "word": "weight",
+      "phonetic": "weɪt",
+      "pos": "n.",
+      "meaning": "重物",
+      "key": true
+    },
+    {
+      "word": "underwater",
+      "phonetic": "ˌʌndəˈwɔːtə(r)",
+      "pos": "adj.",
+      "meaning": "水下的",
+      "key": false
+    },
+    {
+      "word": "tricycle",
+      "phonetic": "ˈtraɪsɪk(ə)l",
+      "pos": "n.",
+      "meaning": "三轮车",
+      "key": false
+    },
+    {
+      "word": "compete",
+      "phonetic": "kəmˈpiːt",
+      "pos": "v.",
+      "meaning": "比赛，对抗",
+      "key": true
+    },
+    {
+      "word": "yard",
+      "phonetic": "jɑːd",
+      "pos": "n.",
+      "meaning": "码",
+      "key": true
+    },
+    {
+      "word": "gasp",
+      "phonetic": "ɡɑːsp",
+      "pos": "v.",
+      "meaning": "喘气",
+      "key": false
+    }
+  ],
+  "95": [
+    {
+      "word": "fantasy",
+      "phonetic": "ˈfæntəsi",
+      "pos": "n.",
+      "meaning": "幻想故事",
+      "key": true
+    },
+    {
+      "word": "ambassador",
+      "phonetic": "æmˈbæsədə(r)",
+      "pos": "n.",
+      "meaning": "大使",
+      "key": false
+    },
+    {
+      "word": "Escalopia",
+      "phonetic": "ɪˈklæmpsiə",
+      "pos": "n.",
+      "meaning": "艾斯卡罗比亚（虚构的国名）",
+      "key": false
+    },
+    {
+      "word": "frightful",
+      "phonetic": "ˈfraɪtf(ə)l",
+      "pos": "adj.",
+      "meaning": "可怕的，令人吃惊的",
+      "key": false
+    },
+    {
+      "word": "fire extinguisher",
+      "phonetic": "ˈfaɪər ɪkˈstɪŋɡwɪʃə(r)",
+      "pos": "n.",
+      "meaning": "灭火器",
+      "key": false
+    },
+    {
+      "word": "drily",
+      "phonetic": "ˈdraɪli",
+      "pos": "adv.",
+      "meaning": "冷淡地，枯燥无味地",
+      "key": false
+    },
+    {
+      "word": "embassy",
+      "phonetic": "ˈembəsi",
+      "pos": "n.",
+      "meaning": "大使馆",
+      "key": false
+    },
+    {
+      "word": "heaven",
+      "phonetic": "ˈhev(ə)n",
+      "pos": "n.",
+      "meaning": "天，天堂",
+      "key": false
+    },
+    {
+      "word": "basement",
+      "phonetic": "ˈbeɪsmənt",
+      "pos": "n.",
+      "meaning": "地下室",
+      "key": false
+    },
+    {
+      "word": "definitely",
+      "phonetic": "ˈdefɪnətli",
+      "pos": "adv.",
+      "meaning": "肯定地",
+      "key": false
+    },
+    {
+      "word": "post",
+      "phonetic": "pəʊst",
+      "pos": "v.",
+      "meaning": "派任",
+      "key": true
+    },
+    {
+      "word": "shot",
+      "phonetic": "ʃɒt",
+      "pos": "n.",
+      "meaning": "子弹",
+      "key": true
+    },
+    {
+      "word": "aim",
+      "phonetic": "eɪm",
+      "pos": "n.",
+      "meaning": "瞄准",
+      "key": true
+    }
+  ],
+  "96": [
+    {
+      "word": "festival",
+      "phonetic": "ˈfestɪvl",
+      "pos": "n.",
+      "meaning": "节日",
+      "key": true
+    },
+    {
+      "word": "lantern",
+      "phonetic": "ˈlæntən",
+      "pos": "n.",
+      "meaning": "灯笼",
+      "key": false
+    },
+    {
+      "word": "spectacle",
+      "phonetic": "ˈspektək(ə)l",
+      "pos": "n.",
+      "meaning": "景象，壮观，场面",
+      "key": false
+    },
+    {
+      "word": "drift",
+      "phonetic": "drɪft",
+      "pos": "v.",
+      "meaning": "漂流",
+      "key": true
+    },
+    {
+      "word": "guide",
+      "phonetic": "ɡaɪd",
+      "pos": "v.",
+      "meaning": "带领",
+      "key": true
+    }
+  ]
+}

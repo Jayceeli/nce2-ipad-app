@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="NCE2">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>新概念英语第二册 · 点读 / 笔记 / 听写</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/extra.css">
+  <script src="assets/progress.js" defer></script>
+  <script src="assets/register-sw.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const container = document.getElementById('lessons');
+      const statsEl = document.getElementById('stats');
+      const loading = document.getElementById('loading');
+
+      function updateStatistics() {
+        if (!window.progressManager) return;
+        const stats = window.progressManager.getStatistics();
+        const completed = window.progressManager.getBookProgress('NCE2').filter((p) => p.completed).length;
+        if (statsEl && (stats.total.duration > 0 || completed > 0)) {
+          statsEl.style.display = 'block';
+          statsEl.innerHTML = `
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-value">${completed}</div>
+                <div class="stat-label">已完成课程</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">${window.progressManager.formatDuration(stats.total.duration)}</div>
+                <div class="stat-label">学习时长</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">${stats.streak}</div>
+                <div class="stat-label">连续天数</div>
+              </div>
+            </div>
+          `;
+        }
+      }
+
+      try {
+        const res = await fetch('data/lessons.json');
+        const lessons = await res.json();
+        container.innerHTML = '';
+        lessons.forEach((lesson) => {
+          const a = document.createElement('a');
+          a.className = 'lesson-item';
+          a.href = `lesson.html#NCE2/${encodeURIComponent(lesson.filename)}`;
+          if (window.progressManager) {
+            const p = window.progressManager.getLessonProgress('NCE2', lesson.filename);
+            if (p?.completed) a.classList.add('completed');
+            else if (p?.lastVisit) a.classList.add('in-progress');
+          }
+          a.innerHTML = `
+            <div class="lesson-num">第${lesson.id}课</div>
+            <div class="lesson-info">
+              <div class="lesson-title">${lesson.title}</div>
+            </div>
+          `;
+          container.appendChild(a);
+        });
+        loading.hidden = true;
+        updateStatistics();
+      } catch (err) {
+        loading.textContent = '课程列表加载失败：' + err.message;
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>新概念英语第二册</h1>
+      <p class="subtitle">逐句点读 · 双语笔记 · 单词听写</p>
+      <nav class="top-nav">
+        <a href="settings.html">设置</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </header>
+    <div id="stats" class="stats-container" style="display:none"></div>
+    <main class="lessons" id="lessons"></main>
+    <p id="loading" class="muted" style="text-align:center">正在加载课程…</p>
+    <footer>
+      <p>仅供个人学习使用 · 非商业用途</p>
+    </footer>
+  </div>
+</body>
+</html>

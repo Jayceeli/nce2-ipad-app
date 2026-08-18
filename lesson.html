@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="NCE2">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>NCE2 · 课程</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/extra.css">
+  <script src="assets/app.js" defer></script>
+  <script src="assets/progress.js" defer></script>
+  <script src="assets/favorites.js" defer></script>
+  <script src="assets/common.js" defer></script>
+  <script src="assets/lesson.js" defer></script>
+  <script src="assets/notes.js" defer></script>
+  <script src="assets/dictation.js" defer></script>
+  <script src="assets/ui.js" defer></script>
+  <script src="assets/register-sw.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="hero compact">
+      <h1 id="lessonTitle">课文</h1>
+      <p id="lessonSub" class="muted"></p>
+      <div class="segmented tabs view-tabs" id="viewTabs" role="tablist" aria-label="课程视图">
+        <button class="seg active" data-view="point" role="tab">点读</button>
+        <button class="seg" data-view="notes" role="tab">笔记</button>
+        <button class="seg" data-view="dictation" role="tab">单词听写</button>
+      </div>
+    </header>
+
+    <section id="view-point">
+      <div class="toolbar">
+        <div class="player">
+          <a id="backLink" class="back-inline" href="#" aria-label="返回">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M9.78 3.22a.75.75 0 0 1 0 1.06L6.06 8l3.72 3.72a.75.75 0 1 1-1.06 1.06L4.47 8.53a1.25 1.25 0 0 1 0-1.77l4.25-4.25a.75.75 0 0 1 1.06 0Z"></path></svg>
+            返回
+          </a>
+          <audio id="player"></audio>
+          <div class="player-controls">
+            <button id="playPauseBtn" class="control-btn" title="播放/暂停">
+              <svg id="playIcon" viewBox="0 0 16 16" aria-hidden="true"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
+              <svg id="pauseIcon" viewBox="0 0 16 16" aria-hidden="true" style="display:none"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+            </button>
+            <div class="timeline-container">
+              <input type="range" id="timeline" class="timeline" min="0" max="100" value="0" step="0.1">
+              <div class="time-display">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+            <button id="volumeBtn" class="control-btn" title="音量">
+              <svg id="volumeIcon" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/><path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/><path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4z"/></svg>
+              <svg id="muteIcon" viewBox="0 0 16 16" aria-hidden="true" style="display:none"><path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/></svg>
+            </button>
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="100" step="1">
+            <button id="loopBtn" class="control-btn" title="单句循环">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm3.81.086a.5.5 0 0 1 .09.497A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67z"/></svg>
+            </button>
+            <button id="dictationBtn" class="control-btn" title="听写模式">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/><path d="M2.5 5.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+            </button>
+            <select id="speedSelect" class="speed-select">
+              <option value="0.5">0.5x</option>
+              <option value="0.75">0.75x</option>
+              <option value="1" selected>1x</option>
+              <option value="1.25">1.25x</option>
+              <option value="1.5">1.5x</option>
+              <option value="1.75">1.75x</option>
+              <option value="2">2x</option>
+            </select>
+            <button id="helpBtn" class="control-btn" title="键盘快捷键">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/></svg>
+            </button>
+          </div>
+          <div id="helpTooltip" class="help-tooltip">
+            <div class="help-tooltip-arrow"></div>
+            <div class="help-tooltip-content">
+              <div class="help-tooltip-title">键盘快捷键</div>
+              <div class="help-grid">
+                <div class="help-item"><kbd>空格</kbd> <span>播放/暂停</span></div>
+                <div class="help-item"><kbd>← →</kbd> <span>上/下一句</span></div>
+                <div class="help-item"><kbd>↑ ↓</kbd> <span>加/减速</span></div>
+                <div class="help-item"><kbd>L</kbd> <span>循环模式</span></div>
+                <div class="help-item"><kbd>R</kbd> <span>重播当前</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="segmented" role="tablist" aria-label="语言">
+          <button class="seg" data-mode="en">EN</button>
+          <button class="seg active" data-mode="bi">EN+CN</button>
+          <button class="seg" data-mode="cn">CN</button>
+        </div>
+      </div>
+      <main class="sentences" id="sentences"></main>
+      <div class="lesson-nav">
+        <a id="prevLesson" class="btn-nav prev" href="#">上一课</a>
+        <a id="nextLesson" class="btn-nav next" href="#">下一课</a>
+      </div>
+    </section>
+
+    <section id="view-notes" hidden>
+      <div class="notes-toolbar">
+        <div class="notes-search">
+          <input id="notesSearch" type="search" placeholder="在本课笔记中搜索…">
+        </div>
+        <div class="notes-font-btns">
+          <button id="notesFontDown" class="btn" title="缩小文字">A-</button>
+          <button id="notesFontUp" class="btn" title="放大文字">A+</button>
+        </div>
+      </div>
+      <p id="notesLoading" class="muted" style="text-align:center">正在加载笔记…</p>
+      <div id="notesContent" class="notes-content" hidden></div>
+    </section>
+
+    <section id="view-dictation" hidden>
+      <div class="dictation-wrap">
+        <div class="dictation-card">
+          <p id="dictWordCount" class="dict-count">正在加载单词…</p>
+          <div class="dict-controls">
+            <select id="dictScope" title="听写范围">
+              <option value="all">全部单词</option>
+              <option value="key">仅重点词</option>
+            </select>
+            <button id="dictStart" class="btn">开始听写</button>
+          </div>
+
+          <div id="dictQuiz" class="dict-quiz" hidden>
+            <div id="dictProgress" class="dict-progress"></div>
+            <button id="dictCard" type="button" class="dict-flash-card" aria-label="听写卡片">
+              <div id="dictFront" class="dict-front">
+                <div class="dict-speaker">🔊</div>
+                <div class="dict-front-hint">点击听发音</div>
+              </div>
+              <div id="dictBack" class="dict-back" hidden></div>
+            </button>
+            <div id="dictStageHint" class="dict-stage-hint"></div>
+          </div>
+
+          <div id="dictResult" class="dict-result" hidden>
+            <h2>本轮单词汇总</h2>
+            <div id="dictSummary" class="dict-summary"></div>
+            <button id="dictRestart" class="btn">再来一轮</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

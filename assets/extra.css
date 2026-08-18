@@ -1,0 +1,527 @@
+/* Child-friendly high-contrast light theme */
+:root {
+  --gray-50: #f0f7ff;
+  --gray-100: #e4f0fc;
+  --gray-200: #cfe0f4;
+  --gray-300: #b4cdea;
+  --gray-400: #95b3d8;
+  --gray-500: #7590b5;
+  --gray-600: #5a7394;
+  --gray-700: #435672;
+  --gray-800: #2c3c56;
+  --gray-900: #1f2a44;
+  --gray-950: #111827;
+  --bg: #f5f9ff;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --text: #1f2a44;
+  --text-secondary: #5a7394;
+  --muted: #7590b5;
+  --border: #cfe0f4;
+  --border-light: #e4f0fc;
+  --accent: #ff7a1a;
+  --accent-hover: #e8630c;
+  --radius-sm: 0.5rem;
+  --radius: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --shadow-sm: 0 2px 8px rgba(30, 60, 120, 0.08);
+  --shadow: 0 4px 14px rgba(30, 60, 120, 0.12);
+  --shadow-md: 0 8px 20px rgba(30, 60, 120, 0.14);
+  --shadow-lg: 0 14px 30px rgba(30, 60, 120, 0.16);
+  --shadow-xl: 0 20px 40px rgba(30, 60, 120, 0.18);
+}
+
+/* Keep the same bright palette even if the device requests dark mode. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gray-50: #f0f7ff;
+    --gray-100: #e4f0fc;
+    --gray-200: #cfe0f4;
+    --gray-300: #b4cdea;
+    --gray-400: #95b3d8;
+    --gray-500: #7590b5;
+    --gray-600: #5a7394;
+    --gray-700: #435672;
+    --gray-800: #2c3c56;
+    --gray-900: #1f2a44;
+    --gray-950: #111827;
+    --bg: #f5f9ff;
+    --surface: #ffffff;
+    --card: #ffffff;
+    --text: #1f2a44;
+    --text-secondary: #5a7394;
+    --muted: #7590b5;
+    --border: #cfe0f4;
+    --border-light: #e4f0fc;
+    --accent: #ff7a1a;
+    --accent-hover: #e8630c;
+  }
+}
+
+body {
+  font-size: 16px;
+  background: var(--bg);
+}
+
+.btn {
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: #ffffff;
+}
+
+.btn:hover {
+  background: #fff4ea;
+  color: var(--accent-hover);
+}
+
+.segmented .seg {
+  padding: 10px 18px;
+  font-size: 15px;
+}
+
+.control-btn {
+  width: 44px;
+  height: 44px;
+}
+
+.lesson-item {
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  font-size: 16px;
+}
+
+.sentence {
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+}
+
+.sentence .en {
+  font-size: 17px;
+}
+
+.sentence .cn {
+  font-size: 15px;
+}
+
+/* Lesson page view tabs */
+.view-tabs {
+  margin: 16px 0 0;
+}
+
+.view-tabs .seg {
+  font-weight: 600;
+}
+
+/* Point-read view keeps the existing toolbar layout */
+#view-point .toolbar {
+  margin-top: 8px;
+}
+
+/* Notes view */
+.notes-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.notes-toolbar .notes-search {
+  flex: 1;
+  min-width: 180px;
+}
+
+.notes-search input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.notes-font-btns {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.notes-content {
+  padding: 24px 0 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+.nce-notes {
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.nce-notes h1,
+.nce-notes h2,
+.nce-notes h3,
+.nce-notes h4,
+.nce-notes h5,
+.nce-notes h6 {
+  color: var(--text);
+  margin: 1.25em 0 0.6em;
+}
+
+.nce-notes h3 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.nce-notes table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.nce-notes th,
+.nce-notes td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+.nce-notes th {
+  background: var(--gray-50);
+}
+
+.nce-notes .badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--gray-100);
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.nce-notes mark.nce-search-mark {
+  background: #fff3a3;
+  color: #000;
+  padding: 0 1px;
+}
+
+/* Dictation view */
+.dictation-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 0 48px;
+}
+
+.dictation-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.dictation-card .dict-count {
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+}
+
+.dict-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.dict-controls select {
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.dict-quiz {
+  margin-top: 20px;
+}
+
+.dict-progress {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.dict-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.dict-actions input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 18px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.dict-feedback {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.dict-feedback.ok {
+  color: #15803d;
+}
+
+.dict-feedback.bad {
+  color: #b91c1c;
+}
+
+.dict-answer {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--gray-50);
+}
+
+.dict-answer-word {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dict-answer-meta {
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.dict-result {
+  margin-top: 20px;
+}
+
+.dict-score {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0 16px;
+}
+
+.dict-wrong-item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.dict-wrong-item b {
+  margin-right: 8px;
+}
+
+.dict-wrong-you {
+  color: #b91c1c;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.dict-no-wrong {
+  color: #15803d;
+  font-weight: 600;
+}
+
+/* Settings / about generic */
+.page-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 0 48px;
+}
+
+.page-card .card-box {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.card-box h2 {
+  margin-top: 0;
+}
+
+/* Compact hero for lesson page */
+.hero.compact {
+  padding: 28px 0 8px;
+}
+
+.hero.compact h1 {
+  font-size: 32px;
+}
+
+@media (max-width: 640px) {
+  .hero.compact h1 {
+    font-size: 26px;
+  }
+
+  .dictation-card {
+    padding: 16px;
+  }
+}
+
+/* Exercises inside notes */
+.nce-exercise {
+  cursor: pointer;
+  position: relative;
+}
+
+.nce-exercise .nce-option {
+  padding: 4px 10px;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.nce-exercise .nce-option.nce-correct {
+  background: #16a34a;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.nce-answer-btn {
+  margin-top: 12px;
+  min-height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #16a34a;
+  border-radius: 10px;
+  background: #e9f9ef;
+  color: #15803d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nce-answer-btn:disabled {
+  opacity: 0.75;
+  cursor: default;
+}
+
+.nce-explain {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #fff7e6;
+  border: 1px solid #ffd9a8;
+  border-radius: 10px;
+  color: #7c4a03;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Flashcard dictation */
+.dict-flash-card {
+  width: 100%;
+  min-height: 280px;
+  margin: 8px auto 0;
+  border: 3px solid var(--accent);
+  border-radius: 1.5rem;
+  background: #ffffff;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.dict-flash-card:hover {
+  transform: translateY(-2px);
+}
+
+.dict-flash-card.listening {
+  border-color: #3b82f6;
+}
+
+.dict-flash-card.revealed {
+  border-color: #16a34a;
+}
+
+.dict-front {
+  text-align: center;
+}
+
+.dict-speaker {
+  font-size: 64px;
+  line-height: 1;
+}
+
+.dict-front-hint {
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dict-back {
+  text-align: center;
+}
+
+.dict-flash-word {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.dict-flash-meta {
+  margin-top: 12px;
+  font-size: 19px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.dict-stage-hint {
+  text-align: center;
+  margin-top: 14px;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.dict-summary {
+  display: grid;
+  gap: 10px;
+}
+
+.dict-summary-item {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.dict-summary-word {
+  font-size: 21px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.dict-summary-meta {
+  margin-top: 4px;
+  color: var(--text-secondary);
+}
+
+.dict-result .btn {
+  margin-top: 18px;
+}
