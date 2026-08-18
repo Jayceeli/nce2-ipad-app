@@ -52,19 +52,37 @@
         const lessons = await res.json();
         container.innerHTML = '';
         lessons.forEach((lesson) => {
+          if ([1, 25, 49, 73].includes(lesson.id)) {
+            const unit = document.createElement('div');
+            unit.className = 'unit-header';
+            const unitNames = ['第一单元', '第二单元', '第三单元', '第四单元'];
+            const unitIndex = Math.floor((lesson.id - 1) / 24);
+            const start = unitIndex * 24 + 1;
+            const end = start + 23;
+            unit.textContent = `${unitNames[unitIndex]} · 第 ${start}–${end} 课`;
+            container.appendChild(unit);
+          }
           const a = document.createElement('a');
           a.className = 'lesson-item';
           a.href = `lesson.html#NCE2/${encodeURIComponent(lesson.filename)}`;
+          let status = '未学';
           if (window.progressManager) {
             const p = window.progressManager.getLessonProgress('NCE2', lesson.filename);
-            if (p?.completed) a.classList.add('completed');
-            else if (p?.lastVisit) a.classList.add('in-progress');
+            if (p?.completed) {
+              a.classList.add('completed');
+              status = '已完成';
+            } else if (p?.lastVisit) {
+              a.classList.add('in-progress');
+              status = '进行中';
+            }
           }
           a.innerHTML = `
-            <div class="lesson-num">第${lesson.id}课</div>
+            <span class="lesson-card-num">${lesson.id}</span>
             <div class="lesson-info">
               <div class="lesson-title">${lesson.title}</div>
+              <span class="lesson-status-pill">${status}</span>
             </div>
+            <span class="lesson-arrow">›</span>
           `;
           container.appendChild(a);
         });

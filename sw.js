@@ -1,4 +1,4 @@
-const CORE_CACHE = 'nce2-core-v2';
+const CORE_CACHE = 'nce2-core-v3';
 const MEDIA_CACHE = 'nce2-media-v1';
 
 self.addEventListener('install', (event) => {
