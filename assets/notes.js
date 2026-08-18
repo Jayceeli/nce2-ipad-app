@@ -112,6 +112,12 @@
       if (!res.ok) throw new Error('notes load failed');
       originalHtml = await res.text();
       container.innerHTML = originalHtml;
+      // Remove any leftover Vue style bindings that could blur/fade the
+      // reading passage ("复述本文") text.
+      container.querySelectorAll('*').forEach((el) => {
+        const v = el.getAttribute(':style');
+        if (v && /blur|opacity/i.test(v)) el.removeAttribute(':style');
+      });
       enhanceExercises(container);
       loading.hidden = true;
       container.hidden = false;

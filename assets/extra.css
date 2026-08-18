@@ -839,3 +839,29 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+/* Reading (点读) text contrast: slightly lighter, still clearly readable */
+.sentence .en {
+  color: #3a4a6b;
+}
+
+.sentence .cn {
+  color: #6b7f9e;
+}
+
+.sentence.active .en {
+  color: #22304e;
+  font-weight: 700;
+}
+
+/* Notes reading passage: never allow blur/fade leftovers to hide text */
+.nce-notes [x-data] {
+  filter: none !important;
+  opacity: 1 !important;
+  user-select: text !important;
+}
+
+.nce-notes .text-muted,
+.nce-notes small.text-muted {
+  color: #6b7f9e !important;
+}
