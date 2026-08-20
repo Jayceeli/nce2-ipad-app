@@ -866,6 +866,13 @@ footer {
   font-weight: 700;
 }
 
+@media (prefers-color-scheme: dark) {
+  #view-point .sentence.active .en,
+  #view-point .sentence.active .cn {
+    color: #ffffff;
+  }
+}
+
 /* Notes reading passage: never allow blur/fade leftovers to hide text */
 .nce-notes [x-data] {
   filter: none !important;
