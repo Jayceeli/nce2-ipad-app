@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="NCE2">
   <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>NCE2 · 设置</title>
   <link rel="stylesheet" href="assets/styles.css">
@@ -28,8 +28,11 @@
       <div class="card-box">
         <h2>离线音频</h2>
         <p id="cacheStatus">正在统计已缓存音频…</p>
+        <p class="muted">96 课音频约 162 MB。下载时请保持本页打开；iPad 会尝试保持亮屏，中断后可继续下载剩余课程。</p>
+        <p id="storageStatus" class="muted"></p>
         <button id="preloadAll" class="btn">预下载全部音频</button>
-        <div id="preloadProgress" class="dict-progress" style="margin-top:12px"></div>
+        <progress id="preloadBar" class="offline-progress" max="96" value="0" hidden></progress>
+        <div id="preloadProgress" class="dict-progress" aria-live="polite"></div>
       </div>
       <div class="card-box">
         <h2>学习数据</h2>
