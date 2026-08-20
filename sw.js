@@ -1,5 +1,5 @@
-const CORE_CACHE = 'nce2-core-v6';
-const LEGACY_CORE_CACHES = ['nce2-core-v4', 'nce2-core-v5'];
+const CORE_CACHE = 'nce2-core-v7';
+const LEGACY_CORE_CACHES = ['nce2-core-v4', 'nce2-core-v5', 'nce2-core-v6'];
 const MEDIA_CACHE = 'nce2-media-v1';
 const CONTENT_CACHE = 'nce2-content-v1';
 const PRELOAD_HEADER = 'X-NCE2-Preload';
@@ -28,7 +28,7 @@ const APP_SHELL = [
   'assets/lesson.js',
   'assets/notes.js',
   'assets/progress.js',
-  'assets/register-sw.js',
+  'assets/register-sw-v7.js',
   'assets/settings.js',
   'assets/styles.css',
   'assets/ui.js',
@@ -51,7 +51,7 @@ const REQUIRED_APP_SHELL = [
   './',
   'index.html',
   'settings.html',
-  'assets/register-sw.js',
+  'assets/register-sw-v7.js',
   'assets/settings.js',
   'assets/styles.css',
   'assets/extra.css',
