@@ -1,0 +1,41 @@
+WARNING u01-talking missing source translation line 1
+WARNING u01-talking missing source translation line 2
+WARNING u01-talking missing source translation line 3
+WARNING u01-talking missing source translation line 4
+WARNING u01-talking missing source translation line 5
+WARNING u01-talking missing source translation line 6
+WARNING u01-talking missing source translation line 7
+WARNING u01-talking missing source translation line 8
+WARNING u01-talking missing source translation line 9
+PASS u01-talking final timing within audio duration
+WARNING u01-talking original local audio not yet copied: books/shanghai-g5a-2026/audio/09_Unit 1 Talking time.mp3
+WARNING u01-story missing source translation line 1
+WARNING u01-story missing source translation line 2
+WARNING u01-story missing source translation line 3
+WARNING u01-story missing source translation line 4
+WARNING u01-story missing source translation line 5
+WARNING u01-story missing source translation line 6
+WARNING u01-story missing source translation line 7
+WARNING u01-story missing source translation line 8
+WARNING u01-story missing source translation line 9
+WARNING u01-story missing source translation line 10
+WARNING u01-story missing source translation line 11
+WARNING u01-story missing source translation line 12
+WARNING u01-story missing source translation line 13
+WARNING u01-story missing source translation line 14
+WARNING u01-story missing source translation line 15
+WARNING u01-story missing source translation line 16
+WARNING u01-story missing source translation line 17
+WARNING u01-story missing source translation line 18
+WARNING u01-story missing source translation line 19
+PASS u01-story final timing within audio duration
+WARNING u01-story original local audio not yet copied: books/shanghai-g5a-2026/audio/10_Unit 1 Story time.mp3
+WARNING unit-1 gardening: publisher word track exists but per-word timing is missing
+WARNING unit-1 storytelling: publisher word track exists but per-word timing is missing
+WARNING unit-1 photography: publisher word track exists but per-word timing is missing
+WARNING unit-1 join: publisher word track exists but per-word timing is missing
+WARNING unit-1 view: publisher word track exists but per-word timing is missing
+WARNING unit-1 pottery: publisher word track exists but per-word timing is missing
+WARNING unit-1 how about: publisher word track exists but per-word timing is missing
+
+Validation: 0 ERROR, 37 WARNING

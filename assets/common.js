@@ -1,33 +1,13 @@
 (() => {
-  let lessonsPromise = null;
-
-  function parseHash() {
-    const raw = decodeURIComponent(location.hash.slice(1));
-    const [book, ...rest] = raw.split('/');
-    return { book, base: rest.join('/') };
-  }
-
-  async function getLessons() {
-    if (!lessonsPromise) {
-      lessonsPromise = fetch('data/lessons.json').then((r) => {
-        if (!r.ok) throw new Error('lessons.json load failed');
-        return r.json();
-      });
-    }
-    return lessonsPromise;
-  }
-
-  async function getCurrentLesson() {
-    const lessons = await getLessons();
-    const { base } = parseHash();
-    const lesson = lessons.find((l) => l.filename === base);
-    if (!lesson) throw new Error('lesson not found: ' + base);
-    return lesson;
-  }
-
-  function pad2(n) {
-    return String(n).padStart(2, '0');
-  }
-
-  window.NCE_COMMON = { parseHash, getLessons, getCurrentLesson, pad2 };
+  const REGISTRY_URL='data/books.json';let registryPromise=null;const bookCache=new Map(),lessonsCache=new Map();
+  const fetchJson=async url=>{const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(`${url} load failed (${r.status})`);return r.json();};
+  function parseHash(){const raw=decodeURIComponent(location.hash.slice(1));const [bookId='',...rest]=raw.split('/');return{bookId,lessonId:rest.join('/')};}
+  async function getRegistry(){if(!registryPromise)registryPromise=fetchJson(REGISTRY_URL);return registryPromise;}
+  async function getBook(bookId){if(bookCache.has(bookId))return bookCache.get(bookId);const reg=await getRegistry(),entry=reg.books.find(b=>b.id===bookId||b.legacyAlias===bookId);if(!entry)throw new Error(`book not found: ${bookId}`);const book=await fetchJson(entry.config);book.registryEntry=entry;bookCache.set(book.id,book);if(book.legacyBookKey)bookCache.set(book.legacyBookKey,book);return book;}
+  const pad2=n=>String(n).padStart(2,'0');
+  function adaptLegacyNce2(book,raw){const order=Number(raw.id),unitIndex=Math.floor((order-1)/24),unit=book.units[unitIndex]||{};return{id:raw.filename,order,numericId:raw.id,unitId:unit.id||`part-${unitIndex+1}`,unitTitle:unit.title||'',section:`Lesson ${order}`,title:raw.title,filename:raw.filename,kind:'lesson',pointReading:true,transcript:`${book.audioRoot}/${raw.filename}.lrc`,notes:`${book.notesRoot}/lesson-${pad2(order)}.html`,wordsKey:String(order),audio:{primary:`${book.audioRoot}/${raw.filename}.mp3`,duration:null},bookId:book.id,legacyBookKey:book.legacyBookKey||book.id,alignmentSource:'publisher-lrc'};}
+  async function getLessons(bookOrId){const book=typeof bookOrId==='string'?await getBook(bookOrId):bookOrId;if(lessonsCache.has(book.id))return lessonsCache.get(book.id);const raw=await fetchJson(book.lessons),lessons=book.lessonAdapter==='nce2-legacy'?raw.map(x=>adaptLegacyNce2(book,x)):raw.map(x=>({...x,bookId:book.id,legacyBookKey:book.legacyBookKey||book.id}));lessonsCache.set(book.id,lessons);return lessons;}
+  async function getCurrentLesson(){const{bookId,lessonId}=parseHash();if(!bookId||!lessonId)throw new Error('missing book or lesson in URL');const book=await getBook(bookId),lessons=await getLessons(book);let lesson=lessons.find(l=>l.id===lessonId||l.filename===lessonId);if(!lesson)throw new Error(`lesson not found: ${lessonId}`);return{...lesson,book};}
+  async function getWordsForLesson(lesson){const book=lesson.book||await getBook(lesson.bookId);if(!book.words)return[];const data=await fetchJson(book.words),key=lesson.wordsKey||String(lesson.numericId||lesson.id);return data[key]||[];}
+  window.NCE_COMMON={REGISTRY_URL,parseHash,getRegistry,getBook,getLessons,getCurrentLesson,getWordsForLesson,fetchJson,pad2};
 })();
