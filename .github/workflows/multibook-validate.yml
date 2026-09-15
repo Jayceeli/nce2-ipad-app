@@ -1,0 +1,38 @@
+name: Validate multi-book sample
+
+on:
+  push:
+    branches: ["multi-book-grade5a"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/app.js
+          node --check assets/common.js
+          node --check assets/library.js
+          node --check assets/lesson.js
+          node --check assets/progress.js
+          node --check assets/favorites.js
+          node --check assets/notes.js
+          node --check assets/dictation.js
+          node --check assets/settings.js
+          node --check sw.js
+      - name: Rebuild Unit 1 LRC
+        run: node scripts/build-book-data.mjs shanghai-g5a-2026
+      - name: Validate Grade 5A data
+        run: node scripts/validate-book-data.mjs shanghai-g5a-2026
+      - name: Show generated diff
+        run: git diff --exit-code -- books/shanghai-g5a-2026/lrc
