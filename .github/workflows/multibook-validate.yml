@@ -30,6 +30,8 @@ jobs:
           node --check assets/dictation.js
           node --check assets/settings.js
           node --check sw.js
+      - name: Validate legacy NCE2 data compatibility
+        run: node scripts/validate-nce2-compat.mjs
       - name: Rebuild Unit 1 LRC
         run: node scripts/build-book-data.mjs shanghai-g5a-2026
       - name: Validate Grade 5A data
