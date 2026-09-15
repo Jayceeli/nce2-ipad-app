@@ -1,0 +1,22 @@
+{
+  "appId": "english-reader",
+  "appTitle": "英语点读学习",
+  "version": "0.1.0-sample",
+  "books": [
+    {
+      "id": "nce2",
+      "title": "新概念英语第二册",
+      "subtitle": "逐句点读 · 双语笔记 · 单词听写",
+      "config": "books/nce2/book.json",
+      "status": "ready",
+      "legacyAlias": "NCE2"
+    },
+    {
+      "id": "shanghai-g5a-2026",
+      "title": "上海英语五年级上册",
+      "subtitle": "2026 · 五四制 · 上海教育出版社",
+      "config": "books/shanghai-g5a-2026/book.json",
+      "status": "sample"
+    }
+  ]
+}

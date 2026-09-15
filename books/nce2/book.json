@@ -1,0 +1,19 @@
+{
+  "id": "nce2",
+  "legacyBookKey": "NCE2",
+  "title": "新概念英语第二册",
+  "englishTitle": "New Concept English 2",
+  "subtitle": "逐句点读 · 双语笔记 · 单词听写",
+  "audioLanguage": "en",
+  "lessonAdapter": "nce2-legacy",
+  "lessons": "data/lessons.json",
+  "words": "data/words.json",
+  "audioRoot": "NCE2",
+  "notesRoot": "notes",
+  "units": [
+    {"id":"part-1","title":"第一单元 · 第 1–24 课","startOrder":1,"endOrder":24},
+    {"id":"part-2","title":"第二单元 · 第 25–48 课","startOrder":25,"endOrder":48},
+    {"id":"part-3","title":"第三单元 · 第 49–72 课","startOrder":49,"endOrder":72},
+    {"id":"part-4","title":"第四单元 · 第 73–96 课","startOrder":73,"endOrder":96}
+  ]
+}

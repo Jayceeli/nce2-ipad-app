@@ -1,0 +1,11 @@
+{
+  "unit-1": [
+    {"word":"gardening","phonetic":null,"pos":"n.","meaning":"园艺","key":false,"source":"textbook"},
+    {"word":"storytelling","phonetic":null,"pos":"n.","meaning":"讲故事","key":false,"source":"textbook"},
+    {"word":"photography","phonetic":null,"pos":"n.","meaning":"摄影","key":false,"source":"textbook"},
+    {"word":"join","phonetic":null,"pos":"v.","meaning":"成为……的一员；参加","key":false,"source":"textbook"},
+    {"word":"view","phonetic":null,"pos":"n.","meaning":"（从某处看到的）景色","key":false,"source":"textbook"},
+    {"word":"pottery","phonetic":null,"pos":"n.","meaning":"制陶手艺；制陶技艺","key":false,"source":"textbook"},
+    {"word":"how about","phonetic":null,"pos":"phrase","meaning":"（问信息）……怎么样？","key":false,"source":"textbook"}
+  ]
+}
