@@ -1,16 +1,20 @@
-const CORE_CACHE = 'nce2-core-v8';
-const LEGACY_CORE_CACHES = ['nce2-core-v4', 'nce2-core-v5', 'nce2-core-v6', 'nce2-core-v7'];
+const CORE_CACHE = 'nce2-core-v9';
+const LEGACY_CORE_CACHES = ['nce2-core-v4', 'nce2-core-v5', 'nce2-core-v6', 'nce2-core-v7', 'nce2-core-v8'];
 const MEDIA_CACHE = 'nce2-media-v1';
 const CONTENT_CACHE = 'nce2-content-v1';
 const PRELOAD_HEADER = 'X-NCE2-Preload';
 const CORE_CACHE_CONCURRENCY = 6;
 const CORE_FETCH_TIMEOUT_MS = 12000;
 
-// Keep installation small and reliable. Lesson audio, transcripts, and notes
-// are cached by the resumable downloader or on first use.
+// Keep installation small and reliable. NCE2 lesson audio, transcripts, and
+// notes are cached by the resumable downloader or on first use. Grade 5
+// source data/audio currently remain remote and are loaded on demand.
 const APP_SHELL = [
   './',
   'index.html',
+  'nce2.html',
+  'grade5.html',
+  'grade5-lesson.html',
   'lesson.html',
   'settings.html',
   'about.html',
@@ -22,6 +26,9 @@ const APP_SHELL = [
   'assets/dictation.js',
   'assets/extra.css',
   'assets/favorites.js',
+  'assets/grade5-list.js',
+  'assets/grade5-lesson.js',
+  'assets/library.css',
   'assets/icons/apple-touch-icon.png',
   'assets/icons/icon-192.png',
   'assets/icons/icon-512.png',
@@ -50,11 +57,17 @@ const APP_SHELL = [
 const REQUIRED_APP_SHELL = [
   './',
   'index.html',
+  'nce2.html',
+  'grade5.html',
+  'grade5-lesson.html',
   'settings.html',
   'assets/register-sw-v8.js',
   'assets/settings.js',
   'assets/styles.css',
   'assets/extra.css',
+  'assets/library.css',
+  'assets/grade5-list.js',
+  'assets/grade5-lesson.js',
   'data/lessons.json',
 ];
 
@@ -124,7 +137,7 @@ self.addEventListener('activate', (event) => {
       .keys()
       .then(async (keys) => {
         // Preserve already-downloaded transcripts and notes when upgrading
-        // from the previous all-in-one core cache.
+        // from previous all-in-one core caches.
         for (const legacyCacheName of LEGACY_CORE_CACHES) {
           if (keys.includes(legacyCacheName)) {
             const legacy = await caches.open(legacyCacheName);
