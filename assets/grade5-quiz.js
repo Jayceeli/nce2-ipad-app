@@ -209,5 +209,17 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', init);
+  function setupQuizTab() {
+    document.querySelectorAll('#grade5ViewTabs [data-view]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const quizView = document.getElementById('view-quiz');
+        if (quizView) quizView.hidden = btn.dataset.view !== 'quiz';
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setupQuizTab();
+    init();
+  });
 })();
