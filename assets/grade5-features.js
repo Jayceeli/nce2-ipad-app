@@ -1,6 +1,7 @@
 (() => {
   const DATA_BASE = 'https://raw.githubusercontent.com/Jayceeli/hujiao-grade5-english/main/';
   const AUDIO_URL = 'https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg';
+  const NOTES_URL = new URL('data/grade5-notes.json', document.baseURI).href;
   const CONTENT_CACHE = 'nce2-grade5-content-v1';
   const MEDIA_CACHE = 'nce2-media-v1';
   const nativeFetch = window.fetch.bind(window);
@@ -32,6 +33,7 @@
   let unit = null;
   let catalog = null;
   let pointData = null;
+  let studyNotes = null;
   let words = [];
   let dictQueue = [];
   let dictIndex = 0;
@@ -39,7 +41,7 @@
   let cachedAudioObjectUrl = null;
 
   const $ = (id) => document.getElementById(id);
-  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[c]));
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 
   async function getJSON(url) {
     const res = await fetch(url, { cache: 'no-store' });
@@ -116,6 +118,44 @@
     return (unit?.sections || []).map((section) => ({ section, row: tracks[section.track] })).filter((x) => x.row?.segments?.length);
   }
 
+  function renderFormalNotes() {
+    if (!studyNotes) {
+      return '<p class="muted">Starter 暂不配置正式单元笔记；Unit 1–10 已按 2026 五四制教材逐单元校对。</p>';
+    }
+
+    const focus = (studyNotes.focus || []).map((item) => `<li>${esc(item)}</li>`).join('');
+    const grammar = (studyNotes.grammar || []).map((item, index) => `
+      <section class="grade5-note-block">
+        <h4>${index + 1}. ${esc(item.pattern)}</h4>
+        <p><strong>含义：</strong>${esc(item.meaning)}</p>
+        <p><strong>教材锚点：</strong><span lang="en">${esc(item.anchor)}</span></p>
+        <p><strong>迁移例句：</strong><span lang="en">${esc(item.example)}</span></p>
+        <p class="muted"><strong>注意：</strong>${esc(item.tip)}</p>
+      </section>`).join('');
+    const phrases = (studyNotes.phrases || []).map((item) => `
+      <div class="grade5-vocab-row"><strong>${esc(item.en)}</strong><span>${esc(item.cn)}</span></div>`).join('');
+    const pitfalls = (studyNotes.pitfalls || []).map((item, index) => `
+      <section class="grade5-note-block">
+        <h4>易错 ${index + 1}</h4>
+        <p><strong>✗</strong> <span lang="en">${esc(item.wrong)}</span></p>
+        <p><strong>✓</strong> <span lang="en">${esc(item.right)}</span></p>
+        <p class="muted">${esc(item.why)}</p>
+      </section>`).join('');
+
+    return `
+      <div class="grade5-study-summary">
+        <p>${esc(studyNotes.summary)}</p>
+      </div>
+      <h3>学习重点</h3>
+      <ul>${focus}</ul>
+      <h3>重点句型与核心语法</h3>
+      ${grammar || '<p class="muted">本单元暂未整理核心语法。</p>'}
+      <h3>重点短语</h3>
+      <div class="grade5-vocab-list">${phrases}</div>
+      <h3>易错点</h3>
+      ${pitfalls || '<p class="muted">本单元暂未整理易错点。</p>'}`;
+  }
+
   function renderNotes() {
     const root = $('grade5NotesContent');
     if (!root || !unit) return;
@@ -125,7 +165,8 @@
     root.innerHTML = `
       <div class="notes-content grade5-notes-panel">
         <h2>${esc(unit.title)}</h2>
-        <p class="muted">教材 PDF 第 ${unit.pageRange?.[0] ?? '—'}–${unit.pageRange?.[1] ?? '—'} 页。这里只整理已进入精校时间轴的正文与本单元词汇。</p>
+        <p class="muted">教材 PDF 第 ${unit.pageRange?.[0] ?? '—'}–${unit.pageRange?.[1] ?? '—'} 页。正式笔记只以当前 2026 五四制教材为内容基线；第三方 GitHub 项目仅借鉴笔记结构。</p>
+        ${renderFormalNotes()}
         <h3>精校正文</h3>
         ${precise.length ? precise.map(({section, row}) => `
           <section class="grade5-note-block">
@@ -222,7 +263,13 @@
   async function grade5Resources() {
     const cat = catalog || await getJSON(DATA_BASE + 'data/index.json');
     const pointIndex = await getJSON(DATA_BASE + 'data/point-v3/index.json');
-    const urls = [DATA_BASE + 'data/index.json', DATA_BASE + 'data/audio-sprite-manifest.json', DATA_BASE + 'data/point-v3/index.json', AUDIO_URL];
+    const urls = [
+      DATA_BASE + 'data/index.json',
+      DATA_BASE + 'data/audio-sprite-manifest.json',
+      DATA_BASE + 'data/point-v3/index.json',
+      NOTES_URL,
+      AUDIO_URL
+    ];
     (cat.units || []).forEach((item) => urls.push(DATA_BASE + 'data/' + item.file));
     (pointIndex.files || []).forEach((file) => urls.push(DATA_BASE + 'data/' + file));
     return [...new Set(urls)];
@@ -266,7 +313,7 @@
         $('grade5OfflineStatus').textContent = `正在缓存 ${done} / ${urls.length}`;
       }
       await useCachedAudioIfAvailable();
-      $('grade5OfflineStatus').textContent = '五年级上全部教材数据与原版音频已缓存，可离线使用。';
+      $('grade5OfflineStatus').textContent = '五年级上全部教材数据、正式笔记与原版音频已缓存，可离线使用。';
     } catch (err) {
       $('grade5OfflineStatus').textContent = `离线下载未完成：${err.message}。已成功缓存的内容会保留，可再次点击继续。`;
     } finally {
@@ -279,8 +326,15 @@
     catalog = await getJSON(DATA_BASE + 'data/index.json');
     const info = (catalog.units || []).find((x) => x.id === unitId) || catalog.units?.[0];
     if (!info) throw new Error('找不到当前单元');
-    unit = await getJSON(DATA_BASE + 'data/' + info.file);
-    const pointIndex = await getJSON(DATA_BASE + 'data/point-v3/index.json');
+
+    const [unitData, pointIndex, notesData] = await Promise.all([
+      getJSON(DATA_BASE + 'data/' + info.file),
+      getJSON(DATA_BASE + 'data/point-v3/index.json'),
+      getJSON(NOTES_URL).catch(() => ({ units: {} }))
+    ]);
+    unit = unitData;
+    studyNotes = notesData?.units?.[unit.id] || null;
+
     const baseName = String(info.file || '').split('/').pop();
     const pointFile = (pointIndex.files || []).find((f) => String(f).split('/').pop() === baseName);
     pointData = pointFile ? await getJSON(DATA_BASE + 'data/' + pointFile) : { tracks: {} };
