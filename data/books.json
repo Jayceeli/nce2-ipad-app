@@ -1,0 +1,25 @@
+{
+  "app": {
+    "id": "english-reader",
+    "title": "英语点读学习",
+    "subtitle": "逐句点读 · 双语学习 · 单词听写",
+    "version": "0.1.0-phase3"
+  },
+  "books": [
+    {
+      "id": "nce2",
+      "title": "新概念英语第二册",
+      "englishTitle": "New Concept English 2",
+      "description": "96课 · 原版音频 · 双语点读",
+      "config": "books/nce2/book.json",
+      "legacyHash": "NCE2"
+    },
+    {
+      "id": "shanghai-5a-2026",
+      "title": "上海英语五年级上册",
+      "englishTitle": "English Grade 5A · Shanghai Edition",
+      "description": "2026新版 · 五四制 · 上海教育出版社",
+      "config": "books/shanghai-5a/book.json"
+    }
+  ]
+}
