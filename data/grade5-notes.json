@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "edition": "沪教版（五四制）2026秋 · 五年级上册",
+  "scope": "Unit 1–10",
+  "sourcePolicy": "内容以 Jayceeli/hujiao-grade5-english 当前 2026 教材 JSON 为唯一教材基线；第三方 GitHub 项目仅借鉴笔记数据结构，不直接套用其教材知识点。",
+  "units": {
+    "unit-1": {
+      "summary": "围绕校园社团谈论选择、计划和兴趣，并能简单描述参加社团的原因与体验。",
+      "focus": [
+        "用 be going to 表达近期计划或打算",
+        "用 How about ...? 提建议",
+        "掌握社团活动相关动名词和短语"
+      ],
+      "grammar": [
+        {
+          "pattern": "be going to + 动词原形",
+          "meaning": "打算/计划做某事",
+          "anchor": "I'm going to join the Photography Club this term.",
+          "example": "We are going to make a photo journal.",
+          "tip": "be 要随主语变化：I am / he is / they are。"
+        },
+        {
+          "pattern": "How about + 名词 / V-ing?",
+          "meaning": "……怎么样？用于提出建议",
+          "anchor": "How about bamboo?",
+          "example": "How about joining the Art Club?",
+          "tip": "how about 后接动作时用 V-ing，不用动词原形。"
+        },
+        {
+          "pattern": "one of + the + 形容词 + 复数名词",
+          "meaning": "……之一",
+          "anchor": "one of the four noble plants",
+          "example": "Photography is one of the popular clubs at school.",
+          "tip": "one of 后面的可数名词必须用复数。"
+        }
+      ],
+      "phrases": [
+        {"en": "join a club", "cn": "参加/加入一个社团"},
+        {"en": "take photos", "cn": "拍照"},
+        {"en": "keep the sweet moments", "cn": "留住美好时刻"},
+        {"en": "have fun", "cn": "玩得开心"},
+        {"en": "give it a try", "cn": "试一试"},
+        {"en": "give up", "cn": "放弃"}
+      ],
+      "pitfalls": [
+        {"wrong": "I going to join the club.", "right": "I'm going to join the club.", "why": "be going to 结构不能漏掉 be。"},
+        {"wrong": "How about join the club?", "right": "How about joining the club?", "why": "How about 后接动词时用 V-ing。"},
+        {"wrong": "one of the four noble plant", "right": "one of the four noble plants", "why": "one of 后接复数名词。"}
+      ],
+      "sourcePath": "data/units/01-unit-1.json"
+    },
+    "unit-2": {
+      "summary": "围绕中国传统游戏和武术动作进行介绍，学会用祈使句给动作指令，并描述动作的样子和速度。",
+      "focus": ["祈使句：动词原形开头", "look like 表示“看起来像”", "as ... as 表示同级比较"],
+      "grammar": [
+        {"pattern": "动词原形 + ...", "meaning": "祈使句，用于指令、建议或邀请", "anchor": "Stand like a pine tree.", "example": "Keep the same pace.", "tip": "肯定祈使句通常省略主语 you，直接用动词原形。"},
+        {"pattern": "What does ... look like? / ... looks like ...", "meaning": "询问或描述外观/形态", "anchor": "What does this look like?", "example": "The action looks like a tree.", "tip": "问句有 does 时，look 用原形。"},
+        {"pattern": "as + 形容词/副词原级 + as", "meaning": "和……一样……", "anchor": "As fast as the wind.", "example": "He runs as fast as his teammate.", "tip": "中间使用原级，不用 faster。"}
+      ],
+      "phrases": [
+        {"en": "have a go", "cn": "试一试"}, {"en": "keep up with", "cn": "跟上"},
+        {"en": "lose control of", "cn": "失去对……的控制"}, {"en": "be in step", "cn": "步调一致"},
+        {"en": "keep the same pace", "cn": "保持相同速度/步调"}, {"en": "come to life", "cn": "活跃起来；栩栩如生"}
+      ],
+      "pitfalls": [
+        {"wrong": "To stand like a pine tree.", "right": "Stand like a pine tree.", "why": "表示动作指令的祈使句直接以动词原形开头。"},
+        {"wrong": "What does it looks like?", "right": "What does it look like?", "why": "does 后的实义动词用原形。"},
+        {"wrong": "as faster as the wind", "right": "as fast as the wind", "why": "as ... as 中使用形容词/副词原级。"}
+      ],
+      "sourcePath": "data/units/02-unit-2.json"
+    },
+    "unit-3": {
+      "summary": "学习植物部位、特征与天气反应，能够描述植物的外形，并用条件句说明天气变化。",
+      "focus": ["look like 描述外形", "If 条件句 + be going to 预测结果", "植物科普常用动词短语"],
+      "grammar": [
+        {"pattern": "look(s) like + 名词", "meaning": "看起来像……", "anchor": "This one looks like an ice cream cone.", "example": "The leaf looks like a small umbrella.", "tip": "主语为第三人称单数时 look 要加 -s。"},
+        {"pattern": "If + 一般现在时, ... be going to + 动词原形", "meaning": "如果某情况发生，预测将会……", "anchor": "If the flowers close up ..., it is going to be a sunny day.", "example": "If the sky gets dark, it is going to rain.", "tip": "if 从句表达条件时，本单元这类句子不用 will/be going to 放在 if 从句里。"},
+        {"pattern": "be covered with + 名词", "meaning": "被……覆盖", "anchor": "The wall is covered with plants.", "example": "The ground is covered with leaves.", "tip": "with 后接覆盖物。"}
+      ],
+      "phrases": [
+        {"en": "take in", "cn": "吸入；吸收"}, {"en": "grow into", "cn": "长成；变成"},
+        {"en": "react to", "cn": "对……作出反应"}, {"en": "close up", "cn": "闭合"},
+        {"en": "be covered with", "cn": "被……覆盖"}, {"en": "protect ... from ...", "cn": "保护……免受……"}
+      ],
+      "pitfalls": [
+        {"wrong": "It look like an umbrella.", "right": "It looks like an umbrella.", "why": "主语 it 为第三人称单数。"},
+        {"wrong": "If it will rain, the petals close.", "right": "If it rains, the petals close.", "why": "表示真实条件时，if 从句通常用一般现在时表达将来条件。"},
+        {"wrong": "The wall covers with plants.", "right": "The wall is covered with plants.", "why": "“被植物覆盖”使用 be covered with。"}
+      ],
+      "sourcePath": "data/units/03-unit-3.json"
+    },
+    "unit-4": {
+      "summary": "围绕动物观察和野生动物园活动进行交流，重点学习感官系动词、部分否定以及观察动作的表达。",
+      "focus": ["feel/look/taste + 形容词", "not all 表示“并非全部”", "see + 宾语 + V-ing 描述看到正在发生的动作"],
+      "grammar": [
+        {"pattern": "feel / look / taste + 形容词", "meaning": "感官系动词后用形容词描述状态", "anchor": "Apples taste good to these giraffes.", "example": "The giraffes look healthy. The apples taste good.", "tip": "系动词后一般不用副词；表示味道好应说 taste good。"},
+        {"pattern": "Not all + 复数名词/代词 + ...", "meaning": "并非所有……都……", "anchor": "Not all of them are pink.", "example": "Not all animals sleep at night.", "tip": "not all 是部分否定，不等于 none。"},
+        {"pattern": "see + 宾语 + V-ing", "meaning": "看到某人/某物正在做某事", "anchor": "I saw Momo keeping his head under water.", "example": "We saw the elephants walking slowly.", "tip": "强调正在发生的动作时用 V-ing。"}
+      ],
+      "phrases": [
+        {"en": "take care of", "cn": "照顾"}, {"en": "get close to", "cn": "靠近"},
+        {"en": "be different from", "cn": "与……不同"}, {"en": "give birth to", "cn": "生下"},
+        {"en": "spend ... doing", "cn": "花……时间做某事"}, {"en": "keep ... healthy", "cn": "使……保持健康"}
+      ],
+      "pitfalls": [
+        {"wrong": "The fruit tastes well.", "right": "The fruit tastes good.", "why": "taste 作系动词表示“尝起来”时，后接形容词。"},
+        {"wrong": "All flamingos are not pink.", "right": "Not all flamingos are pink.", "why": "要表达“并非所有”时用 not all 更清楚。"},
+        {"wrong": "different with", "right": "different from", "why": "教材采用 be different from 的固定搭配。"}
+      ],
+      "sourcePath": "data/units/04-unit-4.json"
+    },
+    "unit-5": {
+      "summary": "学习看病、身体不适和健康建议的表达，能够询问建议并给出清晰的健康提醒。",
+      "focus": ["should / need to / can 给建议", "Don't forget to + 动词原形", "less 与 fewer 的区别"],
+      "grammar": [
+        {"pattern": "What should I do? / You should ...", "meaning": "询问和给出建议", "anchor": "What should I do then?", "example": "You should rest and drink more water.", "tip": "should 后接动词原形。"},
+        {"pattern": "Don't forget to + 动词原形", "meaning": "别忘了做某事", "anchor": "Don't forget to do eye exercises twice a day.", "example": "Don't forget to take your medicine.", "tip": "forget to do 表示“忘记要做”；与 forget doing 含义不同。"},
+        {"pattern": "less + 不可数名词 / fewer + 可数名词复数", "meaning": "更少的……", "anchor": "watch less TV and play fewer computer games", "example": "Drink less cola and eat fewer sweets.", "tip": "games 是可数复数，用 fewer。"}
+      ],
+      "phrases": [
+        {"en": "take one's temperature", "cn": "量体温"}, {"en": "have a fever", "cn": "发烧"},
+        {"en": "take some medicine", "cn": "吃药"}, {"en": "have a good rest", "cn": "好好休息"},
+        {"en": "take it easy", "cn": "别急；放轻松"}, {"en": "take good care of", "cn": "好好照顾"},
+        {"en": "by mistake", "cn": "错误地；无意中"}, {"en": "in need of", "cn": "需要……"}
+      ],
+      "pitfalls": [
+        {"wrong": "You should to rest.", "right": "You should rest.", "why": "情态动词 should 后直接接动词原形。"},
+        {"wrong": "Don't forget doing your eye exercises.", "right": "Don't forget to do your eye exercises.", "why": "提醒将要做的事情用 forget to do。"},
+        {"wrong": "fewer water", "right": "less water", "why": "water 是不可数名词。"}
+      ],
+      "sourcePath": "data/units/05-unit-5.json"
+    },
+    "unit-6": {
+      "summary": "围绕面对挑战、成长和坚持展开，重点复习 be 动词的一般过去时，并学习 used to 等表达过去状态的结构。",
+      "focus": ["was / were 描述过去状态", "used to + 动词原形表示过去常常/曾经", "be unable to + 动词原形"],
+      "grammar": [
+        {"pattern": "主语 + was / were + ...", "meaning": "描述过去的状态或特征", "anchor": "You were shy and quiet.", "example": "I was nervous at first. They were confident later.", "tip": "I/he/she/it 用 was；you/we/they 用 were。"},
+        {"pattern": "used to + 动词原形", "meaning": "过去常常/曾经……（现在可能不同）", "anchor": "I used to be very nervous.", "example": "He used to be afraid of speaking in public.", "tip": "used to 后接动词原形；不要写 used to was。"},
+        {"pattern": "be unable to + 动词原形", "meaning": "不能做某事", "anchor": "I was still unable to speak.", "example": "She was unable to walk at that time.", "tip": "unable 后常接 to do。"}
+      ],
+      "phrases": [
+        {"en": "give up", "cn": "放弃"}, {"en": "in front of", "cn": "在……前面"},
+        {"en": "do a lot of practice", "cn": "进行大量练习"}, {"en": "give sb advice", "cn": "给某人建议"},
+        {"en": "be good at", "cn": "擅长"}, {"en": "make it", "cn": "成功做到"}, {"en": "hold ... tightly", "cn": "紧紧握住……"}
+      ],
+      "pitfalls": [
+        {"wrong": "I were nervous.", "right": "I was nervous.", "why": "I 的一般过去时 be 动词用 was。"},
+        {"wrong": "She used to was shy.", "right": "She used to be shy.", "why": "used to 后接动词原形。"},
+        {"wrong": "He didn't gave up.", "right": "He didn't give up.", "why": "didn't 后接动词原形。"}
+      ],
+      "sourcePath": "data/units/06-unit-6.json"
+    },
+    "unit-7": {
+      "summary": "学习介绍科学家、发现和发明，能够用同位语简洁说明人物身份，并用过去时描述人物经历。",
+      "focus": ["名词同位语介绍人物身份", "一般过去时描述生平", "discover 与 invent、be known as 等高频表达"],
+      "grammar": [
+        {"pattern": "人名, + 身份名词短语", "meaning": "同位语，用来补充说明人物身份", "anchor": "This is Tu Youyou, a Nobel Prize winner.", "example": "This is Qian Xuesen, a rocket scientist.", "tip": "同位语与前面的名词指同一个人，中间常用逗号隔开。"},
+        {"pattern": "was/were born + 地点/时间", "meaning": "出生于……", "anchor": "Yuan Longping was born in Beijing in 1930.", "example": "The scientist was born in Shanghai.", "tip": "表示出生固定用 be born。"},
+        {"pattern": "be known as + 身份/称号", "meaning": "被称为……", "anchor": "Mr Yuan is known as the 'Father of Hybrid Rice'.", "example": "She is known as a great scientist.", "tip": "be known as 强调身份/称号；be known for 强调因某事而出名。"}
+      ],
+      "phrases": [
+        {"en": "be interested in", "cn": "对……感兴趣"}, {"en": "outer space", "cn": "太空"},
+        {"en": "do research on", "cn": "研究……"}, {"en": "be born in", "cn": "出生于"},
+        {"en": "be known as", "cn": "被称为"}, {"en": "come true", "cn": "实现；成真"}, {"en": "find out", "cn": "查明；弄清"}
+      ],
+      "pitfalls": [
+        {"wrong": "Scientists invent facts that already exist.", "right": "Scientists discover facts; people invent new things.", "why": "discover 强调发现原本存在的事物；invent 强调创造新事物。"},
+        {"wrong": "He is known for the 'Father of Hybrid Rice'.", "right": "He is known as the 'Father of Hybrid Rice'.", "why": "称号用 be known as。"},
+        {"wrong": "He was born at 1930.", "right": "He was born in 1930.", "why": "年份前使用 in。"}
+      ],
+      "sourcePath": "data/units/07-unit-7.json"
+    },
+    "unit-8": {
+      "summary": "围绕发明及其用途展开，学习说明“做某事很重要”，并掌握发明类说明文中的常见结构。",
+      "focus": ["It is + adj. + to do", "make + 宾语 + 形容词", "help + 宾语 + 动词原形"],
+      "grammar": [
+        {"pattern": "It is + 形容词 + to + 动词原形", "meaning": "做某事是……的", "anchor": "It's important to find out more.", "example": "It is useful to learn how inventions work.", "tip": "真正的动作放在 to do 后面，it 是形式主语。"},
+        {"pattern": "make + 宾语 + 形容词", "meaning": "使……变得……", "anchor": "Wheels make housework much easier.", "example": "This tool makes our work easier.", "tip": "make 后先接宾语，再接形容词描述结果。"},
+        {"pattern": "help + 宾语 + 动词原形", "meaning": "帮助某人做某事", "anchor": "Wheels help people travel around easily.", "example": "Robots help people do difficult jobs.", "tip": "本单元常用 help sb do sth。"}
+      ],
+      "phrases": [
+        {"en": "solve problems", "cn": "解决问题"}, {"en": "in ancient times", "cn": "在古代"},
+        {"en": "thanks to", "cn": "多亏；由于"}, {"en": "date back to", "cn": "追溯到"},
+        {"en": "be able to", "cn": "能够"}, {"en": "hold down", "cn": "压住"}, {"en": "find out", "cn": "弄清；查明"}
+      ],
+      "pitfalls": [
+        {"wrong": "It is important find out more.", "right": "It is important to find out more.", "why": "It is + adj. 后接 to do。"},
+        {"wrong": "one of the most important invention", "right": "one of the most important inventions", "why": "one of 后接可数名词复数。"},
+        {"wrong": "Thanks for the wheel, ...", "right": "Thanks to the wheel, ...", "why": "表示“多亏/由于”用 thanks to；thanks for 表示“感谢……”。"}
+      ],
+      "sourcePath": "data/units/08-unit-8.json"
+    },
+    "unit-9": {
+      "summary": "学习电脑常识、操作和问题解决，重点掌握 as ... as 同级比较，并能用清晰步骤给出电脑使用建议。",
+      "focus": ["as + 形容词 + as 同级比较", "use ... to do 表示用途", "by + V-ing 表示方式"],
+      "grammar": [
+        {"pattern": "as + 形容词原级 + as", "meaning": "和……一样……", "anchor": "It was as big as a room.", "example": "The chip is as small as a grain of salt.", "tip": "as ... as 中不能用 bigger/smaller 等比较级。"},
+        {"pattern": "use + 物 + to + 动词原形", "meaning": "用……做某事", "anchor": "Students use computers to study.", "example": "We use a password to protect our files.", "tip": "to 后接动词原形。"},
+        {"pattern": "by + V-ing", "meaning": "通过……方式", "anchor": "set a password by using eight different letters, numbers and symbols", "example": "You can learn more by searching for information.", "tip": "介词 by 后接动名词。"}
+      ],
+      "phrases": [
+        {"en": "turn on", "cn": "打开（设备）"}, {"en": "mess up", "cn": "弄乱；搞坏"},
+        {"en": "set a password", "cn": "设置密码"}, {"en": "keep ... to oneself", "cn": "保守……不告诉别人"},
+        {"en": "search for information", "cn": "搜索信息"}, {"en": "work out", "cn": "算出；解决"}, {"en": "Recycle Bin", "cn": "回收站"}
+      ],
+      "pitfalls": [
+        {"wrong": "as bigger as a room", "right": "as big as a room", "why": "as ... as 使用形容词原级。"},
+        {"wrong": "many informations", "right": "much information / a lot of information", "why": "information 是不可数名词。"},
+        {"wrong": "by use a password", "right": "by using a password", "why": "介词 by 后接 V-ing。"}
+      ],
+      "sourcePath": "data/units/09-unit-9.json"
+    },
+    "unit-10": {
+      "summary": "学习绿色生活中的减量、再利用和回收，能够说明环保习惯及其作用。",
+      "focus": ["It is a good way to + 动词原形", "remind sb to do", "make ... into ... 与 be made from"],
+      "grammar": [
+        {"pattern": "It is a good way to + 动词原形", "meaning": "这是做某事的好方法", "anchor": "It is a good way to save energy.", "example": "Walking is a good way to reduce air pollution.", "tip": "way 后常接 to do 表示“做……的方法”。"},
+        {"pattern": "remind + 人 + to + 动词原形", "meaning": "提醒某人做某事", "anchor": "I remind my mum to unplug the TV.", "example": "Please remind me to turn off the tap.", "tip": "不要漏掉 to。"},
+        {"pattern": "make A into B / be made from", "meaning": "把 A 做成 B / 由原材料制成", "anchor": "Paper is made from wood.", "example": "We can make old boxes into a toy.", "tip": "原材料发生明显变化时常用 be made from。"}
+      ],
+      "phrases": [
+        {"en": "throw away", "cn": "扔掉"}, {"en": "turn off", "cn": "关掉"},
+        {"en": "unplug ... from ...", "cn": "把……从……拔掉"}, {"en": "be made from", "cn": "由……制成（原材料发生变化）"},
+        {"en": "pick up", "cn": "捡起；拿起"}, {"en": "make ... into ...", "cn": "把……做成……"},
+        {"en": "all at once", "cn": "突然；一下子"}, {"en": "before long", "cn": "不久以后"}
+      ],
+      "pitfalls": [
+        {"wrong": "It is a good way for save energy.", "right": "It is a good way to save energy.", "why": "way 表示“做某事的方法”时常接 to do。"},
+        {"wrong": "remind me turn off the light", "right": "remind me to turn off the light", "why": "remind sb to do sth 是固定结构。"},
+        {"wrong": "Paper is made of wood.", "right": "Paper is made from wood.", "why": "教材强调原材料发生变化后的成品关系，使用 be made from。"}
+      ],
+      "sourcePath": "data/units/10-unit-10.json"
+    }
+  }
+}
