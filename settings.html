@@ -6,11 +6,11 @@
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="NCE2">
+  <meta name="apple-mobile-web-app-title" content="英语学习">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <title>NCE2 · 设置</title>
+  <title>英语学习 · 设置</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/extra.css">
   <script src="assets/progress.js" defer></script>
@@ -22,17 +22,22 @@
   <div class="container">
     <header class="hero compact">
       <h1>设置</h1>
-      <p><a class="btn" href="index.html">返回首页</a></p>
+      <p><a class="btn" href="index.html">返回教材选择</a></p>
     </header>
     <div class="page-card">
       <div class="card-box">
-        <h2>离线音频</h2>
+        <h2>NCE2 离线音频</h2>
         <p id="cacheStatus">正在统计已缓存音频…</p>
-        <p class="muted">96 课音频约 162 MB。下载时请保持本页打开；iPad 会尝试保持亮屏，中断后可继续下载剩余课程。</p>
+        <p class="muted">NCE2 共 96 课，音频约 162 MB。下载时请保持本页打开；iPad 会尝试保持亮屏，中断后可继续下载剩余课程。</p>
         <p id="storageStatus" class="muted"></p>
-        <button id="preloadAll" class="btn">预下载全部音频</button>
+        <button id="preloadAll" class="btn">预下载全部 NCE2 音频</button>
         <progress id="preloadBar" class="offline-progress" max="96" value="0" hidden></progress>
         <div id="preloadProgress" class="dict-progress" aria-live="polite"></div>
+      </div>
+      <div class="card-box">
+        <h2>上海五年级上英语</h2>
+        <p>当前五年级模块使用已校对的教材数据和出版社原版音频，点读音频在线加载；不会调用系统 TTS 或合成语音。</p>
+        <p class="muted">后续可以再把五年级原版音频加入本 App 的离线下载管理。</p>
       </div>
       <div class="card-box">
         <h2>学习数据</h2>
