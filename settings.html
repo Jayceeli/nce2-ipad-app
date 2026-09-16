@@ -6,15 +6,16 @@
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="NCE2">
+  <meta name="apple-mobile-web-app-title" content="英语点读">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <title>NCE2 · 设置</title>
+  <title>英语点读 · 设置</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/extra.css">
   <script src="assets/progress.js" defer></script>
   <script src="assets/favorites.js" defer></script>
+  <script src="assets/common.js" defer></script>
   <script src="assets/settings.js" defer></script>
   <script src="assets/register-sw-v8.js" defer></script>
 </head>
@@ -22,20 +23,22 @@
   <div class="container">
     <header class="hero compact">
       <h1>设置</h1>
-      <p><a class="btn" href="index.html">返回首页</a></p>
+      <p><a class="btn" href="index.html">返回教材首页</a></p>
     </header>
     <div class="page-card">
       <div class="card-box">
-        <h2>离线音频</h2>
+        <h2>离线音频 · <span id="settingsBookTitle">当前教材</span></h2>
         <p id="cacheStatus">正在统计已缓存音频…</p>
-        <p class="muted">96 课音频约 162 MB。下载时请保持本页打开；iPad 会尝试保持亮屏，中断后可继续下载剩余课程。</p>
+        <p id="cacheHint" class="muted">正在读取教材配置…</p>
+        <p class="muted">音频按需缓存，也可以主动下载当前教材。大量音频不会在安装 PWA 时一次性预缓存；iPad 中断下载后可以继续。</p>
         <p id="storageStatus" class="muted"></p>
-        <button id="preloadAll" class="btn">预下载全部音频</button>
-        <progress id="preloadBar" class="offline-progress" max="96" value="0" hidden></progress>
+        <button id="preloadAll" class="btn">下载当前教材音频</button>
+        <progress id="preloadBar" class="offline-progress" max="1" value="0" hidden></progress>
         <div id="preloadProgress" class="dict-progress" aria-live="polite"></div>
       </div>
       <div class="card-box">
         <h2>学习数据</h2>
+        <p class="muted">导出文件同时包含新版通用框架数据和旧 NCE2 学习记录，便于无损迁移。</p>
         <div class="dict-actions">
           <button id="exportData" class="btn">导出数据</button>
           <label class="btn" for="importFile">导入数据<input id="importFile" type="file" accept="application/json" hidden></label>
