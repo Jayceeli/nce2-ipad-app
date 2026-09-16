@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "source": "2026五年级上册教材 Words to use",
+    "phoneticSource": "supplemental-standard-IPA",
+    "meaningSource": "textbook",
+    "originalAudioTrack": "65_Words to use-Unit 1.mp3",
+    "originalAudioOffset": 3749.577,
+    "originalAudioDuration": 53.123,
+    "wordAudioStatus": "alignment-pending",
+    "note": "教材提供词性和中文释义但未提供音标；IPA为补充字段。原版单词音轨已存在，逐词边界未可靠确认前不伪造映射。"
+  },
+  "unit-1": [
+    {"word":"gardening","phonetic":"ˈɡɑːdənɪŋ","pos":"n.","meaning":"园艺","key":true},
+    {"word":"storytelling","phonetic":"ˈstɔːritelɪŋ","pos":"n.","meaning":"讲故事","key":true},
+    {"word":"photography","phonetic":"fəˈtɒɡrəfi","pos":"n.","meaning":"摄影","key":true},
+    {"word":"join","phonetic":"dʒɔɪn","pos":"v.","meaning":"成为……的一员；参加","key":true},
+    {"word":"view","phonetic":"vjuː","pos":"n.","meaning":"（从某处看到的）景色","key":true},
+    {"word":"pottery","phonetic":"ˈpɒtəri","pos":"n.","meaning":"制陶手艺；制陶技艺","key":true},
+    {"word":"how about","phonetic":"haʊ əˈbaʊt","pos":"phrase","meaning":"……怎么样？","key":true}
+  ]
+}
