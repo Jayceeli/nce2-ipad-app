@@ -1,0 +1,24 @@
+{
+  "id": "nce2",
+  "title": "新概念英语第二册",
+  "englishTitle": "New Concept English 2",
+  "publisher": "外语教学与研究出版社 / Longman",
+  "subtitle": "逐句点读 · 双语笔记 · 单词听写",
+  "audioLanguage": "en",
+  "translationStatus": "provided",
+  "lessonData": "data/lessons.json",
+  "words": "data/words.json",
+  "legacy": {
+    "hashAliases": ["NCE2"],
+    "audioPattern": "NCE2/{filename}.mp3",
+    "transcriptPattern": "NCE2/{filename}.lrc",
+    "notesPattern": "notes/lesson-{id2}.html",
+    "wordsKey": "{id}"
+  },
+  "units": [
+    {"id":"nce2-u1","order":1,"title":"第一单元","lessonRange":[1,24]},
+    {"id":"nce2-u2","order":2,"title":"第二单元","lessonRange":[25,48]},
+    {"id":"nce2-u3","order":3,"title":"第三单元","lessonRange":[49,72]},
+    {"id":"nce2-u4","order":4,"title":"第四单元","lessonRange":[73,96]}
+  ]
+}
