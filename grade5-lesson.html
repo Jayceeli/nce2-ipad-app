@@ -11,13 +11,22 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <title>五年级上英语 · 点读</title>
+  <title>五年级上英语 · 学习</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/extra.css">
   <link rel="stylesheet" href="assets/library.css">
+  <style>
+    .grade5-notes-panel h3{margin-top:28px}.grade5-note-block{margin:14px 0 24px}.grade5-note-block h4 small{font-weight:400;color:var(--muted,#777)}
+    .grade5-note-block li{margin:8px 0;line-height:1.6}.grade5-vocab-list{display:grid;gap:8px}.grade5-vocab-row{display:flex;gap:18px;justify-content:space-between;padding:10px 12px;border:1px solid rgba(127,127,127,.18);border-radius:12px}.grade5-vocab-row span{text-align:right;color:var(--muted,#777)}
+    .grade5-note-editor{width:100%;box-sizing:border-box;border:1px solid rgba(127,127,127,.28);border-radius:14px;padding:14px;font:inherit;line-height:1.6;background:var(--card,#fff);color:inherit;resize:vertical}
+    .grade5-feature-card{max-width:760px;margin:22px auto;padding:20px;border:1px solid rgba(127,127,127,.18);border-radius:18px;background:var(--card,#fff)}
+    .grade5-dict-card{margin:18px 0;min-height:200px;border:1px solid rgba(127,127,127,.22);border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;cursor:pointer}.grade5-dict-word{font-size:30px;font-weight:700}.grade5-dict-meaning{margin-top:12px;color:var(--muted,#777)}
+    .grade5-offline-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.grade5-offline-actions progress{width:min(100%,420px)}
+  </style>
   <script>window.addEventListener('hashchange', () => location.reload());</script>
   <script src="assets/progress.js" defer></script>
   <script src="assets/grade5-lesson.js" defer></script>
+  <script src="assets/grade5-features.js" defer></script>
   <script src="assets/register-sw-v8.js" defer></script>
 </head>
 <body>
@@ -26,6 +35,12 @@
       <div class="brand">Shanghai · Grade 5A · 2026</div>
       <h1 id="lessonTitle">正在加载…</h1>
       <p id="lessonSub" class="muted"></p>
+      <div class="segmented tabs view-tabs" id="grade5ViewTabs" role="tablist" aria-label="学习视图">
+        <button class="seg active" data-view="point" role="tab">点读</button>
+        <button class="seg" data-view="notes" role="tab">笔记</button>
+        <button class="seg" data-view="dictation" role="tab">单词听写</button>
+        <button class="seg" data-view="offline" role="tab">离线下载</button>
+      </div>
     </header>
 
     <section id="view-point">
@@ -63,7 +78,39 @@
         <a id="prevLesson" class="btn-nav prev" href="#">上一单元</a>
         <a id="nextLesson" class="btn-nav next" href="#">下一单元</a>
       </div>
-      <p class="grade5-source">仅播放出版社配套原版录音；精校正文按已验证时间轴点读，未可靠对应的文字不会强行绑定错误语音。</p>
+      <p class="grade5-source">点读仅保留已精校正文；其他内容只保留教材页码、标题和出版社原版整段朗读按钮。</p>
+    </section>
+
+    <section id="view-notes" hidden>
+      <div id="grade5NotesContent" class="grade5-feature-card"><p class="muted">正在加载本单元笔记…</p></div>
+    </section>
+
+    <section id="view-dictation" hidden>
+      <div class="grade5-feature-card">
+        <h2>单词听写</h2>
+        <p id="grade5DictStatus" class="muted">正在加载 Words to use…</p>
+        <button id="grade5DictStart" class="btn">开始听写</button>
+        <div id="grade5DictCard" class="grade5-dict-card" hidden>
+          <div>
+            <div id="grade5DictProgress" class="muted"></div>
+            <div id="grade5DictWord" class="grade5-dict-word"></div>
+            <div id="grade5DictMeaning" class="grade5-dict-meaning"></div>
+          </div>
+        </div>
+        <div id="grade5DictResult" hidden></div>
+      </div>
+    </section>
+
+    <section id="view-offline" hidden>
+      <div class="grade5-feature-card">
+        <h2>五年级上离线下载</h2>
+        <p>一次缓存 Unit 1–10 / Starter 的教材数据、精校点读时间轴以及出版社原版音频。完成后，在没有网络的情况下仍可进入五上教材学习。</p>
+        <div class="grade5-offline-actions">
+          <button id="grade5OfflineDownload" class="btn">下载 / 继续下载全部五上资源</button>
+          <progress id="grade5OfflineProgress" value="0" max="1" hidden></progress>
+        </div>
+        <p id="grade5OfflineStatus" class="muted">正在检查缓存状态…</p>
+      </div>
     </section>
   </div>
 </body>
