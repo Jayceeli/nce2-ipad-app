@@ -3,6 +3,33 @@
   const AUDIO_URL = 'https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg';
   const CONTENT_CACHE = 'nce2-grade5-content-v1';
   const MEDIA_CACHE = 'nce2-media-v1';
+  const nativeFetch = window.fetch.bind(window);
+
+  function isGrade5Remote(url) {
+    try {
+      const u = new URL(url, location.href);
+      return (u.hostname === 'raw.githubusercontent.com' && u.pathname.startsWith('/Jayceeli/hujiao-grade5-english/')) ||
+        (u.hostname === 'jayceeli.github.io' && u.pathname.startsWith('/hujiao-grade5-english/'));
+    } catch (_) {
+      return false;
+    }
+  }
+
+  // Grade 5 data lives in the companion repository. Fall back to the browser
+  // Cache API when the network is unavailable so downloaded units still open.
+  window.fetch = async (input, init) => {
+    const url = typeof input === 'string' ? input : input?.url;
+    if (!url || !isGrade5Remote(url)) return nativeFetch(input, init);
+    try {
+      return await nativeFetch(input, init);
+    } catch (err) {
+      const isAudio = /\.(?:ogg|mp3)(?:$|\?)/i.test(url);
+      const cache = await caches.open(isAudio ? MEDIA_CACHE : CONTENT_CACHE);
+      const cached = await cache.match(url, { ignoreSearch: true });
+      if (cached) return cached;
+      throw err;
+    }
+  };
 
   let unit = null;
   let catalog = null;
@@ -11,6 +38,7 @@
   let dictQueue = [];
   let dictIndex = 0;
   let dictStage = 0;
+  let cachedAudioObjectUrl = null;
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
@@ -19,6 +47,24 @@
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) throw new Error(`${res.status} ${url}`);
     return res.json();
+  }
+
+  async function useCachedAudioIfAvailable() {
+    const player = $('player');
+    if (!player || !('caches' in window)) return;
+    try {
+      const cache = await caches.open(MEDIA_CACHE);
+      const cached = await cache.match(AUDIO_URL, { ignoreSearch: true });
+      if (!cached) return;
+      const blob = await cached.blob();
+      if (!blob.size) return;
+      if (cachedAudioObjectUrl) URL.revokeObjectURL(cachedAudioObjectUrl);
+      cachedAudioObjectUrl = URL.createObjectURL(blob);
+      player.src = cachedAudioObjectUrl;
+      player.load();
+      const status = $('audioStatus');
+      if (status) status.textContent = navigator.onLine ? '已使用本机缓存的出版社原版音频' : '离线模式 · 正在使用已下载的出版社原版音频';
+    } catch (_) {}
   }
 
   function currentUnitId() {
@@ -178,12 +224,7 @@
   async function grade5Resources() {
     const cat = catalog || await getJSON(DATA_BASE + 'data/index.json');
     const pointIndex = await getJSON(DATA_BASE + 'data/point-v3/index.json');
-    const urls = [
-      DATA_BASE + 'data/index.json',
-      DATA_BASE + 'data/audio-sprite-manifest.json',
-      DATA_BASE + 'data/point-v3/index.json',
-      AUDIO_URL,
-    ];
+    const urls = [DATA_BASE + 'data/index.json', DATA_BASE + 'data/audio-sprite-manifest.json', DATA_BASE + 'data/point-v3/index.json', AUDIO_URL];
     (cat.units || []).forEach((item) => urls.push(DATA_BASE + 'data/' + item.file));
     (pointIndex.files || []).forEach((file) => urls.push(DATA_BASE + 'data/' + file));
     return [...new Set(urls)];
@@ -218,7 +259,7 @@
       for (const url of urls) {
         const cache = url === AUDIO_URL ? media : content;
         if (!(await cache.match(url))) {
-          const res = await fetch(url, { cache: 'no-store' });
+          const res = await nativeFetch(url, { cache: 'no-store' });
           if (!res.ok) throw new Error(`下载失败 ${res.status}: ${url}`);
           await cache.put(url, res.clone());
         }
@@ -226,6 +267,7 @@
         progress.value = done;
         $('grade5OfflineStatus').textContent = `正在缓存 ${done} / ${urls.length}`;
       }
+      await useCachedAudioIfAvailable();
       $('grade5OfflineStatus').textContent = '五年级上全部教材数据与原版音频已缓存，可离线使用。';
     } catch (err) {
       $('grade5OfflineStatus').textContent = `离线下载未完成：${err.message}。已成功缓存的内容会保留，可再次点击继续。`;
@@ -249,6 +291,7 @@
   document.addEventListener('DOMContentLoaded', async () => {
     setupTabs();
     observePointContent();
+    await useCachedAudioIfAvailable();
     try {
       await loadFeatureData();
       renderNotes();
@@ -260,5 +303,9 @@
       if ($('grade5DictStatus')) $('grade5DictStatus').textContent = '单词听写数据加载失败';
       if ($('grade5OfflineStatus')) $('grade5OfflineStatus').textContent = '离线资源列表加载失败';
     }
+  });
+
+  window.addEventListener('pagehide', () => {
+    if (cachedAudioObjectUrl) URL.revokeObjectURL(cachedAudioObjectUrl);
   });
 })();
