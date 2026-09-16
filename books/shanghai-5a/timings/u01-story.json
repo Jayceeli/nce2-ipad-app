@@ -1,0 +1,26 @@
+{
+  "source":"10_Unit 1 Story time.mp3",
+  "method":"v4.1-0.1s-waveform-reviewed",
+  "precision":0.1,
+  "segments":[
+    {"start":11.1,"end":16.9,"text":"At the Pottery Club, Miss Li says, “All the brush pots are dry now."},
+    {"start":17.5,"end":19.7,"text":"Today, you need to paint them.”"},
+    {"start":21.1,"end":23.3,"text":"James gets his brush pot."},
+    {"start":24.3,"end":26.2,"text":"“It doesn’t look very nice!”"},
+    {"start":26.9,"end":31.0,"text":"“Don’t worry,” Miss Li says. “It’s about to change.”"},
+    {"start":31.9,"end":33.8,"text":"“What do you think I should paint?”"},
+    {"start":34.5,"end":36.3,"text":"James asks Xiaopu."},
+    {"start":37.6,"end":39.4,"text":"“How about bamboo?"},
+    {"start":39.8,"end":44.1,"text":"Bamboo is one of the four noble plants in Chinese culture.”"},
+    {"start":48.9,"end":49.9,"text":"“Good idea!”"},
+    {"start":50.5,"end":52.2,"text":"James begins to paint."},
+    {"start":52.8,"end":55.3,"text":"“Oh, it’s hard to draw the leaves!”"},
+    {"start":56.2,"end":57.2,"text":"James says."},
+    {"start":57.8,"end":58.8,"text":"“Don’t give up."},
+    {"start":59.4,"end":60.7,"text":"Draw like this!”"},
+    {"start":61.5,"end":63.4,"text":"Xiaopu shows James."},
+    {"start":64.5,"end":68.2,"text":"At last, James makes a nice bamboo brush pot."},
+    {"start":69.2,"end":71.9,"text":"“With your help, it becomes easier!”"},
+    {"start":73.0,"end":73.9,"text":"James says."}
+  ]
+}
