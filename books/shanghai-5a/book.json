@@ -1,0 +1,35 @@
+{
+  "id": "shanghai-5a-2026",
+  "title": "义务教育教科书（五·四学制）英语 五年级上册",
+  "englishTitle": "English Grade 5A · Shanghai Edition",
+  "shortTitle": "上海英语五上",
+  "grade": "Grade 5",
+  "semester": "上册",
+  "publisher": "上海教育出版社",
+  "useYear": "2026",
+  "isbn": "9787572043550",
+  "subtitle": "原版音频点读 · 单词听写 · 学习笔记",
+  "audioLanguage": "en",
+  "translationStatus": "missing",
+  "translationNote": "用户提供的教材正文未包含逐句中文译文；不使用AI补写，暂标记为 missing。",
+  "lessonData": "books/shanghai-5a/lessons.json",
+  "words": "books/shanghai-5a/words.json",
+  "audioSource": {
+    "type": "publisher-original-sprite",
+    "url": "https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg",
+    "manifest": "https://jayceeli.github.io/hujiao-grade5-english/data/audio-sprite-manifest.json",
+    "note": "该 Opus sprite 由用户提供的74条出版社配套MP3顺序合并生成；源MP3不被覆盖。"
+  },
+  "units": [
+    {"id":"u01","order":1,"title":"Unit 1 · Clubs in our school","printedPages":[9,16],"pdfPages":[15,22],"status":"sample"},
+    {"id":"u02","order":2,"title":"Unit 2 · Traditional games","status":"pending"},
+    {"id":"u03","order":3,"title":"Unit 3 · Amazing plants","status":"pending"},
+    {"id":"u04","order":4,"title":"Unit 4 · Together with animals","status":"pending"},
+    {"id":"u05","order":5,"title":"Unit 5 · Seeing a doctor","status":"pending"},
+    {"id":"u06","order":6,"title":"Unit 6 · Rise to the challenge","status":"pending"},
+    {"id":"u07","order":7,"title":"Unit 7 · Great scientists","status":"pending"},
+    {"id":"u08","order":8,"title":"Unit 8 · Useful inventions","status":"pending"},
+    {"id":"u09","order":9,"title":"Unit 9 · Using computers","status":"pending"},
+    {"id":"u10","order":10,"title":"Unit 10 · A greener life","status":"pending"}
+  ]
+}
