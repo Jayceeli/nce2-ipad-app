@@ -28,6 +28,7 @@
   <script src="assets/grade5-lesson.js" defer></script>
   <script src="assets/grade5-features.js" defer></script>
   <script src="assets/grade5-exam-notes.js" defer></script>
+  <script src="assets/grade5-quiz.js" defer></script>
   <script src="assets/register-sw-v8.js" defer></script>
 </head>
 <body>
@@ -40,6 +41,7 @@
         <button class="seg active" data-view="point" role="tab">点读</button>
         <button class="seg" data-view="notes" role="tab">笔记</button>
         <button class="seg" data-view="dictation" role="tab">单词听写</button>
+        <button class="seg" data-view="quiz" role="tab">随堂练习</button>
         <button class="seg" data-view="offline" role="tab">离线下载</button>
       </div>
     </header>
@@ -102,10 +104,16 @@
       </div>
     </section>
 
+    <section id="view-quiz" hidden>
+      <div id="grade5QuizRoot" class="grade5-feature-card">
+        <p class="muted">正在加载本单元随堂练习…</p>
+      </div>
+    </section>
+
     <section id="view-offline" hidden>
       <div class="grade5-feature-card">
         <h2>五年级上离线下载</h2>
-        <p>一次缓存 Unit 1–10 / Starter 的教材数据、精校点读时间轴以及出版社原版音频。完成后，在没有网络的情况下仍可进入五上教材学习。</p>
+        <p>一次缓存 Unit 1–10 / Starter 的教材数据、精校点读时间轴、学习笔记、随堂练习以及出版社原版音频。完成后，在没有网络的情况下仍可进入五上教材学习。</p>
         <div class="grade5-offline-actions">
           <button id="grade5OfflineDownload" class="btn">下载 / 继续下载全部五上资源</button>
           <progress id="grade5OfflineProgress" value="0" max="1" hidden></progress>
