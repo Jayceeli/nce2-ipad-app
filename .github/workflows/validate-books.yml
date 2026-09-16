@@ -15,5 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: |
+          for f in assets/*.js; do
+            echo "CHECK $f"
+            node --check "$f"
+          done
       - name: Validate all configured books
         run: python3 scripts/validate-book-data.py
