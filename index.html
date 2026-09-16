@@ -7,109 +7,68 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="NCE2">
+  <meta name="apple-mobile-web-app-title" content="英语学习">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <title>新概念英语第二册 · 点读 / 笔记 / 听写</title>
+  <title>英语学习 · 教材选择</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/extra.css">
+  <link rel="stylesheet" href="assets/library.css">
+  <script>
+    if (location.hash === '#NCE2') location.replace('nce2.html');
+  </script>
   <script src="assets/progress.js" defer></script>
   <script src="assets/register-sw-v8.js" defer></script>
   <script defer>
-    document.addEventListener('DOMContentLoaded', async () => {
-      const container = document.getElementById('lessons');
-      const statsEl = document.getElementById('stats');
-      const loading = document.getElementById('loading');
-
-      function updateStatistics() {
-        if (!window.progressManager) return;
-        const stats = window.progressManager.getStatistics();
-        const completed = window.progressManager.getBookProgress('NCE2').filter((p) => p.completed).length;
-        if (statsEl && (stats.total.duration > 0 || completed > 0)) {
-          statsEl.style.display = 'block';
-          statsEl.innerHTML = `
-            <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-value">${completed}</div>
-                <div class="stat-label">已完成课程</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-value">${window.progressManager.formatDuration(stats.total.duration)}</div>
-                <div class="stat-label">学习时长</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-value">${stats.streak}</div>
-                <div class="stat-label">连续天数</div>
-              </div>
-            </div>
-          `;
-        }
-      }
-
-      try {
-        const res = await fetch('data/lessons.json');
-        const lessons = await res.json();
-        container.innerHTML = '';
-        lessons.forEach((lesson) => {
-          if ([1, 25, 49, 73].includes(lesson.id)) {
-            const unit = document.createElement('div');
-            unit.className = 'unit-header';
-            const unitNames = ['第一单元', '第二单元', '第三单元', '第四单元'];
-            const unitIndex = Math.floor((lesson.id - 1) / 24);
-            const start = unitIndex * 24 + 1;
-            const end = start + 23;
-            unit.textContent = `${unitNames[unitIndex]} · 第 ${start}–${end} 课`;
-            container.appendChild(unit);
-          }
-          const a = document.createElement('a');
-          a.className = 'lesson-item';
-          a.href = `lesson.html#NCE2/${encodeURIComponent(lesson.filename)}`;
-          let status = '未学';
-          if (window.progressManager) {
-            const p = window.progressManager.getLessonProgress('NCE2', lesson.filename);
-            if (p?.completed) {
-              a.classList.add('completed');
-              status = '已完成';
-            } else if (p?.lastVisit) {
-              a.classList.add('in-progress');
-              status = '进行中';
-            }
-          }
-          a.innerHTML = `
-            <span class="lesson-card-num">${lesson.id}</span>
-            <div class="lesson-info">
-              <div class="lesson-title">${lesson.title}</div>
-              <span class="lesson-status-pill">${status}</span>
-            </div>
-            <span class="lesson-arrow">›</span>
-          `;
-          container.appendChild(a);
-        });
-        loading.hidden = true;
-        updateStatistics();
-      } catch (err) {
-        loading.textContent = '课程列表加载失败：' + err.message;
-      }
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.progressManager) return;
+      const nce = window.progressManager.getBookProgress('NCE2');
+      const g5 = window.progressManager.getBookProgress('SHG5A2026');
+      const set = (id, rows, total) => {
+        const done = rows.filter(x => x.completed).length;
+        const active = rows.filter(x => x.lastVisit && !x.completed).length;
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = `<span class="library-stat"><strong>${done}</strong>/${total} 已完成</span><span class="library-stat"><strong>${active}</strong> 进行中</span>`;
+      };
+      set('nceStats', nce, 96);
+      set('g5Stats', g5, 11);
     });
   </script>
 </head>
 <body>
   <div class="container">
     <header class="hero">
-      <h1>新概念英语第二册</h1>
-      <p class="subtitle">逐句点读 · 双语笔记 · 单词听写</p>
+      <div class="brand">ENGLISH STUDY</div>
+      <h1>选择学习内容</h1>
+      <p class="subtitle">两套教材共用一个学习入口，学习记录相互独立</p>
       <nav class="top-nav">
         <a href="settings.html">设置</a>
         <a href="about.html">关于</a>
       </nav>
     </header>
-    <div id="stats" class="stats-container" style="display:none"></div>
-    <main class="lessons" id="lessons"></main>
-    <p id="loading" class="muted" style="text-align:center">正在加载课程…</p>
-    <footer>
-      <p>仅供个人学习使用 · 非商业用途</p>
-    </footer>
+
+    <main class="book-picker" aria-label="教材选择">
+      <a class="book-choice" href="nce2.html">
+        <div class="book-kicker">New Concept English 2</div>
+        <h2>新概念英语第二册</h2>
+        <p>保留原有 96 课学习体系，包括逐句点读、双语笔记、单词听写、收藏与学习进度。</p>
+        <div class="book-meta"><span class="book-pill">96 Lessons</span><span class="book-pill">点读</span><span class="book-pill">笔记</span><span class="book-pill">听写</span></div>
+        <div id="nceStats" class="library-stats"></div>
+        <div class="book-arrow">进入 NCE2 →</div>
+      </a>
+
+      <a class="book-choice" href="grade5.html">
+        <div class="book-kicker">Shanghai · Grade 5A · 2026</div>
+        <h2>上海五年级上英语</h2>
+        <p>沪教版（五四制）2026 新版，包含 Starter + Unit 1–10；接入出版社原版音频与已精校逐句点读数据。</p>
+        <div class="book-meta"><span class="book-pill">Starter + 10 Units</span><span class="book-pill">原版音频</span><span class="book-pill">逐句点读</span></div>
+        <div id="g5Stats" class="library-stats"></div>
+        <div class="book-arrow">进入五年级上 →</div>
+      </a>
+    </main>
+
+    <footer><p>仅供个人学习使用 · 非商业用途</p></footer>
   </div>
 </body>
 </html>

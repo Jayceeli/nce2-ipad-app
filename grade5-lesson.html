@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="五上英语">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>五年级上英语 · 点读</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/extra.css">
+  <link rel="stylesheet" href="assets/library.css">
+  <script>window.addEventListener('hashchange', () => location.reload());</script>
+  <script src="assets/progress.js" defer></script>
+  <script src="assets/grade5-lesson.js" defer></script>
+  <script src="assets/register-sw-v8.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="hero compact">
+      <div class="brand">Shanghai · Grade 5A · 2026</div>
+      <h1 id="lessonTitle">正在加载…</h1>
+      <p id="lessonSub" class="muted"></p>
+    </header>
+
+    <section id="view-point">
+      <div class="toolbar">
+        <div class="player">
+          <a class="back-inline" href="grade5.html" aria-label="返回单元列表">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.78 3.22a.75.75 0 0 1 0 1.06L6.06 8l3.72 3.72a.75.75 0 1 1-1.06 1.06L4.47 8.53a1.25 1.25 0 0 1 0-1.77l4.25-4.25a.75.75 0 0 1 1.06 0Z"></path></svg>
+            返回
+          </a>
+          <audio id="player" preload="metadata" hidden></audio>
+          <div class="player-controls">
+            <button id="playPauseBtn" class="control-btn" title="播放/暂停" aria-label="播放/暂停">
+              <svg id="playIcon" viewBox="0 0 16 16" aria-hidden="true"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
+              <svg id="pauseIcon" viewBox="0 0 16 16" aria-hidden="true" style="display:none"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+            </button>
+            <div class="timeline-container">
+              <input type="range" id="timeline" class="timeline" min="0" max="100" value="0" step="0.1">
+              <div class="time-display"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+            </div>
+            <button id="prevPoint" class="control-btn" title="上一句" aria-label="上一句">←</button>
+            <button id="nextPoint" class="control-btn" title="下一句" aria-label="下一句">→</button>
+            <button id="loopBtn" class="control-btn" title="单句循环" aria-label="单句循环">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm3.81.086a.5.5 0 0 1 .09.497A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67z"/></svg>
+            </button>
+            <select id="speedSelect" class="speed-select" title="播放速度">
+              <option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option><option value="1.5">1.5x</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <p id="audioStatus" class="grade5-note" style="text-align:center">正在加载出版社原版音频…</p>
+      <main class="sentences" id="grade5Content"></main>
+      <div class="lesson-nav">
+        <a id="prevLesson" class="btn-nav prev" href="#">上一单元</a>
+        <a id="nextLesson" class="btn-nav next" href="#">下一单元</a>
+      </div>
+      <p class="grade5-source">仅播放出版社配套原版录音；精校正文按已验证时间轴点读，未可靠对应的文字不会强行绑定错误语音。</p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
-  "name": "新概念英语第二册",
-  "short_name": "NCE2",
-  "description": "新概念英语第二册点读、笔记与单词听写",
+  "name": "英语学习 · NCE2 与上海五年级上",
+  "short_name": "英语学习",
+  "description": "新概念英语第二册与上海五年级上英语点读学习",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
