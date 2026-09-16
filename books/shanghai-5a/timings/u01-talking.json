@@ -1,0 +1,16 @@
+{
+  "source":"09_Unit 1 Talking time.mp3",
+  "method":"v4.2-0.1s-talking-edge-reviewed",
+  "precision":0.1,
+  "segments":[
+    {"start":14.5,"end":17.8,"text":"Shenshen, it’s your photo. So sweet. I love it!"},
+    {"start":18.3,"end":23.8,"text":"Thank you, Xiaojiang. I’m glad you like it. Taking photos helps me keep the sweet moments in life."},
+    {"start":24.3,"end":27.5,"text":"I’m going to join the Photography Club this term."},
+    {"start":28.1,"end":31.9,"text":"Good idea. You can meet new friends and have fun at the same time!"},
+    {"start":32.8,"end":35.7,"text":"Look, this is Xiaopu’s painting."},
+    {"start":36.5,"end":42.6,"text":"Wow, the night view of the Huangpu River. It’s beautiful!"},
+    {"start":43.1,"end":47.6,"text":"I love this painting too. The colours are just amazing."},
+    {"start":48.1,"end":58.5,"text":"Xiaopu learns how to use colours well in the Art Club. It’s fun to play with colours."},
+    {"start":59.2,"end":68.7,"text":"That’s nice. I am going to join the Art Club. I’d like to give it a try."}
+  ]
+}
