@@ -1,250 +1,114 @@
-const CORE_CACHE = 'nce2-core-v8';
-const LEGACY_CORE_CACHES = ['nce2-core-v4', 'nce2-core-v5', 'nce2-core-v6', 'nce2-core-v7'];
-const MEDIA_CACHE = 'nce2-media-v1';
-const CONTENT_CACHE = 'nce2-content-v1';
-const PRELOAD_HEADER = 'X-NCE2-Preload';
-const CORE_CACHE_CONCURRENCY = 6;
+const CORE_CACHE = 'english-reader-core-v1';
+const MEDIA_CACHE = 'english-reader-media-v1';
+const CONTENT_CACHE = 'english-reader-content-v1';
+const LEGACY_MEDIA_CACHE = 'nce2-media-v1';
+const LEGACY_CONTENT_CACHE = 'nce2-content-v1';
+const PRELOAD_HEADER = 'X-English-Preload';
 const CORE_FETCH_TIMEOUT_MS = 12000;
+const CORE_CACHE_CONCURRENCY = 6;
 
-// Keep installation small and reliable. Lesson audio, transcripts, and notes
-// are cached by the resumable downloader or on first use.
 const APP_SHELL = [
-  './',
-  'index.html',
-  'lesson.html',
-  'settings.html',
-  'about.html',
-  'manifest.webmanifest',
-  'favicon.ico',
-  'assets/app.js',
-  'assets/bootstrap.min.css',
-  'assets/common.js',
-  'assets/dictation.js',
-  'assets/extra.css',
-  'assets/favorites.js',
-  'assets/icons/apple-touch-icon.png',
-  'assets/icons/icon-192.png',
-  'assets/icons/icon-512.png',
-  'assets/lesson.js',
-  'assets/notes.js',
-  'assets/progress.js',
-  'assets/register-sw-v8.js',
-  'assets/settings.js',
-  'assets/styles.css',
-  'assets/ui.js',
-  'data/lessons.json',
-  'data/words.json',
-  'static/data.json',
-  'notes/img/lesson-07-img-1.png',
-  'notes/img/lesson-08-img-1.png',
-  'notes/img/lesson-10-img-1.png',
-  'notes/img/lesson-27-img-1.png',
-  'notes/img/lesson-31-img-1.png',
-  'notes/img/lesson-33-img-1.png',
-  'notes/img/lesson-72-img-1.png',
-  'notes/img/lesson-73-img-1.png',
-  'notes/img/lesson-91-img-1.png',
-  'notes/img/lesson-92-img-1.png',
+  './','index.html','lesson.html','settings.html','about.html','manifest.webmanifest','favicon.ico',
+  'assets/app.js','assets/bootstrap.min.css','assets/common.js','assets/dictation.js','assets/extra.css',
+  'assets/favorites.js','assets/home.js','assets/icons/apple-touch-icon.png','assets/icons/icon-192.png','assets/icons/icon-512.png',
+  'assets/lesson.js','assets/notes.js','assets/progress.js','assets/register-sw-v8.js','assets/settings.js','assets/styles.css','assets/ui.js',
+  'data/books.json','data/lessons.json','data/words.json','static/data.json',
+  'books/nce2/book.json','books/shanghai-5a/book.json','books/shanghai-5a/lessons.json','books/shanghai-5a/words.json',
+  'books/shanghai-5a/lrc/u01-talking.lrc','books/shanghai-5a/lrc/u01-story.lrc',
+  'books/shanghai-5a/timings/u01-talking.json','books/shanghai-5a/timings/u01-story.json','notes/shanghai-5a/u01.html'
 ];
+const REQUIRED_APP_SHELL = ['./','index.html','lesson.html','settings.html','assets/common.js','assets/lesson.js','assets/styles.css','data/books.json'];
 
-const REQUIRED_APP_SHELL = [
-  './',
-  'index.html',
-  'settings.html',
-  'assets/register-sw-v8.js',
-  'assets/settings.js',
-  'assets/styles.css',
-  'assets/extra.css',
-  'data/lessons.json',
-];
-
-async function fetchAndCacheCoreAsset(cache, path) {
+async function fetchAndCache(cache, path) {
   const url = new URL(path, self.registration.scope).href;
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), CORE_FETCH_TIMEOUT_MS);
-
+  const timer = setTimeout(() => controller.abort(), CORE_FETCH_TIMEOUT_MS);
   try {
-    const response = await fetch(url, {
-      cache: 'reload',
-      signal: controller.signal,
-    });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    await cache.put(url, response);
-  } finally {
-    clearTimeout(timeout);
-  }
+    const res = await fetch(url, { cache:'reload', signal:controller.signal });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    await cache.put(url, res);
+  } finally { clearTimeout(timer); }
 }
 
-async function cacheCoreAssets(cache, paths, required) {
-  const failures = [];
-  let nextIndex = 0;
-  const workerCount = Math.min(CORE_CACHE_CONCURRENCY, paths.length);
-
-  await Promise.all(
-    Array.from({ length: workerCount }, async () => {
-      while (nextIndex < paths.length) {
-        const path = paths[nextIndex];
-        nextIndex += 1;
-        try {
-          await fetchAndCacheCoreAsset(cache, path);
-        } catch (err) {
-          failures.push({ path, err });
-          console.warn('Unable to precache app shell asset:', path, err);
-        }
-      }
-    })
-  );
-
-  if (required && failures.length) {
-    throw new Error(
-      `Required app shell assets failed: ${failures.map(({ path }) => path).join(', ')}`
-    );
-  }
+async function cacheMany(cache, paths, required) {
+  const failures=[]; let next=0;
+  await Promise.all(Array.from({length:Math.min(CORE_CACHE_CONCURRENCY,paths.length)}, async()=>{
+    while(next<paths.length){ const path=paths[next++]; try{await fetchAndCache(cache,path);}catch(err){failures.push({path,err});console.warn('precache failed',path,err);} }
+  }));
+  if(required&&failures.length) throw new Error('Required app shell assets failed: '+failures.map(x=>x.path).join(', '));
 }
 
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    (async () => {
-      const cache = await caches.open(CORE_CACHE);
-      const required = new Set(REQUIRED_APP_SHELL);
-      const optional = APP_SHELL.filter((path) => !required.has(path));
-
-      // Cache each resource separately so one slow optional asset cannot keep
-      // iPadOS stuck in the service-worker installing state indefinitely.
-      await cacheCoreAssets(cache, REQUIRED_APP_SHELL, true);
-      await cacheCoreAssets(cache, optional, false);
-      await self.skipWaiting();
-    })()
-  );
+self.addEventListener('install',(event)=>{
+  event.waitUntil((async()=>{
+    const cache=await caches.open(CORE_CACHE);
+    const required=new Set(REQUIRED_APP_SHELL);
+    await cacheMany(cache,REQUIRED_APP_SHELL,true);
+    await cacheMany(cache,APP_SHELL.filter((p)=>!required.has(p)),false);
+    await self.skipWaiting();
+  })());
 });
 
-self.addEventListener('activate', (event) => {
-  event.waitUntil(
-    caches
-      .keys()
-      .then(async (keys) => {
-        // Preserve already-downloaded transcripts and notes when upgrading
-        // from the previous all-in-one core cache.
-        for (const legacyCacheName of LEGACY_CORE_CACHES) {
-          if (keys.includes(legacyCacheName)) {
-            const legacy = await caches.open(legacyCacheName);
-            const content = await caches.open(CONTENT_CACHE);
-            const requests = await legacy.keys();
-            for (const request of requests) {
-              const pathname = new URL(request.url).pathname;
-              const isLessonContent = pathname.endsWith('.lrc') || /\/notes\/lesson-\d+\.html$/.test(pathname);
-              if (!isLessonContent || (await content.match(request))) continue;
-              const response = await legacy.match(request);
-              if (response) await content.put(request, response);
-            }
-          }
-        }
-
-        await Promise.all(
-          keys
-            .filter((key) => key !== CORE_CACHE && key !== MEDIA_CACHE && key !== CONTENT_CACHE)
-            .map((key) => caches.delete(key))
-        );
-      })
-      .then(() => self.clients.claim())
-  );
+self.addEventListener('activate',(event)=>{
+  event.waitUntil((async()=>{
+    const keys=await caches.keys();
+    const keep=new Set([CORE_CACHE,MEDIA_CACHE,CONTENT_CACHE,LEGACY_MEDIA_CACHE,LEGACY_CONTENT_CACHE]);
+    await Promise.all(keys.filter((k)=>!keep.has(k)).map((k)=>caches.delete(k)));
+    await self.clients.claim();
+  })());
 });
 
-function parseRange(res, rangeHeader) {
-  return res.blob().then((blob) => {
-    const size = blob.size;
-    const match = /bytes=(\d*)-(\d*)/.exec(rangeHeader || '');
-    let start = 0;
-    let end = size - 1;
-    if (match) {
-      if (match[1]) start = parseInt(match[1], 10);
-      if (match[2]) end = parseInt(match[2], 10);
-    }
-    if (start >= size) {
-      return new Response('', {
-        status: 416,
-        headers: { 'Content-Range': `bytes */${size}` },
-      });
-    }
-    end = Math.min(end, size - 1);
-    const sliced = blob.slice(start, end + 1);
-    return new Response(sliced, {
-      status: 206,
-      headers: {
-        'Content-Range': `bytes ${start}-${end}/${size}`,
-        'Accept-Ranges': 'bytes',
-        'Content-Length': String(sliced.size),
-        'Content-Type': blob.type || 'audio/mpeg',
-      },
-    });
-  });
+async function rangeResponse(fullResponse, rangeHeader) {
+  const blob=await fullResponse.blob();
+  const size=blob.size;
+  const m=/bytes=(\d*)-(\d*)/.exec(rangeHeader||'');
+  let start=0,end=size-1;
+  if(m){ if(m[1])start=parseInt(m[1],10); if(m[2])end=parseInt(m[2],10); }
+  if(start>=size) return new Response('',{status:416,headers:{'Content-Range':`bytes */${size}`}});
+  end=Math.min(end,size-1);
+  const sliced=blob.slice(start,end+1);
+  return new Response(sliced,{status:206,headers:{
+    'Content-Range':`bytes ${start}-${end}/${size}`,
+    'Accept-Ranges':'bytes','Content-Length':String(sliced.size),
+    'Content-Type':blob.type||fullResponse.headers.get('content-type')||'application/octet-stream'
+  }});
 }
 
 async function handleMedia(request) {
-  const cache = await caches.open(MEDIA_CACHE);
-  const rangeHeader = request.headers.get('range');
-  let cached = await cache.match(request.url, { ignoreSearch: true });
-
-  if (!cached) {
-    // Fetch without the Range header so we can cache the full file.
-    const full = await fetch(request.url);
-    if (full.ok) {
-      try {
-        await cache.put(request.url, full.clone());
-      } catch (err) {
-        // Cache failures must not break online playback.
-        console.warn('Unable to cache audio:', request.url, err);
-      }
-      cached = full;
-    } else {
-      return full;
-    }
+  const range=request.headers.get('range');
+  let full=await caches.match(request.url,{ignoreSearch:true});
+  if(!full){
+    const network=await fetch(request.url,{cache:'no-store'});
+    if(!network.ok)return network;
+    full=network.clone();
+    try{const cache=await caches.open(MEDIA_CACHE);await cache.put(request.url,network.clone());}catch(err){console.warn('media cache failed',request.url,err);}
   }
-
-  if (rangeHeader) return parseRange(cached, rangeHeader);
-  return cached;
+  return range?rangeResponse(full,range):full;
 }
 
-self.addEventListener('fetch', (event) => {
-  const request = event.request;
-  if (request.method !== 'GET') return;
-  const url = new URL(request.url);
-  if (url.origin !== location.origin) return;
+self.addEventListener('fetch',(event)=>{
+  const req=event.request;
+  if(req.method!=='GET')return;
+  const url=new URL(req.url);
+  if(url.origin!==location.origin)return;
+  if(req.headers.get(PRELOAD_HEADER)==='1')return;
 
-  // The settings page owns pre-download writes so progress, retries, and
-  // failures are observable. Let these requests go straight to the network.
-  if (request.headers.get(PRELOAD_HEADER) === '1') return;
+  if(/\.(mp3|ogg|m4a|wav)$/i.test(url.pathname)){
+    event.respondWith(handleMedia(req)); return;
+  }
 
-  if (url.pathname.endsWith('.mp3')) {
-    event.respondWith(handleMedia(request));
+  if(req.mode==='navigate'){
+    event.respondWith(fetch(req).then((res)=>{
+      if(res.ok){const copy=res.clone();caches.open(CORE_CACHE).then((c)=>c.put(req,copy));}
+      return res;
+    }).catch(()=>caches.match(req).then((r)=>r||caches.match('index.html'))));
     return;
   }
 
-  if (request.mode === 'navigate') {
-    event.respondWith(
-      fetch(request)
-        .then((res) => {
-          const copy = res.clone();
-          caches.open(CORE_CACHE).then((c) => c.put(request, copy));
-          return res;
-        })
-        .catch(() =>
-          caches.match(request).then((r) => r || caches.match('index.html'))
-        )
-    );
-    return;
-  }
-
-  event.respondWith(
-    caches.match(request, { ignoreSearch: true }).then((cached) => {
-      if (cached) return cached;
-      return fetch(request).then((res) => {
-        if (res.ok) {
-          const copy = res.clone();
-          caches.open(CORE_CACHE).then((c) => c.put(request, copy));
-        }
-        return res;
-      });
-    })
-  );
+  event.respondWith(caches.match(req,{ignoreSearch:true}).then((cached)=>{
+    if(cached)return cached;
+    return fetch(req).then((res)=>{
+      if(res.ok){const copy=res.clone();caches.open(CORE_CACHE).then((c)=>c.put(req,copy));}
+      return res;
+    });
+  }));
 });
