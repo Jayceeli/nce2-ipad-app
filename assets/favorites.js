@@ -1,201 +1,108 @@
-/**
- * 收藏管理系统
- * 负责管理句子收藏和生词本功能
- */
-
+/** Book-aware favorites and vocabulary store. */
 class FavoritesManager {
   constructor() {
-    this.STORAGE_KEY = 'nce_favorites';
-    this.VOCABULARY_KEY = 'nce_vocabulary';
+    this.KEY = 'learning_favorites_v2';
+    this.VOCAB_KEY = 'learning_vocabulary_v2';
+    this.LEGACY_KEY = 'nce_favorites';
+    this.LEGACY_VOCAB = 'nce_vocabulary';
   }
 
-  // 获取所有收藏的句子
   getFavorites() {
-    const data = localStorage.getItem(this.STORAGE_KEY);
-    return data ? JSON.parse(data) : [];
+    let current = [];
+    try { current = JSON.parse(localStorage.getItem(this.KEY) || '[]'); } catch (_) {}
+    let legacy = [];
+    try { legacy = JSON.parse(localStorage.getItem(this.LEGACY_KEY) || '[]'); } catch (_) {}
+    const converted = legacy.map((f) => ({
+      bookId: f.book === 'NCE2' ? 'nce2' : (f.book || ''),
+      unitId: f.unitId || '', lessonId: f.lessonId, sentenceId: String(f.sentenceIndex), sentenceIndex:f.sentenceIndex,
+      en:f.en || '', cn:f.cn || '', start:f.start ?? null, end:f.end ?? null, timestamp:f.timestamp || 0, legacy:true,
+    }));
+    const map = new Map();
+    [...converted, ...current].forEach((f) => map.set(`${f.bookId}|${f.lessonId}|${f.sentenceId ?? f.sentenceIndex}`, f));
+    return [...map.values()];
   }
 
-  // 检查句子是否已收藏
-  isFavorite(book, lessonId, sentenceIndex) {
-    const favorites = this.getFavorites();
-    return favorites.some(f => 
-      f.book === book && 
-      f.lessonId === lessonId && 
-      f.sentenceIndex === sentenceIndex
-    );
+  isFavorite(bookId, lessonId, sentenceIndex) {
+    return this.getFavorites().some((f) => f.bookId === bookId && f.lessonId === lessonId && Number(f.sentenceIndex ?? f.sentenceId) === Number(sentenceIndex));
   }
 
-  // 添加收藏
-  addFavorite(book, lessonId, sentenceIndex, sentenceData) {
-    const favorites = this.getFavorites();
-    
-    // 避免重复添加
-    if(this.isFavorite(book, lessonId, sentenceIndex)) {
-      return false;
-    }
-    
-    favorites.push({
-      book,
-      lessonId,
-      sentenceIndex,
-      en: sentenceData.en,
-      cn: sentenceData.cn || '',
-      timestamp: Date.now()
+  addFavorite(bookId, lessonId, sentenceIndex, data = {}) {
+    if (this.isFavorite(bookId, lessonId, sentenceIndex)) return false;
+    const list = this.getFavorites().filter((x) => !x.legacy);
+    list.push({
+      bookId, unitId:data.unitId || '', unitTitle:data.unitTitle || '', lessonId, lessonTitle:data.lessonTitle || '',
+      sentenceId:String(sentenceIndex), sentenceIndex:Number(sentenceIndex), en:data.en || '', cn:data.cn || '',
+      start:Number.isFinite(data.start) ? data.start : null, end:Number.isFinite(data.end) ? data.end : null,
+      timestamp:Date.now(),
     });
-    
-    localStorage.setItem(this.STORAGE_KEY, JSON.stringify(favorites));
+    localStorage.setItem(this.KEY, JSON.stringify(list));
     return true;
   }
 
-  // 移除收藏
-  removeFavorite(book, lessonId, sentenceIndex) {
-    const favorites = this.getFavorites();
-    const filtered = favorites.filter(f => 
-      !(f.book === book && 
-        f.lessonId === lessonId && 
-        f.sentenceIndex === sentenceIndex)
-    );
-    
-    localStorage.setItem(this.STORAGE_KEY, JSON.stringify(filtered));
-    return filtered.length < favorites.length;
+  removeFavorite(bookId, lessonId, sentenceIndex) {
+    const before = this.getFavorites().filter((x) => !x.legacy);
+    const after = before.filter((f) => !(f.bookId === bookId && f.lessonId === lessonId && Number(f.sentenceIndex) === Number(sentenceIndex)));
+    localStorage.setItem(this.KEY, JSON.stringify(after));
+    return after.length < before.length || this.isFavorite(bookId, lessonId, sentenceIndex);
   }
 
-  // 切换收藏状态
-  toggleFavorite(book, lessonId, sentenceIndex, sentenceData) {
-    if(this.isFavorite(book, lessonId, sentenceIndex)) {
-      this.removeFavorite(book, lessonId, sentenceIndex);
+  toggleFavorite(bookId, lessonId, sentenceIndex, data = {}) {
+    if (this.isFavorite(bookId, lessonId, sentenceIndex)) {
+      const all = this.getFavorites();
+      const kept = all.filter((f) => !(f.bookId === bookId && f.lessonId === lessonId && Number(f.sentenceIndex ?? f.sentenceId) === Number(sentenceIndex)) && !f.legacy);
+      localStorage.setItem(this.KEY, JSON.stringify(kept));
       return false;
-    } else {
-      this.addFavorite(book, lessonId, sentenceIndex, sentenceData);
-      return true;
     }
+    this.addFavorite(bookId, lessonId, sentenceIndex, data); return true;
   }
 
-  // 获取收藏统计
   getStatistics() {
-    const favorites = this.getFavorites();
-    const bookStats = {};
-    
-    favorites.forEach(f => {
-      if(!bookStats[f.book]) {
-        bookStats[f.book] = 0;
-      }
-      bookStats[f.book]++;
-    });
-    
-    return {
-      total: favorites.length,
-      byBook: bookStats,
-      recent: favorites.slice(-10).reverse()
-    };
+    const list = this.getFavorites(); const byBook = {};
+    list.forEach((f) => { byBook[f.bookId] = (byBook[f.bookId] || 0) + 1; });
+    return { total:list.length, byBook, recent:list.slice().sort((a,b)=>(b.timestamp||0)-(a.timestamp||0)).slice(0,10) };
   }
 
-  // 生词本功能
-  
-  // 获取所有生词
   getVocabulary() {
-    const data = localStorage.getItem(this.VOCABULARY_KEY);
-    return data ? JSON.parse(data) : [];
+    let a = [], b = [];
+    try { a = JSON.parse(localStorage.getItem(this.VOCAB_KEY) || '[]'); } catch (_) {}
+    try { b = JSON.parse(localStorage.getItem(this.LEGACY_VOCAB) || '[]'); } catch (_) {}
+    return [...b.map((x) => ({...x, bookId:x.book === 'NCE2' ? 'nce2' : (x.book || ''), legacy:true})), ...a];
   }
 
-  // 添加生词
   addWord(word, context = {}) {
-    const vocabulary = this.getVocabulary();
-    
-    // 避免重复
-    if(vocabulary.some(v => v.word.toLowerCase() === word.toLowerCase())) {
-      return false;
-    }
-    
-    vocabulary.push({
-      word,
-      context: context.sentence || '',
-      translation: context.translation || '',
-      notes: context.notes || '',
-      book: context.book || '',
-      lessonId: context.lessonId || '',
-      timestamp: Date.now(),
-      reviewCount: 0,
-      lastReview: null
-    });
-    
-    localStorage.setItem(this.VOCABULARY_KEY, JSON.stringify(vocabulary));
-    return true;
+    const all = this.getVocabulary();
+    if (all.some((v) => v.word.toLowerCase() === word.toLowerCase() && (v.bookId || '') === (context.bookId || context.book || ''))) return false;
+    const current = all.filter((x) => !x.legacy);
+    current.push({ word, context:context.sentence || '', translation:context.translation || '', notes:context.notes || '',
+      bookId:context.bookId || context.book || '', unitId:context.unitId || '', lessonId:context.lessonId || '', timestamp:Date.now(), reviewCount:0, lastReview:null });
+    localStorage.setItem(this.VOCAB_KEY, JSON.stringify(current)); return true;
   }
 
-  // 移除生词
-  removeWord(word) {
-    const vocabulary = this.getVocabulary();
-    const filtered = vocabulary.filter(v => 
-      v.word.toLowerCase() !== word.toLowerCase()
-    );
-    
-    localStorage.setItem(this.VOCABULARY_KEY, JSON.stringify(filtered));
-    return filtered.length < vocabulary.length;
+  removeWord(word, bookId = '') {
+    const current = this.getVocabulary().filter((x) => !x.legacy);
+    const after = current.filter((v) => !(v.word.toLowerCase() === word.toLowerCase() && (!bookId || v.bookId === bookId)));
+    localStorage.setItem(this.VOCAB_KEY, JSON.stringify(after)); return after.length < current.length;
   }
 
-  // 更新生词复习记录
-  markWordReviewed(word) {
-    const vocabulary = this.getVocabulary();
-    const wordItem = vocabulary.find(v => 
-      v.word.toLowerCase() === word.toLowerCase()
-    );
-    
-    if(wordItem) {
-      wordItem.reviewCount++;
-      wordItem.lastReview = Date.now();
-      localStorage.setItem(this.VOCABULARY_KEY, JSON.stringify(vocabulary));
-      return true;
-    }
-    
-    return false;
+  markWordReviewed(word, bookId = '') {
+    const current = this.getVocabulary().filter((x) => !x.legacy);
+    const item = current.find((v) => v.word.toLowerCase() === word.toLowerCase() && (!bookId || v.bookId === bookId));
+    if (!item) return false;
+    item.reviewCount = Number(item.reviewCount || 0) + 1; item.lastReview = Date.now();
+    localStorage.setItem(this.VOCAB_KEY, JSON.stringify(current)); return true;
   }
 
-  // 获取需要复习的生词
   getWordsForReview(limit = 20) {
-    const vocabulary = this.getVocabulary();
-    const now = Date.now();
-    const dayMs = 24 * 60 * 60 * 1000;
-    
-    // 根据复习次数和时间间隔排序
-    return vocabulary
-      .filter(w => {
-        if(!w.lastReview) return true;
-        const daysSinceReview = (now - w.lastReview) / dayMs;
-        // 根据复习次数决定复习间隔
-        const interval = Math.pow(2, w.reviewCount); // 1, 2, 4, 8... 天
-        return daysSinceReview >= interval;
-      })
-      .sort((a, b) => {
-        // 优先显示从未复习的词
-        if(!a.lastReview) return -1;
-        if(!b.lastReview) return 1;
-        // 然后按最后复习时间排序
-        return a.lastReview - b.lastReview;
-      })
-      .slice(0, limit);
+    const now = Date.now(), day = 86400000;
+    return this.getVocabulary().filter((w) => !w.lastReview || (now - w.lastReview) / day >= Math.pow(2, w.reviewCount || 0))
+      .sort((a,b)=>(a.lastReview||0)-(b.lastReview||0)).slice(0, limit);
   }
 
-  // 导出收藏和生词数据
-  exportData() {
-    return {
-      favorites: this.getFavorites(),
-      vocabulary: this.getVocabulary(),
-      exportDate: new Date().toISOString()
-    };
-  }
-
-  // 导入数据
+  exportData() { return { version:'2.0', favorites:this.getFavorites(), vocabulary:this.getVocabulary(), exportDate:new Date().toISOString() }; }
   importData(data) {
-    if(data.favorites) {
-      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(data.favorites));
-    }
-    if(data.vocabulary) {
-      localStorage.setItem(this.VOCABULARY_KEY, JSON.stringify(data.vocabulary));
-    }
+    if (data.favorites) localStorage.setItem(this.KEY, JSON.stringify(data.favorites));
+    if (data.vocabulary) localStorage.setItem(this.VOCAB_KEY, JSON.stringify(data.vocabulary));
     return true;
   }
 }
-
-// 创建全局实例
 window.favoritesManager = new FavoritesManager();
