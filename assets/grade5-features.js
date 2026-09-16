@@ -15,8 +15,6 @@
     }
   }
 
-  // Grade 5 data lives in the companion repository. Fall back to the browser
-  // Cache API when the network is unavailable so downloaded units still open.
   window.fetch = async (input, init) => {
     const url = typeof input === 'string' ? input : input?.url;
     if (!url || !isGrade5Remote(url)) return nativeFetch(input, init);
@@ -41,7 +39,7 @@
   let cachedAudioObjectUrl = null;
 
   const $ = (id) => document.getElementById(id);
-  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[c]));
 
   async function getJSON(url) {
     const res = await fetch(url, { cache: 'no-store' });
@@ -283,7 +281,8 @@
     if (!info) throw new Error('找不到当前单元');
     unit = await getJSON(DATA_BASE + 'data/' + info.file);
     const pointIndex = await getJSON(DATA_BASE + 'data/point-v3/index.json');
-    const pointFile = (pointIndex.files || []).find((f) => f.endsWith('/' + info.file));
+    const baseName = String(info.file || '').split('/').pop();
+    const pointFile = (pointIndex.files || []).find((f) => String(f).split('/').pop() === baseName);
     pointData = pointFile ? await getJSON(DATA_BASE + 'data/' + pointFile) : { tracks: {} };
     words = parseWords(unit);
   }
