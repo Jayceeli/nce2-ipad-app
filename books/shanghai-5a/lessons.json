@@ -1,0 +1,41 @@
+[
+  {
+    "id":"u01-overview","order":1,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Big task","title":"Making a photo journal of a club","page":9,"pdfPages":[15],
+    "audio":"https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg","audioOffset":341.425,"audioDuration":14.707,"pointReading":false,
+    "content":["Unit 1","Clubs in our school","Making a photo journal of a club","gardening, photography, art, storytelling, pottery","Come and join our clubs!","It’s good to join clubs","I’m/I am going to ...","At the Pottery Club","My photo journal in a club"]
+  },
+  {
+    "id":"u01-topic-words","order":2,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Topic words","title":"Topic words","page":10,"pdfPages":[16],
+    "audio":"https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg","audioOffset":356.132,"audioDuration":23.464,"pointReading":false,"wordsKey":"unit-1",
+    "content":["Reading Club","Gardening Club","Football Club","Storytelling Club","Art Club","Photography Club","photography","art","gardening","storytelling","pottery"]
+  },
+  {
+    "id":"u01-fun","order":3,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Fun time","title":"Come and join our clubs!","page":11,"pdfPages":[17],
+    "audio":"https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg","audioOffset":379.596,"audioDuration":131.155,"pointReading":false,
+    "content":["Come and join our clubs!","Join us! We are waiting for you!","Welcome back to school! Here are some clubs for you this term.","There are ...","The ... Club is ...","I want to ...","Which one do you want to join?","What clubs do we have for this term?"]
+  },
+  {
+    "id":"u01-sound","order":4,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Sound","title":"ph · photography","page":11,"pdfPages":[17],
+    "audio":"https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg","audioOffset":510.751,"audioDuration":15.046,"pointReading":false,
+    "content":["Sound: ph (photography)","Philip sees a lovely elephant in the zoo.","He takes out his phone and wants to take a photo.","Oops, he drops his phone and he can’t take any photos."]
+  },
+  {
+    "id":"u01-talking","order":5,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Talking time","title":"It’s good to join clubs","page":12,"pdfPages":[18,19],
+    "audio":"https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg","audioOffset":525.797,"audioDuration":69.856,"pointReading":true,
+    "transcript":"books/shanghai-5a/lrc/u01-talking.lrc","timings":"books/shanghai-5a/timings/u01-talking.json","wordsKey":"unit-1","notes":"notes/shanghai-5a/u01.html","translationStatus":"missing"
+  },
+  {
+    "id":"u01-story","order":6,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Story time","title":"At the Pottery Club","page":14,"pdfPages":[20,21],
+    "audio":"https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg","audioOffset":595.652,"audioDuration":75.250,"pointReading":true,
+    "transcript":"books/shanghai-5a/lrc/u01-story.lrc","timings":"books/shanghai-5a/timings/u01-story.json","wordsKey":"unit-1","notes":"notes/shanghai-5a/u01.html","translationStatus":"missing"
+  },
+  {
+    "id":"u01-project","order":7,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Project","title":"My photo journal in a club","page":16,"pdfPages":[22],"pointReading":false,"wordsKey":"unit-1","notes":"notes/shanghai-5a/u01.html",
+    "content":["My photo journal in a club","In the Photography Club, I learn how to take beautiful pictures.","These are photos of beautiful plants and birds in the park. They are amazing.","I’m going to take more nice pictures for my family and friends. I feel happy in the club.","Come and join us! You will have lots of fun here!"]
+  },
+  {
+    "id":"u01-words","order":8,"unit":1,"unitId":"u01","unitTitle":"Unit 1 · Clubs in our school","section":"Words to use","title":"Words to use · Unit 1","pdfPages":[95,96,97],"wordsKey":"unit-1","pointReading":false,
+    "audio":"https://jayceeli.github.io/hujiao-grade5-english/assets/audio-sprite.ogg","audioOffset":3749.577,"audioDuration":53.123,
+    "content":["gardening · n. · 园艺","storytelling · n. · 讲故事","photography · n. · 摄影","join · v. · 成为……的一员；参加","view · n. · （从某处看到的）景色","pottery · n. · 制陶手艺；制陶技艺","how about · ……怎么样？"]
+  }
+]
